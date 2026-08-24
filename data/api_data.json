@@ -1,0 +1,508 @@
+{
+  "lastUpdated": "2026-08-24T13:55:26.183Z",
+  "activeStation": "Jersey Avenue Station",
+  "activeWindow": "morning",
+  "scrapeTime": "25540ms",
+  "currentBoard": [
+    {
+      "trainNumber": "3831",
+      "scheduledTime": "10:38 AM",
+      "destination": "Trenton",
+      "line": "NEC",
+      "track": "4",
+      "status": "On Time",
+      "station": "Jersey Ave"
+    },
+    {
+      "trainNumber": "3835",
+      "scheduledTime": "11:37 AM",
+      "destination": "Trenton",
+      "line": "NEC",
+      "track": "4",
+      "status": "On Time",
+      "station": "Jersey Ave"
+    },
+    {
+      "trainNumber": "3839",
+      "scheduledTime": "12:38 PM",
+      "destination": "Trenton",
+      "line": "NEC",
+      "track": "4",
+      "status": "On Time",
+      "station": "Jersey Ave"
+    },
+    {
+      "trainNumber": "3841",
+      "scheduledTime": "1:04 PM",
+      "destination": "Trenton",
+      "line": "NEC",
+      "track": "4",
+      "status": "On Time",
+      "station": "Jersey Ave"
+    },
+    {
+      "trainNumber": "3843",
+      "scheduledTime": "1:39 PM",
+      "destination": "Trenton",
+      "line": "NEC",
+      "track": "4",
+      "status": "On Time",
+      "station": "Jersey Ave"
+    },
+    {
+      "trainNumber": "3845",
+      "scheduledTime": "2:06 PM",
+      "destination": "Trenton",
+      "line": "NEC",
+      "track": "4",
+      "status": "On Time",
+      "station": "Jersey Ave"
+    },
+    {
+      "trainNumber": "3847",
+      "scheduledTime": "2:34 PM",
+      "destination": "Trenton",
+      "line": "NEC",
+      "track": "4",
+      "status": "On Time",
+      "station": "Jersey Ave"
+    },
+    {
+      "trainNumber": "3849",
+      "scheduledTime": "3:09 PM",
+      "destination": "Trenton",
+      "line": "NEC",
+      "track": "4",
+      "status": "On Time",
+      "station": "Jersey Ave"
+    },
+    {
+      "trainNumber": "3937",
+      "scheduledTime": "3:47 PM",
+      "destination": "Trenton",
+      "line": "NEC",
+      "track": "4",
+      "status": "On Time",
+      "station": "Jersey Ave"
+    },
+    {
+      "trainNumber": "3855",
+      "scheduledTime": "4:24 PM",
+      "destination": "Trenton",
+      "line": "NEC",
+      "track": "4",
+      "status": "On Time",
+      "station": "Jersey Ave"
+    },
+    {
+      "trainNumber": "3867",
+      "scheduledTime": "6:28 PM",
+      "destination": "Trenton",
+      "line": "NEC",
+      "track": "4",
+      "status": "On Time",
+      "station": "Jersey Ave"
+    },
+    {
+      "trainNumber": "3873",
+      "scheduledTime": "7:20 PM",
+      "destination": "Trenton",
+      "line": "NEC",
+      "track": "4",
+      "status": "On Time",
+      "station": "Jersey Ave"
+    },
+    {
+      "trainNumber": "3961",
+      "scheduledTime": "7:28 PM",
+      "destination": "Trenton",
+      "line": "NEC",
+      "track": "4",
+      "status": "On Time",
+      "station": "Jersey Ave"
+    },
+    {
+      "trainNumber": "3875",
+      "scheduledTime": "7:41 PM",
+      "destination": "Trenton",
+      "line": "NEC",
+      "track": "4",
+      "status": "On Time",
+      "station": "Jersey Ave"
+    },
+    {
+      "trainNumber": "3877",
+      "scheduledTime": "8:06 PM",
+      "destination": "Trenton",
+      "line": "NEC",
+      "track": "4",
+      "status": "On Time",
+      "station": "Jersey Ave"
+    },
+    {
+      "trainNumber": "3879",
+      "scheduledTime": "8:14 PM",
+      "destination": "Trenton",
+      "line": "NEC",
+      "track": "4",
+      "status": "On Time",
+      "station": "Jersey Ave"
+    },
+    {
+      "trainNumber": "3965",
+      "scheduledTime": "8:29 PM",
+      "destination": "Trenton",
+      "line": "NEC",
+      "track": "4",
+      "status": "On Time",
+      "station": "Jersey Ave"
+    },
+    {
+      "trainNumber": "3969",
+      "scheduledTime": "9:05 PM",
+      "destination": "Trenton",
+      "line": "NEC",
+      "track": "4",
+      "status": "On Time",
+      "station": "Jersey Ave"
+    },
+    {
+      "trainNumber": "3883",
+      "scheduledTime": "9:12 PM",
+      "destination": "Trenton",
+      "line": "NEC",
+      "track": "4",
+      "status": "On Time",
+      "station": "Jersey Ave"
+    }
+  ],
+  "recentlyDeparted": [],
+  "predictions": [
+    {
+      "trainNumber": "3831",
+      "destination": "Trenton",
+      "line": "NEC",
+      "scheduledTime": "10:38 AM",
+      "currentTrack": "4",
+      "predictedTrack": "4",
+      "confidence": 1,
+      "trackDistribution": {
+        "4": 1
+      },
+      "daysOfData": 1,
+      "totalHistoryDays": 1,
+      "excludedTracks": [],
+      "excludeReasons": {}
+    },
+    {
+      "trainNumber": "3835",
+      "destination": "Trenton",
+      "line": "NEC",
+      "scheduledTime": "11:37 AM",
+      "currentTrack": "4",
+      "predictedTrack": "4",
+      "confidence": 1,
+      "trackDistribution": {
+        "4": 1
+      },
+      "daysOfData": 1,
+      "totalHistoryDays": 1,
+      "excludedTracks": [],
+      "excludeReasons": {}
+    },
+    {
+      "trainNumber": "3839",
+      "destination": "Trenton",
+      "line": "NEC",
+      "scheduledTime": "12:38 PM",
+      "currentTrack": "4",
+      "predictedTrack": "4",
+      "confidence": 1,
+      "trackDistribution": {
+        "4": 1
+      },
+      "daysOfData": 1,
+      "totalHistoryDays": 1,
+      "excludedTracks": [],
+      "excludeReasons": {}
+    },
+    {
+      "trainNumber": "3841",
+      "destination": "Trenton",
+      "line": "NEC",
+      "scheduledTime": "1:04 PM",
+      "currentTrack": "4",
+      "predictedTrack": "4",
+      "confidence": 1,
+      "trackDistribution": {
+        "4": 1
+      },
+      "daysOfData": 1,
+      "totalHistoryDays": 1,
+      "excludedTracks": [],
+      "excludeReasons": {}
+    },
+    {
+      "trainNumber": "3843",
+      "destination": "Trenton",
+      "line": "NEC",
+      "scheduledTime": "1:39 PM",
+      "currentTrack": "4",
+      "predictedTrack": "4",
+      "confidence": 1,
+      "trackDistribution": {
+        "4": 1
+      },
+      "daysOfData": 1,
+      "totalHistoryDays": 1,
+      "excludedTracks": [],
+      "excludeReasons": {}
+    },
+    {
+      "trainNumber": "3845",
+      "destination": "Trenton",
+      "line": "NEC",
+      "scheduledTime": "2:06 PM",
+      "currentTrack": "4",
+      "predictedTrack": "4",
+      "confidence": 1,
+      "trackDistribution": {
+        "4": 1
+      },
+      "daysOfData": 1,
+      "totalHistoryDays": 1,
+      "excludedTracks": [],
+      "excludeReasons": {}
+    },
+    {
+      "trainNumber": "3847",
+      "destination": "Trenton",
+      "line": "NEC",
+      "scheduledTime": "2:34 PM",
+      "currentTrack": "4",
+      "predictedTrack": "4",
+      "confidence": 1,
+      "trackDistribution": {
+        "4": 1
+      },
+      "daysOfData": 1,
+      "totalHistoryDays": 1,
+      "excludedTracks": [],
+      "excludeReasons": {}
+    },
+    {
+      "trainNumber": "3849",
+      "destination": "Trenton",
+      "line": "NEC",
+      "scheduledTime": "3:09 PM",
+      "currentTrack": "4",
+      "predictedTrack": "4",
+      "confidence": 1,
+      "trackDistribution": {
+        "4": 1
+      },
+      "daysOfData": 1,
+      "totalHistoryDays": 1,
+      "excludedTracks": [],
+      "excludeReasons": {}
+    },
+    {
+      "trainNumber": "3937",
+      "destination": "Trenton",
+      "line": "NEC",
+      "scheduledTime": "3:47 PM",
+      "currentTrack": "4",
+      "predictedTrack": "4",
+      "confidence": 1,
+      "trackDistribution": {
+        "4": 1
+      },
+      "daysOfData": 1,
+      "totalHistoryDays": 1,
+      "excludedTracks": [],
+      "excludeReasons": {}
+    },
+    {
+      "trainNumber": "3855",
+      "destination": "Trenton",
+      "line": "NEC",
+      "scheduledTime": "4:24 PM",
+      "currentTrack": "4",
+      "predictedTrack": "4",
+      "confidence": 0.5,
+      "trackDistribution": {
+        "4": 1,
+        "14": 1
+      },
+      "daysOfData": 2,
+      "totalHistoryDays": 2,
+      "excludedTracks": [],
+      "excludeReasons": {}
+    },
+    {
+      "trainNumber": "3867",
+      "destination": "Trenton",
+      "line": "NEC",
+      "scheduledTime": "6:28 PM",
+      "currentTrack": "4",
+      "predictedTrack": "4",
+      "confidence": 0.5,
+      "trackDistribution": {
+        "4": 1,
+        "11": 1
+      },
+      "daysOfData": 2,
+      "totalHistoryDays": 2,
+      "excludedTracks": [],
+      "excludeReasons": {}
+    },
+    {
+      "trainNumber": "3873",
+      "destination": "Trenton",
+      "line": "NEC",
+      "scheduledTime": "7:20 PM",
+      "currentTrack": "4",
+      "predictedTrack": "4",
+      "confidence": 1,
+      "trackDistribution": {
+        "4": 1
+      },
+      "daysOfData": 1,
+      "totalHistoryDays": 2,
+      "excludedTracks": [],
+      "excludeReasons": {}
+    },
+    {
+      "trainNumber": "3961",
+      "destination": "Trenton",
+      "line": "NEC",
+      "scheduledTime": "7:28 PM",
+      "currentTrack": "4",
+      "predictedTrack": "4",
+      "confidence": 1,
+      "trackDistribution": {
+        "4": 1
+      },
+      "daysOfData": 1,
+      "totalHistoryDays": 2,
+      "excludedTracks": [],
+      "excludeReasons": {}
+    },
+    {
+      "trainNumber": "3875",
+      "destination": "Trenton",
+      "line": "NEC",
+      "scheduledTime": "7:41 PM",
+      "currentTrack": "4",
+      "predictedTrack": "4",
+      "confidence": 1,
+      "trackDistribution": {
+        "4": 1
+      },
+      "daysOfData": 1,
+      "totalHistoryDays": 2,
+      "excludedTracks": [],
+      "excludeReasons": {}
+    },
+    {
+      "trainNumber": "3877",
+      "destination": "Trenton",
+      "line": "NEC",
+      "scheduledTime": "8:06 PM",
+      "currentTrack": "4",
+      "predictedTrack": "4",
+      "confidence": 1,
+      "trackDistribution": {
+        "4": 1
+      },
+      "daysOfData": 1,
+      "totalHistoryDays": 1,
+      "excludedTracks": [],
+      "excludeReasons": {}
+    },
+    {
+      "trainNumber": "3879",
+      "destination": "Trenton",
+      "line": "NEC",
+      "scheduledTime": "8:14 PM",
+      "currentTrack": "4",
+      "predictedTrack": "4",
+      "confidence": 1,
+      "trackDistribution": {
+        "4": 1
+      },
+      "daysOfData": 1,
+      "totalHistoryDays": 1,
+      "excludedTracks": [],
+      "excludeReasons": {}
+    },
+    {
+      "trainNumber": "3965",
+      "destination": "Trenton",
+      "line": "NEC",
+      "scheduledTime": "8:29 PM",
+      "currentTrack": "4",
+      "predictedTrack": "4",
+      "confidence": 1,
+      "trackDistribution": {
+        "4": 1
+      },
+      "daysOfData": 1,
+      "totalHistoryDays": 1,
+      "excludedTracks": [],
+      "excludeReasons": {}
+    },
+    {
+      "trainNumber": "3969",
+      "destination": "Trenton",
+      "line": "NEC",
+      "scheduledTime": "9:05 PM",
+      "currentTrack": "4",
+      "predictedTrack": "4",
+      "confidence": 1,
+      "trackDistribution": {
+        "4": 1
+      },
+      "daysOfData": 1,
+      "totalHistoryDays": 1,
+      "excludedTracks": [],
+      "excludeReasons": {}
+    },
+    {
+      "trainNumber": "3883",
+      "destination": "Trenton",
+      "line": "NEC",
+      "scheduledTime": "9:12 PM",
+      "currentTrack": "4",
+      "predictedTrack": "4",
+      "confidence": 1,
+      "trackDistribution": {
+        "4": 1
+      },
+      "daysOfData": 1,
+      "totalHistoryDays": 1,
+      "excludedTracks": [],
+      "excludeReasons": {}
+    }
+  ],
+  "cancellations": {
+    "recentByTrain": {}
+  },
+  "enRouteCancellations": [],
+  "trackRegistry": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "7",
+    "8",
+    "9",
+    "10",
+    "11",
+    "12",
+    "13",
+    "14",
+    "15"
+  ]
+}

@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NJT Track Predictor — Departure Predictions & Station Filter</title>
+  <meta name="description" content="Real-time NJ Transit departure track predictions with 90-day historical analysis, station stop filtering, and arrival time estimation.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <!-- Header -->
+  <header id="app-header">
+    <div class="header-inner">
+      <div class="header-brand">
+        <div class="brand-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="28" height="28">
+            <path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/>
+            <line x1="4" y1="22" x2="4" y2="15"/>
+          </svg>
+        </div>
+        <div>
+          <h1>NJT Track Predictor</h1>
+          <p class="header-subtitle" id="header-station">Loading...</p>
+        </div>
+      </div>
+      <div class="header-status">
+        <div class="status-pill" id="status-pill">
+          <span class="status-dot"></span>
+          <span id="status-text">Connecting...</span>
+        </div>
+        <div class="last-updated" id="last-updated">—</div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Filter & Tab Navigation Bar -->
+  <nav id="nav-bar">
+    <div class="nav-bar-inner">
+      <!-- Tabs -->
+      <div class="tab-group">
+        <button class="tab-btn active" data-tab="board" id="tab-board">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>
+          Departure Board
+        </button>
+        <button class="tab-btn" data-tab="predictions" id="tab-predictions">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><polyline points="22,12 18,12 15,21 9,3 6,12 2,12"/></svg>
+          Track Predictions
+        </button>
+        <button class="tab-btn" data-tab="cancellations" id="tab-cancellations">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>
+          Cancellations
+        </button>
+      </div>
+
+      <!-- Station Stop Filter Controls -->
+      <div class="station-filter-container">
+        <label for="station-search-input" class="filter-label">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><circle cx="12" cy="12" r="10"/><path d="M12 2a10 10 0 0 0-10 10c0 5.25 10 10 10 10s10-4.75 10-10A10 10 0 0 0 12 2z"/><circle cx="12" cy="10" r="3"/></svg>
+          Filter Stop:
+        </label>
+
+        <div class="searchable-station-container" id="station-combobox">
+          <div class="station-search-box">
+            <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            <input 
+              type="text" 
+              id="station-search-input" 
+              class="station-search-input" 
+              placeholder="Search station..." 
+              value="Jersey Avenue"
+              autocomplete="off" 
+              spellcheck="false"
+            />
+            <button type="button" id="station-clear-btn" class="station-clear-btn" title="Clear station filter">✕</button>
+            <span class="combobox-arrow">▼</span>
+          </div>
+
+          <div id="station-dropdown-menu" class="station-dropdown-menu" hidden>
+            <div class="dropdown-header-bar" id="dropdown-count-header">All Stations (A-Z)</div>
+            <div class="options-list" id="station-options-list" role="listbox">
+              <!-- Dynamically populated in alphabetical order -->
+            </div>
+          </div>
+        </div>
+
+        <select id="station-filter-select" class="station-select-hidden" style="display:none;">
+          <option value="">All Trains (Any Stop)</option>
+          <option value="Jersey Avenue" selected>Jersey Avenue</option>
+        </select>
+
+        <div class="filter-pills">
+          <button class="pill-btn active" data-stop="Jersey Avenue" id="pill-jersey-ave">📍 Jersey Ave</button>
+          <button class="pill-btn" data-stop="New York Penn Station" id="pill-ny-penn">🗽 NY Penn</button>
+          <button class="pill-btn" data-stop="" id="pill-all">All Trains</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Filter Active Notification Banner -->
+  <div id="filter-banner" class="filter-banner" style="display:none;">
+    <span>Filtering for trains stopping at <strong id="filter-banner-target">Jersey Avenue</strong> — showing calculated arrival times</span>
+    <button id="clear-filter-btn" class="clear-btn">Clear Filter</button>
+  </div>
+
+  <!-- Main Content -->
+  <main id="main-content">
+
+    <!-- ═══ DEPARTURE BOARD TAB ═══ -->
+    <section id="panel-board" class="tab-panel active">
+      <div class="board-container">
+        <!-- Current Departures -->
+        <div class="section-header">
+          <h2>Current Departures</h2>
+          <span class="badge badge-live" id="board-count">0 trains</span>
+        </div>
+        <p class="click-hint">💡 Click any train row to view its complete route & arrival timeline</p>
+
+        <div class="board-table-wrap">
+          <table class="board-table" id="departure-table">
+            <thead>
+              <tr id="board-th-row">
+                <th>Train</th>
+                <th>Dep Time</th>
+                <th id="th-arr-time" style="color:var(--text-amber);">Arr @ Jersey Ave</th>
+                <th>To</th>
+                <th>Line</th>
+                <th class="col-track">Track</th>
+                <th>Status</th>
+                <th>Stops Action</th>
+              </tr>
+            </thead>
+            <tbody id="departure-tbody">
+              <tr class="row-empty"><td colspan="8">Waiting for data...</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Recently Departed (last 10 min) -->
+        <div class="section-header section-departed" id="departed-header" style="display:none;">
+          <h2>Recently Departed</h2>
+          <span class="badge badge-departed" id="departed-count">0</span>
+        </div>
+        <div class="board-table-wrap" id="departed-wrap" style="display:none;">
+          <table class="board-table board-table--departed">
+            <thead>
+              <tr>
+                <th>Train</th>
+                <th>Dep Time</th>
+                <th id="th-departed-arr-time" style="color:var(--text-cyan);">Arr @ Jersey Ave</th>
+                <th>To</th>
+                <th>Line</th>
+                <th class="col-track">Track</th>
+                <th>Left Board</th>
+                <th>Stops Action</th>
+              </tr>
+            </thead>
+            <tbody id="departed-tbody"></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ PREDICTIONS TAB ═══ -->
+    <section id="panel-predictions" class="tab-panel">
+      <p class="click-hint" style="margin-bottom:1rem;">💡 Click any prediction card to view full route stops & arrival details</p>
+      <div class="predictions-grid" id="predictions-grid">
+        <div class="empty-state">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="48" height="48"><polyline points="22,12 18,12 15,21 9,3 6,12 2,12"/></svg>
+          <p>Predictions will appear during active hours</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ CANCELLATIONS TAB ═══ -->
+    <section id="panel-cancellations" class="tab-panel">
+      <!-- En-Route Cancellations (afternoon only) -->
+      <div id="enroute-section" style="display:none;">
+        <div class="section-header">
+          <h2>⚠ En-Route Cancellations</h2>
+          <span class="badge badge-alert" id="enroute-count">0</span>
+        </div>
+        <p class="section-desc">Trains that departed Penn Station but were cancelled before arriving at Edison.</p>
+        <div class="cancel-cards" id="enroute-cards"></div>
+      </div>
+
+      <!-- Recent Cancellations (last 7 days) -->
+      <div class="section-header">
+        <h2>Cancellations — Last 7 Days</h2>
+      </div>
+      <div class="cancel-list" id="cancel-list">
+        <div class="empty-state">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="48" height="48"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>
+          <p>No cancellations recorded yet</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══ TRAIN STOPS MODAL ═══ -->
+  <div id="stops-modal" class="modal-backdrop" style="display:none;">
+    <div class="modal-card">
+      <div class="modal-header">
+        <div class="modal-title-group">
+          <span class="modal-train-num" id="modal-train-num">Train 3855</span>
+          <span class="line-badge" id="modal-train-line">NEC</span>
+          <span class="modal-train-time" id="modal-train-time">3:30 PM</span>
+        </div>
+        <button id="modal-close-btn" class="modal-close">&times;</button>
+      </div>
+
+      <div class="modal-meta-row">
+        <div><strong>Destination:</strong> <span id="modal-train-dest">Trenton</span></div>
+        <div><strong>Track:</strong> <span id="modal-train-track">Track 14</span></div>
+        <div><strong>Status:</strong> <span id="modal-train-status">All Aboard</span></div>
+      </div>
+
+      <div class="modal-body">
+        <h3 class="modal-subheading">Station Stops & Arrival Schedule</h3>
+        <div class="timeline-wrap" id="modal-stops-timeline">
+          <!-- Populated dynamically -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer id="app-footer">
+    <p>Data scraped from <a href="https://www.njtransit.com" target="_blank" rel="noopener">NJ Transit DepartureVision</a> · Auto-refreshes every 60s · Track history: 90 days</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

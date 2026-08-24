@@ -1,0 +1,811 @@
+{
+  "3165": {
+    "2026-08-21": {
+      "track": "7",
+      "status": "All Aboard",
+      "station": "NY Penn",
+      "scheduledTime": "4:50 PM",
+      "destination": "Jersey Avenue"
+    }
+  },
+  "3255": {
+    "2026-08-21": {
+      "track": "",
+      "status": "On Time",
+      "station": "NY Penn",
+      "scheduledTime": "3:44 PM",
+      "destination": "Long Branch"
+    }
+  },
+  "3265": {
+    "2026-08-21": {
+      "track": "2",
+      "status": "All Aboard",
+      "station": "NY Penn",
+      "scheduledTime": "5:15 PM",
+      "destination": "Long Branch"
+    }
+  },
+  "3267": {
+    "2026-08-21": {
+      "track": "3",
+      "status": "All Aboard",
+      "station": "NY Penn",
+      "scheduledTime": "5:34 PM",
+      "destination": "Long Branch-BH"
+    }
+  },
+  "3271": {
+    "2026-08-21": {
+      "track": "",
+      "status": "On Time",
+      "station": "NY Penn",
+      "scheduledTime": "6:01 PM",
+      "destination": "Long Branch"
+    }
+  },
+  "3275": {
+    "2026-08-21": {
+      "track": "",
+      "status": "On Time",
+      "station": "NY Penn",
+      "scheduledTime": "6:31 PM",
+      "destination": "Long Branch"
+    }
+  },
+  "3361": {
+    "2026-08-21": {
+      "track": "13",
+      "status": "All Aboard",
+      "station": "NY Penn",
+      "scheduledTime": "4:30 PM",
+      "destination": "Bay Head"
+    }
+  },
+  "3363": {
+    "2026-08-21": {
+      "track": "13",
+      "status": "All Aboard",
+      "station": "NY Penn",
+      "scheduledTime": "5:01 PM",
+      "destination": "Bay Head"
+    }
+  },
+  "3373": {
+    "2026-08-21": {
+      "track": "14",
+      "status": "All Aboard",
+      "station": "NY Penn",
+      "scheduledTime": "5:56 PM",
+      "destination": "Bay Head"
+    }
+  },
+  "3511": {
+    "2026-08-21": {
+      "track": "4",
+      "status": "All Aboard",
+      "station": "NY Penn",
+      "scheduledTime": "5:05 PM",
+      "destination": "South Amboy"
+    }
+  },
+  "3513": {
+    "2026-08-21": {
+      "track": "14",
+      "status": "All Aboard",
+      "station": "NY Penn",
+      "scheduledTime": "5:29 PM",
+      "destination": "South Amboy"
+    }
+  },
+  "3515": {
+    "2026-08-21": {
+      "track": "",
+      "status": "On Time",
+      "station": "NY Penn",
+      "scheduledTime": "6:29 PM",
+      "destination": "So. Amboy"
+    }
+  },
+  "3706": {
+    "2026-08-24": {
+      "track": "",
+      "status": "On Time",
+      "station": "Jersey Ave",
+      "scheduledTime": "6:16 AM",
+      "destination": "New York"
+    }
+  },
+  "3708": {
+    "2026-08-24": {
+      "track": "",
+      "status": "On Time",
+      "station": "Jersey Ave",
+      "scheduledTime": "6:40 AM",
+      "destination": "New York"
+    }
+  },
+  "3710": {
+    "2026-08-24": {
+      "track": "",
+      "status": "On Time",
+      "station": "Jersey Ave",
+      "scheduledTime": "7:06 AM",
+      "destination": "New York"
+    }
+  },
+  "3712": {
+    "2026-08-24": {
+      "track": "",
+      "status": "On Time",
+      "station": "Jersey Ave",
+      "scheduledTime": "7:38 AM",
+      "destination": "New York"
+    }
+  },
+  "3714": {
+    "2026-08-24": {
+      "track": "",
+      "status": "On Time",
+      "station": "Jersey Ave",
+      "scheduledTime": "7:55 AM",
+      "destination": "New York"
+    }
+  },
+  "3716": {
+    "2026-08-24": {
+      "track": "",
+      "status": "On Time",
+      "station": "Jersey Ave",
+      "scheduledTime": "8:19 AM",
+      "destination": "New York"
+    }
+  },
+  "3718": {
+    "2026-08-24": {
+      "track": "4",
+      "status": "All Aboard",
+      "station": "Jersey Ave",
+      "scheduledTime": "8:40 AM",
+      "destination": "New York"
+    }
+  },
+  "3720": {
+    "2026-08-24": {
+      "track": "",
+      "status": "On Time",
+      "station": "Jersey Ave",
+      "scheduledTime": "9:02 AM",
+      "destination": "New York"
+    }
+  },
+  "3721": {
+    "2026-08-21": {
+      "track": "",
+      "status": "On Time",
+      "station": "NY Penn",
+      "scheduledTime": "3:56 PM",
+      "destination": "Jersey Avenue"
+    }
+  },
+  "3722": {
+    "2026-08-24": {
+      "track": "",
+      "status": "On Time",
+      "station": "Jersey Ave",
+      "scheduledTime": "9:31 AM",
+      "destination": "New York"
+    }
+  },
+  "3723": {
+    "2026-08-21": {
+      "track": "14",
+      "status": "All Aboard",
+      "station": "NY Penn",
+      "scheduledTime": "4:18 PM",
+      "destination": "Jersey Avenue"
+    }
+  },
+  "3725": {
+    "2026-08-21": {
+      "track": "15",
+      "status": "All Aboard",
+      "station": "NY Penn",
+      "scheduledTime": "5:08 PM",
+      "destination": "Jersey Avenue"
+    }
+  },
+  "3727": {
+    "2026-08-21": {
+      "track": "9",
+      "status": "All Aboard",
+      "station": "NY Penn",
+      "scheduledTime": "5:41 PM",
+      "destination": "Jersey Ave"
+    }
+  },
+  "3823": {
+    "2026-08-24": {
+      "track": "4",
+      "status": "On Time",
+      "station": "Jersey Ave",
+      "scheduledTime": "8:54 AM",
+      "destination": "Trenton"
+    }
+  },
+  "3831": {
+    "2026-08-24": {
+      "track": "4",
+      "status": "On Time",
+      "station": "Jersey Ave",
+      "scheduledTime": "10:38 AM",
+      "destination": "Trenton"
+    }
+  },
+  "3835": {
+    "2026-08-24": {
+      "track": "4",
+      "status": "On Time",
+      "station": "Jersey Ave",
+      "scheduledTime": "11:37 AM",
+      "destination": "Trenton"
+    }
+  },
+  "3839": {
+    "2026-08-24": {
+      "track": "4",
+      "status": "On Time",
+      "station": "Jersey Ave",
+      "scheduledTime": "12:38 PM",
+      "destination": "Trenton"
+    }
+  },
+  "3841": {
+    "2026-08-24": {
+      "track": "4",
+      "status": "On Time",
+      "station": "Jersey Ave",
+      "scheduledTime": "1:04 PM",
+      "destination": "Trenton"
+    }
+  },
+  "3843": {
+    "2026-08-24": {
+      "track": "4",
+      "status": "On Time",
+      "station": "Jersey Ave",
+      "scheduledTime": "1:39 PM",
+      "destination": "Trenton"
+    }
+  },
+  "3845": {
+    "2026-08-24": {
+      "track": "4",
+      "status": "On Time",
+      "station": "Jersey Ave",
+      "scheduledTime": "2:06 PM",
+      "destination": "Trenton"
+    }
+  },
+  "3847": {
+    "2026-08-24": {
+      "track": "4",
+      "status": "On Time",
+      "station": "Jersey Ave",
+      "scheduledTime": "2:34 PM",
+      "destination": "Trenton"
+    }
+  },
+  "3849": {
+    "2026-08-24": {
+      "track": "4",
+      "status": "On Time",
+      "station": "Jersey Ave",
+      "scheduledTime": "3:09 PM",
+      "destination": "Trenton"
+    }
+  },
+  "3855": {
+    "2026-08-21": {
+      "track": "14",
+      "status": "All Aboard",
+      "station": "NY Penn",
+      "scheduledTime": "3:30 PM",
+      "destination": "Trenton"
+    },
+    "2026-08-24": {
+      "track": "4",
+      "status": "On Time",
+      "station": "Jersey Ave",
+      "scheduledTime": "4:24 PM",
+      "destination": "Trenton"
+    }
+  },
+  "3857": {
+    "2026-08-21": {
+      "track": "",
+      "status": "On Time",
+      "station": "NY Penn",
+      "scheduledTime": "3:42 PM",
+      "destination": "Trenton"
+    }
+  },
+  "3861": {
+    "2026-08-21": {
+      "track": "14",
+      "status": "All Aboard",
+      "station": "NY Penn",
+      "scheduledTime": "4:33 PM",
+      "destination": "Trenton"
+    }
+  },
+  "3867": {
+    "2026-08-21": {
+      "track": "11",
+      "status": "All Aboard",
+      "station": "NY Penn",
+      "scheduledTime": "5:25 PM",
+      "destination": "Trenton"
+    },
+    "2026-08-24": {
+      "track": "4",
+      "status": "On Time",
+      "station": "Jersey Ave",
+      "scheduledTime": "6:28 PM",
+      "destination": "Trenton"
+    }
+  },
+  "3871": {
+    "2026-08-21": {
+      "track": "8",
+      "status": "All Aboard",
+      "station": "NY Penn",
+      "scheduledTime": "5:50 PM",
+      "destination": "Trenton"
+    }
+  },
+  "3873": {
+    "2026-08-21": {
+      "track": "",
+      "status": "On Time",
+      "station": "NY Penn",
+      "scheduledTime": "6:18 PM",
+      "destination": "Trenton"
+    },
+    "2026-08-24": {
+      "track": "4",
+      "status": "On Time",
+      "station": "Jersey Ave",
+      "scheduledTime": "7:20 PM",
+      "destination": "Trenton"
+    }
+  },
+  "3875": {
+    "2026-08-21": {
+      "track": "",
+      "status": "On Time",
+      "station": "NY Penn",
+      "scheduledTime": "6:47 PM",
+      "destination": "Trenton"
+    },
+    "2026-08-24": {
+      "track": "4",
+      "status": "On Time",
+      "station": "Jersey Ave",
+      "scheduledTime": "7:41 PM",
+      "destination": "Trenton"
+    }
+  },
+  "3877": {
+    "2026-08-24": {
+      "track": "4",
+      "status": "On Time",
+      "station": "Jersey Ave",
+      "scheduledTime": "8:06 PM",
+      "destination": "Trenton"
+    }
+  },
+  "3879": {
+    "2026-08-24": {
+      "track": "4",
+      "status": "On Time",
+      "station": "Jersey Ave",
+      "scheduledTime": "8:14 PM",
+      "destination": "Trenton"
+    }
+  },
+  "3883": {
+    "2026-08-24": {
+      "track": "4",
+      "status": "On Time",
+      "station": "Jersey Ave",
+      "scheduledTime": "9:12 PM",
+      "destination": "Trenton"
+    }
+  },
+  "3937": {
+    "2026-08-24": {
+      "track": "4",
+      "status": "On Time",
+      "station": "Jersey Ave",
+      "scheduledTime": "3:47 PM",
+      "destination": "Trenton"
+    }
+  },
+  "3943": {
+    "2026-08-21": {
+      "track": "3",
+      "status": "All Aboard",
+      "station": "NY Penn",
+      "scheduledTime": "4:16 PM",
+      "destination": "Trenton"
+    }
+  },
+  "3947": {
+    "2026-08-21": {
+      "track": "1",
+      "status": "All Aboard",
+      "station": "NY Penn",
+      "scheduledTime": "4:38 PM",
+      "destination": "Trenton"
+    }
+  },
+  "3949": {
+    "2026-08-21": {
+      "track": "3",
+      "status": "All Aboard",
+      "station": "NY Penn",
+      "scheduledTime": "5:03 PM",
+      "destination": "Trenton"
+    }
+  },
+  "3951": {
+    "2026-08-21": {
+      "track": "1",
+      "status": "All Aboard",
+      "station": "NY Penn",
+      "scheduledTime": "5:20 PM",
+      "destination": "Trenton"
+    }
+  },
+  "3953": {
+    "2026-08-21": {
+      "track": "4",
+      "status": "All Aboard",
+      "station": "NY Penn",
+      "scheduledTime": "5:38 PM",
+      "destination": "Trenton"
+    }
+  },
+  "3957": {
+    "2026-08-21": {
+      "track": "",
+      "status": "On Time",
+      "station": "NY Penn",
+      "scheduledTime": "6:12 PM",
+      "destination": "Trenton"
+    }
+  },
+  "3961": {
+    "2026-08-21": {
+      "track": "",
+      "status": "On Time",
+      "station": "NY Penn",
+      "scheduledTime": "6:37 PM",
+      "destination": "Trenton"
+    },
+    "2026-08-24": {
+      "track": "4",
+      "status": "On Time",
+      "station": "Jersey Ave",
+      "scheduledTime": "7:28 PM",
+      "destination": "Trenton"
+    }
+  },
+  "3965": {
+    "2026-08-24": {
+      "track": "4",
+      "status": "On Time",
+      "station": "Jersey Ave",
+      "scheduledTime": "8:29 PM",
+      "destination": "Trenton"
+    }
+  },
+  "3969": {
+    "2026-08-24": {
+      "track": "4",
+      "status": "On Time",
+      "station": "Jersey Ave",
+      "scheduledTime": "9:05 PM",
+      "destination": "Trenton"
+    }
+  },
+  "6253": {
+    "2026-08-21": {
+      "track": "",
+      "status": "On Time",
+      "station": "NY Penn",
+      "scheduledTime": "3:47 PM",
+      "destination": "MSU"
+    }
+  },
+  "6263": {
+    "2026-08-21": {
+      "track": "11",
+      "status": "All Aboard",
+      "station": "NY Penn",
+      "scheduledTime": "4:52 PM",
+      "destination": "MSU"
+    }
+  },
+  "6273": {
+    "2026-08-21": {
+      "track": "7",
+      "status": "All Aboard",
+      "station": "NY Penn",
+      "scheduledTime": "5:31 PM",
+      "destination": "MSU"
+    }
+  },
+  "6279": {
+    "2026-08-21": {
+      "track": "",
+      "status": "On Time",
+      "station": "NY Penn",
+      "scheduledTime": "6:14 PM",
+      "destination": "MSU"
+    }
+  },
+  "6283": {
+    "2026-08-21": {
+      "track": "",
+      "status": "On Time",
+      "station": "NY Penn",
+      "scheduledTime": "6:41 PM",
+      "destination": "MSU"
+    }
+  },
+  "6341": {
+    "2026-08-21": {
+      "track": "",
+      "status": "On Time",
+      "station": "NY Penn",
+      "scheduledTime": "4:07 PM",
+      "destination": "Summit"
+    }
+  },
+  "6343": {
+    "2026-08-21": {
+      "track": "12",
+      "status": "All Aboard",
+      "station": "NY Penn",
+      "scheduledTime": "4:43 PM",
+      "destination": "Summit"
+    }
+  },
+  "6351": {
+    "2026-08-21": {
+      "track": "2",
+      "status": "All Aboard",
+      "station": "NY Penn",
+      "scheduledTime": "5:36 PM",
+      "destination": "Summit"
+    }
+  },
+  "6359": {
+    "2026-08-21": {
+      "track": "",
+      "status": "On Time",
+      "station": "NY Penn",
+      "scheduledTime": "6:50 PM",
+      "destination": "Summit"
+    }
+  },
+  "6431": {
+    "2026-08-21": {
+      "track": "8",
+      "status": "All Aboard",
+      "station": "NY Penn",
+      "scheduledTime": "5:17 PM",
+      "destination": "Gladstone"
+    }
+  },
+  "6437": {
+    "2026-08-21": {
+      "track": "",
+      "status": "On Time",
+      "station": "NY Penn",
+      "scheduledTime": "6:06 PM",
+      "destination": "Gladstone"
+    }
+  },
+  "6639": {
+    "2026-08-21": {
+      "track": "2",
+      "status": "All Aboard",
+      "station": "NY Penn",
+      "scheduledTime": "3:26 PM",
+      "destination": "Dover"
+    }
+  },
+  "6641": {
+    "2026-08-21": {
+      "track": "",
+      "status": "On Time",
+      "station": "NY Penn",
+      "scheduledTime": "4:13 PM",
+      "destination": "Dover"
+    }
+  },
+  "6643": {
+    "2026-08-21": {
+      "track": "10",
+      "status": "All Aboard",
+      "station": "NY Penn",
+      "scheduledTime": "4:46 PM",
+      "destination": "Dover"
+    }
+  },
+  "6647": {
+    "2026-08-21": {
+      "track": "9",
+      "status": "All Aboard",
+      "station": "NY Penn",
+      "scheduledTime": "5:13 PM",
+      "destination": "Dover"
+    }
+  },
+  "6651": {
+    "2026-08-21": {
+      "track": "1",
+      "status": "All Aboard",
+      "station": "NY Penn",
+      "scheduledTime": "5:43 PM",
+      "destination": "Dover"
+    }
+  },
+  "6653": {
+    "2026-08-21": {
+      "track": "10",
+      "status": "All Aboard",
+      "station": "NY Penn",
+      "scheduledTime": "5:52 PM",
+      "destination": "Dover"
+    }
+  },
+  "6655": {
+    "2026-08-21": {
+      "track": "",
+      "status": "On Time",
+      "station": "NY Penn",
+      "scheduledTime": "6:20 PM",
+      "destination": "Dover"
+    }
+  },
+  "6659": {
+    "2026-08-21": {
+      "track": "",
+      "status": "On Time",
+      "station": "NY Penn",
+      "scheduledTime": "6:56 PM",
+      "destination": "Dover"
+    }
+  },
+  "A2165": {
+    "2026-08-21": {
+      "track": "",
+      "status": "DELAYED",
+      "station": "NY Penn",
+      "scheduledTime": "3:16 PM",
+      "destination": "Washington"
+    }
+  },
+  "A651": {
+    "2026-08-21": {
+      "track": "",
+      "status": "On Time",
+      "station": "NY Penn",
+      "scheduledTime": "4:03 PM",
+      "destination": "Harrisburg"
+    }
+  },
+  "A173": {
+    "2026-08-21": {
+      "track": "8",
+      "status": "All Aboard",
+      "station": "NY Penn",
+      "scheduledTime": "4:05 PM",
+      "destination": "Washington"
+    }
+  },
+  "A2123": {
+    "2026-08-21": {
+      "track": "",
+      "status": "On Time",
+      "station": "NY Penn",
+      "scheduledTime": "4:13 PM",
+      "destination": "Washington"
+    }
+  },
+  "A129": {
+    "2026-08-21": {
+      "track": "11",
+      "status": "All Aboard",
+      "station": "NY Penn",
+      "scheduledTime": "4:24 PM",
+      "destination": "Washington"
+    }
+  },
+  "A2167": {
+    "2026-08-21": {
+      "track": "14",
+      "status": "All Aboard",
+      "station": "NY Penn",
+      "scheduledTime": "5:00 PM",
+      "destination": "Washington"
+    }
+  },
+  "A653": {
+    "2026-08-21": {
+      "track": "5",
+      "status": "All Aboard",
+      "station": "NY Penn",
+      "scheduledTime": "5:10 PM",
+      "destination": "Harrisburg"
+    }
+  },
+  "A193": {
+    "2026-08-21": {
+      "track": "13",
+      "status": "All Aboard",
+      "station": "NY Penn",
+      "scheduledTime": "5:47 PM",
+      "destination": "Washington"
+    }
+  },
+  "A2127": {
+    "2026-08-21": {
+      "track": "12",
+      "status": "All Aboard",
+      "station": "NY Penn",
+      "scheduledTime": "6:05 PM",
+      "destination": "Washington"
+    }
+  },
+  "A197": {
+    "2026-08-21": {
+      "track": "11",
+      "status": "All Aboard",
+      "station": "NY Penn",
+      "scheduledTime": "6:09 PM",
+      "destination": "Washington"
+    }
+  },
+  "A137": {
+    "2026-08-21": {
+      "track": "",
+      "status": "On Time",
+      "station": "NY Penn",
+      "scheduledTime": "6:27 PM",
+      "destination": "Washington"
+    }
+  },
+  "A655": {
+    "2026-08-21": {
+      "track": "",
+      "status": "On Time",
+      "station": "NY Penn",
+      "scheduledTime": "6:35 PM",
+      "destination": "Harrisburg"
+    }
+  },
+  "A55": {
+    "2026-08-21": {
+      "track": "",
+      "status": "On Time",
+      "station": "NY Penn",
+      "scheduledTime": "6:45 PM",
+      "destination": "Washington"
+    }
+  }
+}
