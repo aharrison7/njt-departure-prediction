@@ -2,8 +2,8 @@ name: NJT Live Scraper & GitHub Pages Update
 
 on:
   schedule:
-    # Run every 10 minutes between 5am and 2am ET (9am to 6am UTC)
-    - cron: '*/10 * * * *'
+    # Run every 5 minutes continuously
+    - cron: '*/5 * * * *'
   workflow_dispatch: # Allows manual trigger from GitHub UI
 
 permissions:

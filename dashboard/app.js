@@ -66,6 +66,7 @@
   function init() {
     setupTabs();
     setupFilterControls();
+    setupManualRefresh();
     setupModal();
     fetchData();
     refreshTimer = setInterval(fetchData, REFRESH_INTERVAL);
@@ -82,6 +83,24 @@
         $(`#panel-${tab}`).classList.add('active');
         currentTab = tab;
       });
+    });
+  }
+
+  // ─── Manual Refresh ────────────────────────────────────────
+  function setupManualRefresh() {
+    const refreshBtn = $('#manual-refresh-btn');
+    if (!refreshBtn) return;
+
+    refreshBtn.addEventListener('click', async () => {
+      refreshBtn.classList.add('refreshing');
+      
+      // Trigger background scrape if connected to local Node server
+      try {
+        fetch('/api/scrape/afternoon', { method: 'POST' }).catch(() => {});
+      } catch (e) {}
+
+      await fetchData();
+      setTimeout(() => refreshBtn.classList.remove('refreshing'), 800);
     });
   }
 
