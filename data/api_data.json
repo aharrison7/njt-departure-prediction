@@ -1,8 +1,8 @@
 {
-  "lastUpdated": "2026-08-25T17:03:25.587Z",
+  "lastUpdated": "2026-08-25T17:05:26.403Z",
   "activeStation": "Penn Station NY & Jersey Ave",
   "activeWindow": "live",
-  "scrapeTime": "25110ms",
+  "scrapeTime": "25761ms",
   "currentBoard": [
     {
       "trainNumber": "3845",
@@ -83,7 +83,7 @@
       "trainNumber": "5127",
       "scheduledTime": "1:40 PM",
       "destination": "Raritan",
-      "line": "RVL",
+      "line": "RARV",
       "track": "",
       "status": "On Time",
       "station": "NY Penn",
@@ -91,19 +91,18 @@
         "New York Penn Station",
         "Secaucus Junction",
         "Newark Penn Station",
-        "Union",
-        "Roselle Park",
-        "Cranford",
-        "Garwood",
-        "Westfield",
-        "Fanwood",
-        "Netherwood",
-        "Plainfield",
-        "Dunellen",
-        "Bound Brook",
-        "Bridgewater",
-        "Somerville",
-        "Raritan"
+        "Newark Airport",
+        "North Elizabeth",
+        "Elizabeth",
+        "Rahway",
+        "Metropark",
+        "Metuchen",
+        "Edison",
+        "New Brunswick",
+        "Jersey Avenue",
+        "Princeton Junction",
+        "Hamilton",
+        "Trenton"
       ]
     },
     {
@@ -362,7 +361,7 @@
       "trainNumber": "5179",
       "scheduledTime": "2:40 PM",
       "destination": "High Bridge",
-      "line": "RVL",
+      "line": "RARV",
       "track": "",
       "status": "On Time",
       "station": "NY Penn",
@@ -370,24 +369,18 @@
         "New York Penn Station",
         "Secaucus Junction",
         "Newark Penn Station",
-        "Union",
-        "Roselle Park",
-        "Cranford",
-        "Garwood",
-        "Westfield",
-        "Fanwood",
-        "Netherwood",
-        "Plainfield",
-        "Dunellen",
-        "Bound Brook",
-        "Bridgewater",
-        "Somerville",
-        "Raritan",
-        "North Branch",
-        "White House",
-        "Lebanon",
-        "Annandale",
-        "High Bridge"
+        "Newark Airport",
+        "North Elizabeth",
+        "Elizabeth",
+        "Rahway",
+        "Metropark",
+        "Metuchen",
+        "Edison",
+        "New Brunswick",
+        "Jersey Avenue",
+        "Princeton Junction",
+        "Hamilton",
+        "Trenton"
       ]
     },
     {
@@ -456,21 +449,6 @@
         "Mountain Avenue",
         "Montclair Heights",
         "Montclair State University (MSU)"
-      ]
-    },
-    {
-      "trainNumber": "3841",
-      "scheduledTime": "1:04 PM",
-      "destination": "Trenton",
-      "line": "NEC",
-      "track": "4",
-      "status": "All Aboard",
-      "station": "Jersey Ave",
-      "stops": [
-        "Jersey Avenue",
-        "Princeton Junction",
-        "Hamilton",
-        "Trenton"
       ]
     },
     {
@@ -742,9 +720,42 @@
         "Hamilton",
         "Trenton"
       ]
+    },
+    {
+      "trainNumber": "3893",
+      "scheduledTime": "11:36 PM",
+      "destination": "Trenton",
+      "line": "NEC",
+      "track": "4",
+      "status": "On Time",
+      "station": "Jersey Ave",
+      "stops": [
+        "Jersey Avenue",
+        "Princeton Junction",
+        "Hamilton",
+        "Trenton"
+      ]
     }
   ],
   "recentlyDeparted": [
+    {
+      "trainNumber": "3841",
+      "scheduledTime": "1:04 PM",
+      "destination": "Trenton",
+      "line": "NEC",
+      "track": "4",
+      "status": "All Aboard",
+      "station": "Jersey Ave",
+      "stops": [
+        "Jersey Avenue",
+        "Princeton Junction",
+        "Hamilton",
+        "Trenton"
+      ],
+      "removedAt": "2026-08-25T17:05:26.391Z",
+      "departedStatus": "Departed",
+      "lastTrack": "4"
+    },
     {
       "trainNumber": "A2159",
       "scheduledTime": "1:02 PM",
@@ -820,32 +831,6 @@
         "Metuchen",
         "Edison",
         "New Brunswick",
-        "Jersey Avenue",
-        "Princeton Junction",
-        "Hamilton",
-        "Trenton"
-      ]
-    },
-    {
-      "trainNumber": "3841",
-      "destination": "Trenton",
-      "line": "NEC",
-      "scheduledTime": "1:04 PM",
-      "currentTrack": "4",
-      "predictedTrack": "4",
-      "confidence": 1,
-      "trackDistribution": {
-        "4": 2
-      },
-      "daysOfData": 2,
-      "totalHistoryDays": 2,
-      "excludedTracks": [
-        "12"
-      ],
-      "excludeReasons": {
-        "12": "currently occupied by another train"
-      },
-      "stops": [
         "Jersey Avenue",
         "Princeton Junction",
         "Hamilton",
@@ -1324,6 +1309,32 @@
       ]
     },
     {
+      "trainNumber": "3893",
+      "destination": "Trenton",
+      "line": "NEC",
+      "scheduledTime": "11:36 PM",
+      "currentTrack": "4",
+      "predictedTrack": "4",
+      "confidence": 1,
+      "trackDistribution": {
+        "4": 1
+      },
+      "daysOfData": 1,
+      "totalHistoryDays": 2,
+      "excludedTracks": [
+        "12"
+      ],
+      "excludeReasons": {
+        "12": "currently occupied by another train"
+      },
+      "stops": [
+        "Jersey Avenue",
+        "Princeton Junction",
+        "Hamilton",
+        "Trenton"
+      ]
+    },
+    {
       "trainNumber": "6245",
       "destination": "MSU",
       "line": "MOBO",
@@ -1357,11 +1368,9 @@
       "line": "NEC",
       "scheduledTime": "1:32 PM",
       "currentTrack": "",
-      "predictedTrack": "4",
-      "confidence": 1,
-      "trackDistribution": {
-        "4": 2
-      },
+      "predictedTrack": null,
+      "confidence": 0,
+      "trackDistribution": {},
       "daysOfData": 2,
       "totalHistoryDays": 2,
       "excludedTracks": [
@@ -1393,7 +1402,7 @@
     {
       "trainNumber": "5127",
       "destination": "Raritan",
-      "line": "RVL",
+      "line": "RARV",
       "scheduledTime": "1:40 PM",
       "currentTrack": "",
       "predictedTrack": null,
@@ -1407,19 +1416,18 @@
         "New York Penn Station",
         "Secaucus Junction",
         "Newark Penn Station",
-        "Union",
-        "Roselle Park",
-        "Cranford",
-        "Garwood",
-        "Westfield",
-        "Fanwood",
-        "Netherwood",
-        "Plainfield",
-        "Dunellen",
-        "Bound Brook",
-        "Bridgewater",
-        "Somerville",
-        "Raritan"
+        "Newark Airport",
+        "North Elizabeth",
+        "Elizabeth",
+        "Rahway",
+        "Metropark",
+        "Metuchen",
+        "Edison",
+        "New Brunswick",
+        "Jersey Avenue",
+        "Princeton Junction",
+        "Hamilton",
+        "Trenton"
       ]
     },
     {
@@ -1544,11 +1552,9 @@
       "line": "NEC",
       "scheduledTime": "2:07 PM",
       "currentTrack": "",
-      "predictedTrack": "4",
-      "confidence": 1,
-      "trackDistribution": {
-        "4": 2
-      },
+      "predictedTrack": null,
+      "confidence": 0,
+      "trackDistribution": {},
       "daysOfData": 2,
       "totalHistoryDays": 2,
       "excludedTracks": [
@@ -1748,7 +1754,7 @@
     {
       "trainNumber": "5179",
       "destination": "High Bridge",
-      "line": "RVL",
+      "line": "RARV",
       "scheduledTime": "2:40 PM",
       "currentTrack": "",
       "predictedTrack": null,
@@ -1762,79 +1768,18 @@
         "New York Penn Station",
         "Secaucus Junction",
         "Newark Penn Station",
-        "Union",
-        "Roselle Park",
-        "Cranford",
-        "Garwood",
-        "Westfield",
-        "Fanwood",
-        "Netherwood",
-        "Plainfield",
-        "Dunellen",
-        "Bound Brook",
-        "Bridgewater",
-        "Somerville",
-        "Raritan",
-        "North Branch",
-        "White House",
-        "Lebanon",
-        "Annandale",
-        "High Bridge"
-      ]
-    },
-    {
-      "trainNumber": "A649",
-      "destination": "Harrisburg",
-      "line": "AMTK",
-      "scheduledTime": "2:44 PM",
-      "currentTrack": "",
-      "predictedTrack": null,
-      "confidence": 0,
-      "trackDistribution": {},
-      "daysOfData": 1,
-      "excludedTracks": [],
-      "excludeReasons": {},
-      "note": "No track assignments in history",
-      "stops": [
-        "New York Penn Station",
-        "Newark Penn Station",
-        "Metropark",
-        "Trenton",
-        "Philadelphia 30th St",
-        "Wilmington",
-        "Baltimore",
-        "Washington Union Station"
-      ]
-    },
-    {
-      "trainNumber": "3251",
-      "destination": "Long Branch-BH",
-      "line": "NJCL",
-      "scheduledTime": "2:46 PM",
-      "currentTrack": "",
-      "predictedTrack": null,
-      "confidence": 0,
-      "trackDistribution": {},
-      "daysOfData": 1,
-      "excludedTracks": [],
-      "excludeReasons": {},
-      "note": "No track assignments in history",
-      "stops": [
-        "New York Penn Station",
-        "Secaucus Junction",
-        "Newark Penn Station",
+        "Newark Airport",
+        "North Elizabeth",
         "Elizabeth",
         "Rahway",
-        "Avenel",
-        "Woodbridge",
-        "Perth Amboy",
-        "South Amboy",
-        "Matawan",
-        "Hazlet",
-        "Middletown",
-        "Red Bank",
-        "Little Silver",
-        "Long Branch"
+        "Metropark",
+        "Metuchen",
+        "Edison",
+        "New Brunswick",
+        "Jersey Avenue",
+        "Princeton Junction",
+        "Hamilton",
+        "Trenton"
       ]
     },
     {
@@ -1959,7 +1904,6 @@
     "Allendale",
     "Allenhurst",
     "Anderson Street",
-    "Annandale",
     "Asbury Park",
     "Atco",
     "Atlantic City",
@@ -2058,7 +2002,6 @@
     "Newark Airport",
     "Newark Broad St",
     "Newark Penn Station",
-    "North Branch",
     "North Elizabeth",
     "Oradell",
     "Orange",

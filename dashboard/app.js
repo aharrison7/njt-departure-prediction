@@ -661,6 +661,17 @@
     }
   }
 
+  function isAmtrakTrain(item) {
+    if (!item) return false;
+    const line = (item.line || '').toUpperCase().trim();
+    const trainNum = String(item.trainNumber || '').trim();
+    const carrier = (item.carrier || '').toLowerCase();
+
+    return line === 'AMTK' || line === 'AMTRAK' || line === 'ACELA' || line === 'NER' ||
+           trainNum.startsWith('A') || trainNum.startsWith('a') ||
+           carrier.includes('amtrak');
+  }
+
   // ─── Render All ────────────────────────────────────────────
   function renderAll(data) {
     rawData = data;
@@ -683,10 +694,18 @@
       thDeptArr.style.display = 'none';
     }
 
-    // Apply stop filter
-    const filteredBoard = (data.currentBoard || []).filter(dep => trainStopsAt(dep, selectedStop));
-    const filteredDeparted = (data.recentlyDeparted || []).filter(dep => trainStopsAt(dep, selectedStop));
-    const filteredPreds = (data.predictions || []).filter(pred => trainStopsAt(pred, selectedStop));
+    // Filter out Amtrak trains from display (they remain in backend to detect occupied tracks for predictions)
+    const filteredBoard = (data.currentBoard || [])
+      .filter(dep => !isAmtrakTrain(dep))
+      .filter(dep => trainStopsAt(dep, selectedStop));
+
+    const filteredDeparted = (data.recentlyDeparted || [])
+      .filter(dep => !isAmtrakTrain(dep))
+      .filter(dep => trainStopsAt(dep, selectedStop));
+
+    const filteredPreds = (data.predictions || [])
+      .filter(pred => !isAmtrakTrain(pred))
+      .filter(pred => trainStopsAt(pred, selectedStop));
 
     renderBoard(filteredBoard, filteredDeparted, data.activeStation, data.predictions || []);
     renderPredictions(filteredPreds, data.activeStation);
