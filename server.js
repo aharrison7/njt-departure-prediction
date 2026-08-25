@@ -190,9 +190,9 @@ async function main() {
   // Start scheduler
   scheduler.start();
 
-  // Start HTTP server
-  app.listen(PORT, () => {
-    console.log(`\n[Server] HTTP server listening on http://localhost:${PORT}`);
+  // Start HTTP server (bind 0.0.0.0 for Docker/cloud hosts)
+  app.listen(PORT, '0.0.0.0', () => {
+    console.log(`\n[Server] HTTP server listening on http://0.0.0.0:${PORT}`);
     console.log(`[Server] Dashboard: http://localhost:${PORT}/dashboard/`);
     console.log(`[Server] API data:  http://localhost:${PORT}/api/data`);
     console.log(`[Server] Status:    http://localhost:${PORT}/api/status`);
