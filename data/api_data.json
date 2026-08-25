@@ -1,8 +1,8 @@
 {
-  "lastUpdated": "2026-08-25T18:19:56.041Z",
+  "lastUpdated": "2026-08-25T18:29:50.984Z",
   "activeStation": "Penn Station New York",
   "activeWindow": "live",
-  "scrapeTime": "115100ms",
+  "scrapeTime": "110700ms",
   "currentBoard": [
     {
       "trainNumber": "A19",
@@ -1531,15 +1531,15 @@
       "line": "NEC",
       "scheduledTime": "2:27 PM",
       "currentTrack": "",
-      "predictedTrack": "2",
-      "confidence": 0.5,
+      "predictedTrack": null,
+      "confidence": 0,
       "trackDistribution": {
         "2": 3,
-        "11": 2,
-        "13": 1
+        "11": 3,
+        "13": 2
       },
-      "daysOfData": 14,
-      "totalHistoryDays": 15,
+      "daysOfData": 16,
+      "totalHistoryDays": 16,
       "excludedTracks": [
         "3",
         "4",
@@ -1574,15 +1574,15 @@
       "scheduledTime": "2:30 PM",
       "currentTrack": "",
       "predictedTrack": "2",
-      "confidence": 0.42,
+      "confidence": 0.46,
       "trackDistribution": {
         "1": 4,
-        "2": 5,
+        "2": 6,
         "8": 2,
         "9": 1
       },
-      "daysOfData": 16,
-      "totalHistoryDays": 17,
+      "daysOfData": 18,
+      "totalHistoryDays": 18,
       "excludedTracks": [
         "3",
         "4",
