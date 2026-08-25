@@ -99,6 +99,8 @@ const LINE_STOPS = {
     "Hackettstown"
   ],
   RVL: [
+    "New York Penn Station",
+    "Secaucus Junction",
     "Newark Penn Station",
     "Union",
     "Roselle Park",
@@ -113,8 +115,10 @@ const LINE_STOPS = {
     "Bridgewater",
     "Somerville",
     "Raritan",
-    "Lebanon",
+    "North Branch",
     "White House",
+    "Lebanon",
+    "Annandale",
     "High Bridge"
   ],
   MAIN: [
@@ -292,14 +296,113 @@ const STATION_OFFSETS = {
     "convent station": 73,
     "morristown": 78,
     "dover": 95
+  },
+  RVL: {
+    "new york penn station": 0,
+    "secaucus junction": 10,
+    "newark penn station": 18,
+    "union": 27,
+    "roselle park": 32,
+    "cranford": 36,
+    "garwood": 39,
+    "westfield": 42,
+    "fanwood": 46,
+    "netherwood": 49,
+    "plainfield": 53,
+    "dunellen": 58,
+    "bound brook": 65,
+    "bridgewater": 70,
+    "somerville": 75,
+    "raritan": 80,
+    "north branch": 87,
+    "white house": 94,
+    "lebanon": 100,
+    "annandale": 105,
+    "high bridge": 110
   }
 };
 
 /**
+ * Determine line abbreviation from line name, destination, and train number.
+ */
+function resolveLine(lineAbbrv, destination, trainNumber) {
+  const lineClean = (lineAbbrv || '').toUpperCase().trim();
+  const destClean = (destination || '').toLowerCase().trim();
+
+  if (['RVL', 'RV', 'RAR', 'RARITAN', 'RARITAN VALLEY', 'RARITAN VALLEY LINE'].includes(lineClean) ||
+      destClean.includes('raritan') || destClean.includes('high bridge') || destClean.includes('somerville') ||
+      destClean.includes('plainfield') || destClean.includes('dunellen') || destClean.includes('bound brook') ||
+      destClean.includes('bridgewater') || destClean.includes('white house') || destClean.includes('annandale') ||
+      destClean.includes('lebanon') || destClean.includes('cranford') || destClean.includes('roselle park')) {
+    return 'RVL';
+  }
+
+  if (['NJCL', 'COAST', 'NORTH JERSEY COAST', 'BAY HEAD', 'LONG BRANCH'].includes(lineClean) ||
+      destClean.includes('bay head') || destClean.includes('long branch') || destClean.includes('south amboy') ||
+      destClean.includes('asbury park') || destClean.includes('hazlet') || destClean.includes('middletown') ||
+      destClean.includes('red bank') || destClean.includes('point pleasant') || destClean.includes('belmar')) {
+    return 'NJCL';
+  }
+
+  if (['M&E', 'ME', 'MORRIS & ESSEX', 'MORRISTOWN', 'DOVER'].includes(lineClean) ||
+      destClean.includes('dover') || destClean.includes('morristown') || destClean.includes('summit') ||
+      destClean.includes('south orange') || destClean.includes('maplewood') || destClean.includes('chatham') ||
+      destClean.includes('madison') || destClean.includes('convent') || destClean.includes('morris plains')) {
+    return 'M&E';
+  }
+
+  if (['MOBO', 'MONTCLAIR', 'MONTCLAIR-BOONTON', 'BOONTON', 'MSU', 'HACKETTSTOWN'].includes(lineClean) ||
+      destClean.includes('msu') || destClean.includes('montclair') || destClean.includes('hackettstown') ||
+      destClean.includes('boonton') || destClean.includes('wayne') || destClean.includes('little falls')) {
+    return 'MOBO';
+  }
+
+  if (['GLAD', 'GLADSTONE', 'PASSAIC & DELAWARE'].includes(lineClean) ||
+      destClean.includes('gladstone') || destClean.includes('bernardsville') || destClean.includes('peapack') ||
+      destClean.includes('far hills') || destClean.includes('berkeley heights') || destClean.includes('murray hill') ||
+      destClean.includes('new providence') || destClean.includes('stirling') || destClean.includes('millington')) {
+    return 'GLAD';
+  }
+
+  if (['AMTK', 'AMTRAK', 'ACELA', 'NER', 'REGIONAL'].includes(lineClean) ||
+      (trainNumber && String(trainNumber).startsWith('A')) ||
+      destClean.includes('washington') || destClean.includes('baltimore') || destClean.includes('wilmington') ||
+      destClean.includes('philadelphia') || destClean.includes('newport news') || destClean.includes('norfolk') ||
+      destClean.includes('richmond') || destClean.includes('charlotte') || destClean.includes('savannah') ||
+      destClean.includes('boston')) {
+    return 'AMTK';
+  }
+
+  if (['MAIN', 'MAIN LINE'].includes(lineClean) || destClean.includes('suffern') || destClean.includes('ridgewood') ||
+      destClean.includes('paterson') || destClean.includes('clifton') || destClean.includes('passaic')) {
+    return 'MAIN';
+  }
+
+  if (['BGN', 'BERGEN', 'BERGEN COUNTY'].includes(lineClean) || destClean.includes('garfield') || destClean.includes('rutherford')) {
+    return 'BGN';
+  }
+
+  if (['PVL', 'PASCACK', 'PASCACK VALLEY'].includes(lineClean) || destClean.includes('spring valley')) {
+    return 'PVL';
+  }
+
+  if (['ACL', 'ATLANTIC CITY'].includes(lineClean) || destClean.includes('atlantic city')) {
+    return 'ACL';
+  }
+
+  if (['PJL', 'PORT JERVIS'].includes(lineClean) || destClean.includes('port jervis')) {
+    return 'PJL';
+  }
+
+  return 'NEC';
+}
+
+/**
  * Get intermediate stops for a train given its line and destination.
  */
-function getTrainStops(lineAbbrv, destination, originStation) {
-  const fullRoute = LINE_STOPS[lineAbbrv] || LINE_STOPS.NEC;
+function getTrainStops(lineAbbrv, destination, originStation, trainNumber) {
+  const lineKey = resolveLine(lineAbbrv, destination, trainNumber);
+  const fullRoute = LINE_STOPS[lineKey] || LINE_STOPS.NEC;
   const destClean = (destination || '').toLowerCase().replace(/[^a-z0-9]/g, '');
 
   let destIdx = fullRoute.findIndex(st => 
@@ -401,6 +504,7 @@ function getAllStationStops() {
 module.exports = {
   LINE_STOPS,
   STATION_OFFSETS,
+  resolveLine,
   getTrainStops,
   calculateArrivalTime,
   getAllStationStops

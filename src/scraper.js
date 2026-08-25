@@ -6,7 +6,7 @@
  */
 
 const puppeteer = require('puppeteer');
-const { getTrainStops } = require('./route-stops');
+const { getTrainStops, resolveLine } = require('./route-stops');
 
 // Station URLs — ONLY Penn Station NY and Jersey Avenue Station
 const STATIONS = {
@@ -211,7 +211,8 @@ async function scrapeDepartureBoard(stationKey, retries = 3) {
       
       // Attach calculated intermediate stops to each departure
       for (const dep of departures) {
-        dep.stops = getTrainStops(dep.line, dep.destination, station.shortName);
+        dep.line = resolveLine(dep.line, dep.destination, dep.trainNumber);
+        dep.stops = getTrainStops(dep.line, dep.destination, station.shortName, dep.trainNumber);
       }
 
       if (page) await page.close();

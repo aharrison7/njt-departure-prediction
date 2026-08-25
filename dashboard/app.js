@@ -26,7 +26,7 @@
     NJCL: ["New York Penn Station", "Secaucus Junction", "Newark Penn Station", "Elizabeth", "Rahway", "Avenel", "Woodbridge", "Perth Amboy", "South Amboy", "Matawan", "Hazlet", "Middletown", "Red Bank", "Little Silver", "Long Branch", "Elberon", "Allenhurst", "Asbury Park", "Bradley Beach", "Belmar", "Spring Lake", "Manasquan", "Point Pleasant Beach", "Bay Head"],
     "M&E": ["New York Penn Station", "Secaucus Junction", "Newark Broad St", "East Orange", "Brick Church", "Orange", "Highland Ave", "Mountain Station", "South Orange", "Maplewood", "Millburn", "Short Hills", "Summit", "Chatham", "Madison", "Convent Station", "Morristown", "Morris Plains", "Mount Tabor", "Denville", "Dover"],
     MOBO: ["New York Penn Station", "Secaucus Junction", "Newark Broad St", "Broad Street Bloomfield", "Glen Ridge", "Bay Street Montclair", "Walnut Street", "Watchung Avenue", "Upper Montclair", "Mountain Avenue", "Montclair Heights", "Montclair State University (MSU)", "Little Falls", "Mountain View", "Wayne Route 23", "Towaco", "Lincoln Park", "Boonton", "Denville", "Lake Hopatcong", "Netcong", "Mount Arlington", "Mount Olive", "Hackettstown"],
-    RVL: ["Newark Penn Station", "Union", "Roselle Park", "Cranford", "Garwood", "Westfield", "Fanwood", "Netherwood", "Plainfield", "Dunellen", "Bound Brook", "Bridgewater", "Somerville", "Raritan", "Lebanon", "White House", "High Bridge"],
+    RVL: ["New York Penn Station", "Secaucus Junction", "Newark Penn Station", "Union", "Roselle Park", "Cranford", "Garwood", "Westfield", "Fanwood", "Netherwood", "Plainfield", "Dunellen", "Bound Brook", "Bridgewater", "Somerville", "Raritan", "North Branch", "White House", "Lebanon", "Annandale", "High Bridge"],
     MAIN: ["Hoboken", "Secaucus Junction", "Kingsland", "Lyndhurst", "Delawanna", "Passaic", "Clifton", "Paterson", "Fair Lawn (Broadway)", "Fair Lawn (Radburn)", "Glen Rock", "Ridgewood", "Ho-Ho-Kus", "Waldwick", "Allendale", "Ramsey", "Ramsey Route 17", "Mahwah", "Suffern"],
     BGN: ["Hoboken", "Secaucus Junction", "Rutherford", "Garfield", "Plauderville", "Fair Lawn (Broadway)", "Glen Rock", "Ridgewood", "Ho-Ho-Kus", "Waldwick", "Allendale", "Ramsey", "Ramsey Route 17", "Mahwah", "Suffern"],
     PVL: ["Hoboken", "Secaucus Junction", "Wood-Ridge", "Teterboro", "Essex Street", "Anderson Street", "New Bridge Landing", "River Edge", "Oradell", "Emerson", "Westwood", "Hillsdale", "Woodcliff Lake", "Park Ridge", "Montvale", "Pearl River", "Nanuet", "Spring Valley"],
@@ -55,8 +55,87 @@
       "mountain station": 36, "south orange": 40, "maplewood": 44, "millburn": 48,
       "short hills": 52, "summit": 58, "chatham": 64, "madison": 69, "convent station": 73,
       "morristown": 78, "dover": 95
+    },
+    RVL: {
+      "new york penn station": 0, "secaucus junction": 10, "newark penn station": 18,
+      "union": 27, "roselle park": 32, "cranford": 36, "garwood": 39, "westfield": 42,
+      "fanwood": 46, "netherwood": 49, "plainfield": 53, "dunellen": 58, "bound brook": 65,
+      "bridgewater": 70, "somerville": 75, "raritan": 80, "north branch": 87,
+      "white house": 94, "lebanon": 100, "annandale": 105, "high bridge": 110
     }
   };
+
+  function resolveLine(lineAbbrv, destination, trainNumber) {
+    const lineClean = (lineAbbrv || '').toUpperCase().trim();
+    const destClean = (destination || '').toLowerCase().trim();
+
+    if (['RVL', 'RV', 'RAR', 'RARITAN', 'RARITAN VALLEY', 'RARITAN VALLEY LINE'].includes(lineClean) ||
+        destClean.includes('raritan') || destClean.includes('high bridge') || destClean.includes('somerville') ||
+        destClean.includes('plainfield') || destClean.includes('dunellen') || destClean.includes('bound brook') ||
+        destClean.includes('bridgewater') || destClean.includes('white house') || destClean.includes('annandale') ||
+        destClean.includes('lebanon') || destClean.includes('cranford') || destClean.includes('roselle park')) {
+      return 'RVL';
+    }
+
+    if (['NJCL', 'COAST', 'NORTH JERSEY COAST', 'BAY HEAD', 'LONG BRANCH'].includes(lineClean) ||
+        destClean.includes('bay head') || destClean.includes('long branch') || destClean.includes('south amboy') ||
+        destClean.includes('asbury park') || destClean.includes('hazlet') || destClean.includes('middletown') ||
+        destClean.includes('red bank') || destClean.includes('point pleasant') || destClean.includes('belmar')) {
+      return 'NJCL';
+    }
+
+    if (['M&E', 'ME', 'MORRIS & ESSEX', 'MORRISTOWN', 'DOVER'].includes(lineClean) ||
+        destClean.includes('dover') || destClean.includes('morristown') || destClean.includes('summit') ||
+        destClean.includes('south orange') || destClean.includes('maplewood') || destClean.includes('chatham') ||
+        destClean.includes('madison') || destClean.includes('convent') || destClean.includes('morris plains')) {
+      return 'M&E';
+    }
+
+    if (['MOBO', 'MONTCLAIR', 'MONTCLAIR-BOONTON', 'BOONTON', 'MSU', 'HACKETTSTOWN'].includes(lineClean) ||
+        destClean.includes('msu') || destClean.includes('montclair') || destClean.includes('hackettstown') ||
+        destClean.includes('boonton') || destClean.includes('wayne') || destClean.includes('little falls')) {
+      return 'MOBO';
+    }
+
+    if (['GLAD', 'GLADSTONE', 'PASSAIC & DELAWARE'].includes(lineClean) ||
+        destClean.includes('gladstone') || destClean.includes('bernardsville') || destClean.includes('peapack') ||
+        destClean.includes('far hills') || destClean.includes('berkeley heights') || destClean.includes('murray hill') ||
+        destClean.includes('new providence') || destClean.includes('stirling') || destClean.includes('millington')) {
+      return 'GLAD';
+    }
+
+    if (['AMTK', 'AMTRAK', 'ACELA', 'NER', 'REGIONAL'].includes(lineClean) ||
+        (trainNumber && String(trainNumber).startsWith('A')) ||
+        destClean.includes('washington') || destClean.includes('baltimore') || destClean.includes('wilmington') ||
+        destClean.includes('philadelphia') || destClean.includes('newport news') || destClean.includes('norfolk') ||
+        destClean.includes('richmond') || destClean.includes('charlotte') || destClean.includes('savannah') ||
+        destClean.includes('boston')) {
+      return 'AMTK';
+    }
+
+    if (['MAIN', 'MAIN LINE'].includes(lineClean) || destClean.includes('suffern') || destClean.includes('ridgewood') ||
+        destClean.includes('paterson') || destClean.includes('clifton') || destClean.includes('passaic')) {
+      return 'MAIN';
+    }
+
+    if (['BGN', 'BERGEN', 'BERGEN COUNTY'].includes(lineClean) || destClean.includes('garfield') || destClean.includes('rutherford')) {
+      return 'BGN';
+    }
+
+    if (['PVL', 'PASCACK', 'PASCACK VALLEY'].includes(lineClean) || destClean.includes('spring valley')) {
+      return 'PVL';
+    }
+
+    if (['ACL', 'ATLANTIC CITY'].includes(lineClean) || destClean.includes('atlantic city')) {
+      return 'ACL';
+    }
+
+    if (['PJL', 'PORT JERVIS'].includes(lineClean) || destClean.includes('port jervis')) {
+      return 'PJL';
+    }
+
+    return 'NEC';
+  }
 
   // ─── DOM References ────────────────────────────────────────
   const $ = (sel) => document.querySelector(sel);
@@ -480,7 +559,8 @@
     if (item.stops && Array.isArray(item.stops) && item.stops.length > 0) {
       return item.stops;
     }
-    const lineStops = LINE_STOPS[item.line] || LINE_STOPS.NEC;
+    const lineKey = resolveLine(item.line, item.destination, item.trainNumber);
+    const lineStops = LINE_STOPS[lineKey] || LINE_STOPS.NEC;
     const destClean = (item.destination || '').toLowerCase().replace(/[^a-z0-9]/g, '');
 
     let destIdx = lineStops.findIndex(st => 
@@ -489,15 +569,25 @@
     );
     if (destIdx === -1) destIdx = lineStops.length - 1;
 
-    return lineStops.slice(0, destIdx + 1);
+    let stops = lineStops.slice(0, destIdx + 1);
+
+    if (item.station) {
+      const originClean = item.station.toLowerCase().replace(/[^a-z0-9]/g, '');
+      const originIdx = stops.findIndex(st => 
+        st.toLowerCase().replace(/[^a-z0-9]/g, '').includes(originClean) ||
+        originClean.includes(st.toLowerCase().replace(/[^a-z0-9]/g, ''))
+      );
+      if (originIdx !== -1) {
+        stops = stops.slice(originIdx);
+      }
+    }
+
+    return stops;
   }
 
   function trainStopsAt(item, targetStop) {
     if (!targetStop || targetStop.trim() === '') return true;
     const targetClean = targetStop.toLowerCase().replace(/[^a-z0-9]/g, '');
-
-    const destClean = (item.destination || '').toLowerCase().replace(/[^a-z0-9]/g, '');
-    if (destClean.includes(targetClean)) return true;
 
     const stops = getStopsForTrain(item);
     return stops.some(st => st.toLowerCase().replace(/[^a-z0-9]/g, '').includes(targetClean));

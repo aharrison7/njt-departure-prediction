@@ -49,7 +49,7 @@ function generatePredictions(currentBoard, history, trackRegistry) {
         excludedTracks: [],
         excludeReasons: {},
         note: 'No historical data available',
-        stops: dep.stops || getTrainStops(dep.line, dep.destination)
+        stops: dep.stops || getTrainStops(dep.line, dep.destination, dep.station, dep.trainNumber)
       });
       continue;
     }
@@ -80,7 +80,7 @@ function generatePredictions(currentBoard, history, trackRegistry) {
         excludedTracks: [],
         excludeReasons: {},
         note: 'No track assignments in history',
-        stops: dep.stops || getTrainStops(dep.line, dep.destination)
+        stops: dep.stops || getTrainStops(dep.line, dep.destination, dep.station, dep.trainNumber)
       });
       continue;
     }
@@ -153,7 +153,7 @@ function generatePredictions(currentBoard, history, trackRegistry) {
       totalHistoryDays: Object.keys(trainHistory).length,
       excludedTracks: Object.keys(excludedTracks),
       excludeReasons: excludedTracks,
-      stops: dep.stops || getTrainStops(dep.line, dep.destination)
+      stops: dep.stops || getTrainStops(dep.line, dep.destination, dep.station, dep.trainNumber)
     });
   }
 
