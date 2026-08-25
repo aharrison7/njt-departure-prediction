@@ -100,12 +100,15 @@ class DataStore {
   async writeJSON(filename, data, makePublic = false) {
     const jsonStr = JSON.stringify(data, null, 2);
 
-    // Always write locally as backup
+    // Always write locally using atomic write (write to .tmp then rename)
     const localDir = path.join(__dirname, '..', 'data');
     if (!fs.existsSync(localDir)) {
       fs.mkdirSync(localDir, { recursive: true });
     }
-    fs.writeFileSync(path.join(localDir, filename), jsonStr, 'utf8');
+    const targetPath = path.join(localDir, filename);
+    const tmpPath = path.join(localDir, `${filename}.${Date.now()}.${Math.random().toString(36).slice(2, 7)}.tmp`);
+    fs.writeFileSync(tmpPath, jsonStr, 'utf8');
+    fs.renameSync(tmpPath, targetPath);
 
     // Write to Google Drive
     if (this.drive) {

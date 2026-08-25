@@ -610,13 +610,33 @@
         res = await fetch('./data/api_data.json').catch(() => null);
       }
       if (!res || !res.ok) throw new Error(`HTTP fetch failed`);
-      rawData = await res.json();
-      renderAll(rawData);
-      updateStatus('live', rawData.lastUpdated);
+      
+      const newData = await res.json();
+      
+      // Only replace and re-render if the payload contains valid departure data
+      if (newData && Array.isArray(newData.currentBoard) && newData.currentBoard.length > 0) {
+        rawData = newData;
+        renderAll(rawData);
+        updateStatus('live', rawData.lastUpdated);
+      } else if (rawData && Array.isArray(rawData.currentBoard) && rawData.currentBoard.length > 0) {
+        // Keep existing cache on screen, update timestamp if available
+        if (newData && newData.lastUpdated) {
+          updateStatus('live', newData.lastUpdated);
+        }
+      } else {
+        rawData = newData;
+        renderAll(rawData);
+        updateStatus('live', rawData.lastUpdated);
+      }
     } catch (err) {
       console.warn('[Dashboard] Fetch error:', err.message);
-      updateStatus('error');
-      loadDemoData();
+      // If we already have live data loaded, KEEP it on screen seamlessly
+      if (rawData && Array.isArray(rawData.currentBoard) && rawData.currentBoard.length > 0) {
+        console.log('[Dashboard] Retaining existing departures cache on screen.');
+      } else {
+        updateStatus('error');
+        loadDemoData();
+      }
     }
   }
 

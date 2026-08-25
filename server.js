@@ -37,7 +37,7 @@ app.get('/healthz', (req, res) => res.status(200).send('OK'));
 // Also serve local data files for dev/testing
 app.use('/data', express.static(path.join(__dirname, 'data')));
 
-// ─── Scrape Handler ──────────────────────────────────────────────────
+let inMemoryApiData = null;
 
 /**
  * Process a scrape: Penn Station New York ONLY.
@@ -49,7 +49,13 @@ async function handleScrape() {
 
   try {
     const result = await scrapeActiveStations();
-    const currentBoard = result.stations.nyPenn || [];
+    let currentBoard = result.stations.nyPenn || [];
+
+    // Guard: Never wipe out existing departures if a scrape returns 0 trains (e.g. temporary network hiccup)
+    if (currentBoard.length === 0 && inMemoryApiData && inMemoryApiData.currentBoard && inMemoryApiData.currentBoard.length > 0) {
+      console.warn('[Server] Scrape returned 0 departures (possible network hiccup). Retaining previous departures cache.');
+      currentBoard = inMemoryApiData.currentBoard;
+    }
 
     console.log(`[Server] Scraped ${currentBoard.length} departures from Penn Station New York`);
 
@@ -88,6 +94,7 @@ async function handleScrape() {
       allStops: getAllStationStops()
     };
 
+    inMemoryApiData = apiData;
     await dataStore.writeApiData(apiData);
     console.log(`[Server] Live scrape complete in ${Date.now() - startTime}ms`);
   } catch (error) {
@@ -99,6 +106,10 @@ async function handleScrape() {
 
 app.get('/', (req, res) => {
   res.redirect('/dashboard/');
+});
+
+app.get('/healthz', (req, res) => {
+  res.status(200).send('OK');
 });
 
 app.get('/api/status', (req, res) => {
@@ -113,13 +124,19 @@ app.get('/api/status', (req, res) => {
 
 app.get('/api/data', async (req, res) => {
   try {
+    if (inMemoryApiData && inMemoryApiData.currentBoard && inMemoryApiData.currentBoard.length > 0) {
+      return res.json(inMemoryApiData);
+    }
     const data = await dataStore.readJSON('api_data.json');
     if (data) {
-      res.json(data);
-    } else {
-      res.status(404).json({ error: 'No data available yet' });
+      inMemoryApiData = data;
+      return res.json(data);
     }
+    res.status(404).json({ error: 'No data available yet' });
   } catch (error) {
+    if (inMemoryApiData) {
+      return res.json(inMemoryApiData);
+    }
     res.status(500).json({ error: error.message });
   }
 });
