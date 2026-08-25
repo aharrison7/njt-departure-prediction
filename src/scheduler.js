@@ -10,8 +10,9 @@
 const cron = require('node-cron');
 
 class Scheduler {
-  constructor(onScrape) {
-    this.onScrape = typeof onScrape === 'function' ? onScrape : arguments[0];
+  constructor(onScrape, onSync) {
+    this.onScrape = typeof onScrape === 'function' ? onScrape : null;
+    this.onSync = typeof onSync === 'function' ? onSync : null;
     this.jobs = [];
     this.isRunning = false;
   }
@@ -26,7 +27,6 @@ class Scheduler {
     }
 
     // Every 1 minute, 5:00 AM - 1:59 AM ET (hours 0,1, 5-23), 7 days a week
-    // Cron: minute(*) hour(0,1,5-23) * * *
     const scrapeJob = cron.schedule('* 0,1,5-23 * * *', async () => {
       console.log(`[Scheduler] 1-minute live scrape triggered`);
       try {
@@ -41,8 +41,21 @@ class Scheduler {
     });
     this.jobs.push(scrapeJob);
 
+    // Periodically sync historical track data to GitHub (every 10 minutes)
+    if (typeof this.onSync === 'function') {
+      const syncJob = cron.schedule('*/10 * * * *', async () => {
+        try {
+          console.log('[Scheduler] Periodic GitHub sync triggered');
+          await this.onSync();
+        } catch (error) {
+          console.error('[Scheduler] Periodic GitHub sync error:', error.message);
+        }
+      });
+      this.jobs.push(syncJob);
+    }
+
     this.isRunning = true;
-    console.log('[Scheduler] Started with 1-minute live schedule (5:00 AM - 2:00 AM ET, Penn Station + Jersey Ave)');
+    console.log('[Scheduler] Started with 1-minute live scrape and periodic GitHub history sync');
   }
 
   /**

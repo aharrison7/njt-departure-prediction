@@ -13,6 +13,7 @@ const { initBrowser, closeBrowser, scrapeActiveStations } = require('./src/scrap
 const DataStore = require('./src/data-store');
 const DepartedTracker = require('./src/departed-tracker');
 const Scheduler = require('./src/scheduler');
+const GitHubSync = require('./src/github-sync');
 const { generatePredictions, getRecentCancellations } = require('./src/predictor');
 const { getAllStationStops } = require('./src/route-stops');
 
@@ -22,6 +23,7 @@ const PORT = process.env.PORT || 3000;
 // Initialize components
 const dataStore = new DataStore();
 const departedTracker = new DepartedTracker();
+const githubSync = new GitHubSync();
 
 app.use(express.json());
 
@@ -116,6 +118,8 @@ app.get('/api/status', (req, res) => {
   res.json({
     status: 'running',
     scheduler: scheduler.getStatus(),
+    githubSyncConfigured: githubSync.isConfigured(),
+    lastGitHubSync: githubSync.lastSync,
     uptime: process.uptime(),
     memoryUsage: process.memoryUsage(),
     publicDataUrl: dataStore.getPublicUrl('api_data.json')
@@ -146,6 +150,13 @@ app.post('/api/scrape', async (req, res) => {
   res.json({ message: 'Live scrape started' });
   await handleScrape();
 });
+app.post('/api/sync-github', async (req, res) => {
+  if (!githubSync.isConfigured()) {
+    return res.status(400).json({ error: 'GITHUB_TOKEN environment variable is not configured' });
+  }
+  res.json({ message: 'GitHub sync started' });
+  await githubSync.syncAll();
+});
 app.post('/api/scrape/morning', async (req, res) => {
   res.json({ message: 'Live scrape started' });
   await handleScrape();
@@ -157,7 +168,7 @@ app.post('/api/scrape/afternoon', async (req, res) => {
 
 // ─── Startup ─────────────────────────────────────────────────────────
 
-const scheduler = new Scheduler(handleScrape);
+const scheduler = new Scheduler(handleScrape, () => githubSync.syncAll());
 
 async function main() {
   console.log('╔══════════════════════════════════════════════════════════╗');

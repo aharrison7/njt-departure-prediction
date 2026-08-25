@@ -1,8 +1,8 @@
 {
-  "lastUpdated": "2026-08-25T16:46:25.949Z",
+  "lastUpdated": "2026-08-25T16:47:26.289Z",
   "activeStation": "Penn Station NY & Jersey Ave",
   "activeWindow": "live",
-  "scrapeTime": "24984ms",
+  "scrapeTime": "25777ms",
   "currentBoard": [
     {
       "trainNumber": "6627",
