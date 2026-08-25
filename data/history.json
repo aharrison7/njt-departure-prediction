@@ -1049,7 +1049,7 @@
     },
     "2026-08-25": {
       "track": "4",
-      "status": "All Aboard",
+      "status": "On Time",
       "station": "Jersey Ave",
       "scheduledTime": "1:39 PM",
       "destination": "Trenton"
@@ -3284,10 +3284,10 @@
   "A19": {
     "2026-08-25": {
       "track": "12",
-      "destination": "New Orleans",
+      "status": "All Aboard",
       "station": "NY Penn",
-      "status": "BOARDING",
-      "source": "choochootracker_live"
+      "scheduledTime": "2:00 PM",
+      "destination": "New Orleans"
     },
     "2026-08-24": {
       "track": "10",
