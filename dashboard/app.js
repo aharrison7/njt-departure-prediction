@@ -482,8 +482,14 @@
   // ─── Data Fetching ─────────────────────────────────────────
   async function fetchData() {
     try {
-      const res = await fetch(API_URL);
-      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      let res = await fetch(API_URL).catch(() => null);
+      if (!res || !res.ok) {
+        res = await fetch('../data/api_data.json').catch(() => null);
+      }
+      if (!res || !res.ok) {
+        res = await fetch('./data/api_data.json').catch(() => null);
+      }
+      if (!res || !res.ok) throw new Error(`HTTP fetch failed`);
       rawData = await res.json();
       renderAll(rawData);
       updateStatus('live', rawData.lastUpdated);
