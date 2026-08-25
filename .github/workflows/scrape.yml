@@ -2,9 +2,13 @@ name: NJT Live Scraper & GitHub Pages Update
 
 on:
   schedule:
-    # Trigger every 5 minutes (GitHub Actions minimum schedule interval)
-    - cron: '*/5 * * * *'
+    # Trigger every 1 minute
+    - cron: '* * * * *'
   workflow_dispatch: # Allows manual trigger from GitHub UI
+
+concurrency:
+  group: njt-live-scraper
+  cancel-in-progress: false
 
 permissions:
   contents: write
