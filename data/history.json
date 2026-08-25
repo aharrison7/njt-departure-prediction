@@ -44,8 +44,8 @@
   },
   "3243": {
     "2026-08-25": {
-      "track": "",
-      "status": "On Time",
+      "track": "3",
+      "status": "All Aboard",
       "station": "NY Penn",
       "scheduledTime": "12:43 PM",
       "destination": "Long Branch-BH"
@@ -373,6 +373,15 @@
       "station": "Jersey Ave",
       "scheduledTime": "8:40 AM",
       "destination": "New York"
+    }
+  },
+  "3719": {
+    "2026-08-25": {
+      "track": "",
+      "status": "On Time",
+      "station": "NY Penn",
+      "scheduledTime": "2:27 PM",
+      "destination": "Jersey Avenue"
     }
   },
   "3720": {
@@ -1071,8 +1080,8 @@
   },
   "5175": {
     "2026-08-25": {
-      "track": "",
-      "status": "On Time",
+      "track": "4",
+      "status": "All Aboard",
       "station": "NY Penn",
       "scheduledTime": "12:45 PM",
       "destination": "High Bridge"
@@ -1790,8 +1799,8 @@
   },
   "A171": {
     "2026-08-25": {
-      "track": "",
-      "status": "On Time",
+      "track": "11",
+      "status": "All Aboard",
       "station": "NY Penn",
       "scheduledTime": "12:40 PM",
       "destination": "Roanoke"

@@ -28,6 +28,12 @@ app.use(express.json());
 // Serve dashboard static files
 app.use('/dashboard', express.static(path.join(__dirname, 'dashboard')));
 
+// Root redirect to dashboard
+app.get('/', (req, res) => res.redirect('/dashboard/'));
+
+// Health check endpoint for Render / cloud hosts
+app.get('/healthz', (req, res) => res.status(200).send('OK'));
+
 // Also serve local data files for dev/testing
 app.use('/data', express.static(path.join(__dirname, 'data')));
 
@@ -168,9 +174,9 @@ async function main() {
     console.log(`[Server] Manual scrape: POST /api/scrape`);
   });
 
-  // Run immediate scrape if configured
-  if (process.env.SCRAPE_ON_STARTUP === 'true') {
-    await handleScrape();
+  // Run initial scrape on startup so board is populated immediately
+  if (process.env.SCRAPE_ON_STARTUP !== 'false') {
+    handleScrape().catch(e => console.error('[Server] Initial startup scrape error:', e.message));
   }
 }
 
