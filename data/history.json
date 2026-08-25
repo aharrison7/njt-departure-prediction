@@ -53,8 +53,8 @@
   },
   "3247": {
     "2026-08-25": {
-      "track": "",
-      "status": "On Time",
+      "track": "1",
+      "status": "All Aboard",
       "station": "NY Penn",
       "scheduledTime": "1:43 PM",
       "destination": "Long Branch"
@@ -493,6 +493,13 @@
     "2026-08-24": {
       "track": "13",
       "status": "All Aboard",
+      "station": "NY Penn",
+      "scheduledTime": "3:07 PM",
+      "destination": "Jersey Avenue"
+    },
+    "2026-08-25": {
+      "track": "",
+      "status": "On Time",
       "station": "NY Penn",
       "scheduledTime": "3:07 PM",
       "destination": "Jersey Avenue"
@@ -1096,8 +1103,8 @@
   },
   "5127": {
     "2026-08-25": {
-      "track": "",
-      "status": "On Time",
+      "track": "9",
+      "status": "All Aboard",
       "station": "NY Penn",
       "scheduledTime": "1:40 PM",
       "destination": "Raritan"
@@ -1804,6 +1811,13 @@
     "2026-08-24": {
       "track": "8",
       "status": "All Aboard",
+      "station": "NY Penn",
+      "scheduledTime": "3:05 PM",
+      "destination": "Washington"
+    },
+    "2026-08-25": {
+      "track": "",
+      "status": "On Time",
       "station": "NY Penn",
       "scheduledTime": "3:05 PM",
       "destination": "Washington"
