@@ -219,6 +219,7 @@
           const val = opt.getAttribute('data-value');
           setStationFilter(val);
           closeDropdown();
+          if (searchInput) searchInput.blur();
         });
       });
     }
