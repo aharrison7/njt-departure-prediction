@@ -1,367 +1,556 @@
 {
-  "lastUpdated": "2026-08-24T13:55:26.183Z",
-  "activeStation": "Jersey Avenue Station",
-  "activeWindow": "morning",
-  "scrapeTime": "25540ms",
+  "lastUpdated": "2026-08-24T21:55:25.427Z",
+  "activeStation": "Penn Station New York",
+  "activeWindow": "afternoon",
+  "scrapeTime": "25132ms",
   "currentBoard": [
     {
-      "trainNumber": "3831",
-      "scheduledTime": "10:38 AM",
-      "destination": "Trenton",
-      "line": "NEC",
-      "track": "4",
-      "status": "On Time",
-      "station": "Jersey Ave"
+      "trainNumber": "3373",
+      "scheduledTime": "5:56 PM",
+      "destination": "Bay Head",
+      "line": "NJCL",
+      "track": "14",
+      "status": "All Aboard",
+      "station": "NY Penn"
     },
     {
-      "trainNumber": "3835",
-      "scheduledTime": "11:37 AM",
-      "destination": "Trenton",
-      "line": "NEC",
-      "track": "4",
-      "status": "On Time",
-      "station": "Jersey Ave"
+      "trainNumber": "3271",
+      "scheduledTime": "6:01 PM",
+      "destination": "Long Branch",
+      "line": "NJCL",
+      "track": "2",
+      "status": "All Aboard",
+      "station": "NY Penn"
     },
     {
-      "trainNumber": "3839",
-      "scheduledTime": "12:38 PM",
-      "destination": "Trenton",
-      "line": "NEC",
-      "track": "4",
-      "status": "On Time",
-      "station": "Jersey Ave"
+      "trainNumber": "A2127",
+      "scheduledTime": "6:05 PM",
+      "destination": "Washington",
+      "line": "AMTK",
+      "track": "9",
+      "status": "All Aboard",
+      "station": "NY Penn"
     },
     {
-      "trainNumber": "3841",
-      "scheduledTime": "1:04 PM",
-      "destination": "Trenton",
-      "line": "NEC",
-      "track": "4",
+      "trainNumber": "6437",
+      "scheduledTime": "6:06 PM",
+      "destination": "Gladstone",
+      "line": "M&E",
+      "track": "",
       "status": "On Time",
-      "station": "Jersey Ave"
+      "station": "NY Penn"
     },
     {
-      "trainNumber": "3843",
-      "scheduledTime": "1:39 PM",
-      "destination": "Trenton",
-      "line": "NEC",
-      "track": "4",
+      "trainNumber": "A197",
+      "scheduledTime": "6:09 PM",
+      "destination": "Washington",
+      "line": "AMTK",
+      "track": "",
       "status": "On Time",
-      "station": "Jersey Ave"
+      "station": "NY Penn"
     },
     {
-      "trainNumber": "3845",
-      "scheduledTime": "2:06 PM",
+      "trainNumber": "3957",
+      "scheduledTime": "6:12 PM",
       "destination": "Trenton",
       "line": "NEC",
-      "track": "4",
+      "track": "",
       "status": "On Time",
-      "station": "Jersey Ave"
+      "station": "NY Penn"
     },
     {
-      "trainNumber": "3847",
-      "scheduledTime": "2:34 PM",
-      "destination": "Trenton",
-      "line": "NEC",
-      "track": "4",
+      "trainNumber": "6279",
+      "scheduledTime": "6:14 PM",
+      "destination": "MSU",
+      "line": "MOBO",
+      "track": "",
       "status": "On Time",
-      "station": "Jersey Ave"
-    },
-    {
-      "trainNumber": "3849",
-      "scheduledTime": "3:09 PM",
-      "destination": "Trenton",
-      "line": "NEC",
-      "track": "4",
-      "status": "On Time",
-      "station": "Jersey Ave"
-    },
-    {
-      "trainNumber": "3937",
-      "scheduledTime": "3:47 PM",
-      "destination": "Trenton",
-      "line": "NEC",
-      "track": "4",
-      "status": "On Time",
-      "station": "Jersey Ave"
-    },
-    {
-      "trainNumber": "3855",
-      "scheduledTime": "4:24 PM",
-      "destination": "Trenton",
-      "line": "NEC",
-      "track": "4",
-      "status": "On Time",
-      "station": "Jersey Ave"
-    },
-    {
-      "trainNumber": "3867",
-      "scheduledTime": "6:28 PM",
-      "destination": "Trenton",
-      "line": "NEC",
-      "track": "4",
-      "status": "On Time",
-      "station": "Jersey Ave"
+      "station": "NY Penn"
     },
     {
       "trainNumber": "3873",
-      "scheduledTime": "7:20 PM",
+      "scheduledTime": "6:18 PM",
       "destination": "Trenton",
       "line": "NEC",
-      "track": "4",
+      "track": "",
       "status": "On Time",
-      "station": "Jersey Ave"
+      "station": "NY Penn"
+    },
+    {
+      "trainNumber": "6655",
+      "scheduledTime": "6:20 PM",
+      "destination": "Dover",
+      "line": "M&E",
+      "track": "",
+      "status": "On Time",
+      "station": "NY Penn"
+    },
+    {
+      "trainNumber": "A137",
+      "scheduledTime": "6:27 PM",
+      "destination": "Washington",
+      "line": "AMTK",
+      "track": "",
+      "status": "DELAYED",
+      "station": "NY Penn"
+    },
+    {
+      "trainNumber": "3515",
+      "scheduledTime": "6:29 PM",
+      "destination": "So. Amboy",
+      "line": "NJCL",
+      "track": "",
+      "status": "On Time",
+      "station": "NY Penn"
+    },
+    {
+      "trainNumber": "3275",
+      "scheduledTime": "6:31 PM",
+      "destination": "Long Branch",
+      "line": "NJCL",
+      "track": "",
+      "status": "On Time",
+      "station": "NY Penn"
+    },
+    {
+      "trainNumber": "A655",
+      "scheduledTime": "6:35 PM",
+      "destination": "Harrisburg",
+      "line": "AMTK",
+      "track": "",
+      "status": "On Time",
+      "station": "NY Penn"
     },
     {
       "trainNumber": "3961",
-      "scheduledTime": "7:28 PM",
+      "scheduledTime": "6:37 PM",
       "destination": "Trenton",
       "line": "NEC",
-      "track": "4",
+      "track": "",
       "status": "On Time",
-      "station": "Jersey Ave"
+      "station": "NY Penn"
+    },
+    {
+      "trainNumber": "6283",
+      "scheduledTime": "6:41 PM",
+      "destination": "MSU",
+      "line": "MOBO",
+      "track": "",
+      "status": "On Time",
+      "station": "NY Penn"
+    },
+    {
+      "trainNumber": "A55",
+      "scheduledTime": "6:45 PM",
+      "destination": "Washington",
+      "line": "AMTK",
+      "track": "",
+      "status": "DELAYED",
+      "station": "NY Penn"
     },
     {
       "trainNumber": "3875",
-      "scheduledTime": "7:41 PM",
+      "scheduledTime": "6:47 PM",
       "destination": "Trenton",
       "line": "NEC",
-      "track": "4",
+      "track": "",
       "status": "On Time",
-      "station": "Jersey Ave"
+      "station": "NY Penn"
     },
     {
-      "trainNumber": "3877",
-      "scheduledTime": "8:06 PM",
-      "destination": "Trenton",
-      "line": "NEC",
-      "track": "4",
+      "trainNumber": "6359",
+      "scheduledTime": "6:50 PM",
+      "destination": "Summit",
+      "line": "M&E",
+      "track": "",
       "status": "On Time",
-      "station": "Jersey Ave"
+      "station": "NY Penn"
     },
     {
-      "trainNumber": "3879",
-      "scheduledTime": "8:14 PM",
-      "destination": "Trenton",
-      "line": "NEC",
-      "track": "4",
+      "trainNumber": "6659",
+      "scheduledTime": "6:56 PM",
+      "destination": "Dover",
+      "line": "M&E",
+      "track": "",
       "status": "On Time",
-      "station": "Jersey Ave"
-    },
-    {
-      "trainNumber": "3965",
-      "scheduledTime": "8:29 PM",
-      "destination": "Trenton",
-      "line": "NEC",
-      "track": "4",
-      "status": "On Time",
-      "station": "Jersey Ave"
-    },
-    {
-      "trainNumber": "3969",
-      "scheduledTime": "9:05 PM",
-      "destination": "Trenton",
-      "line": "NEC",
-      "track": "4",
-      "status": "On Time",
-      "station": "Jersey Ave"
-    },
-    {
-      "trainNumber": "3883",
-      "scheduledTime": "9:12 PM",
-      "destination": "Trenton",
-      "line": "NEC",
-      "track": "4",
-      "status": "On Time",
-      "station": "Jersey Ave"
+      "station": "NY Penn"
     }
   ],
-  "recentlyDeparted": [],
-  "predictions": [
+  "recentlyDeparted": [
     {
-      "trainNumber": "3831",
+      "trainNumber": "3871",
+      "scheduledTime": "5:50 PM",
       "destination": "Trenton",
       "line": "NEC",
-      "scheduledTime": "10:38 AM",
-      "currentTrack": "4",
-      "predictedTrack": "4",
-      "confidence": 1,
-      "trackDistribution": {
-        "4": 1
-      },
-      "daysOfData": 1,
-      "totalHistoryDays": 1,
-      "excludedTracks": [],
-      "excludeReasons": {}
+      "track": "13",
+      "status": "All Aboard",
+      "station": "NY Penn",
+      "removedAt": "2026-08-24T21:55:25.420Z",
+      "departedStatus": "Departed",
+      "lastTrack": "13"
     },
     {
-      "trainNumber": "3835",
-      "destination": "Trenton",
-      "line": "NEC",
-      "scheduledTime": "11:37 AM",
-      "currentTrack": "4",
-      "predictedTrack": "4",
-      "confidence": 1,
-      "trackDistribution": {
-        "4": 1
-      },
-      "daysOfData": 1,
-      "totalHistoryDays": 1,
-      "excludedTracks": [],
-      "excludeReasons": {}
+      "trainNumber": "6653",
+      "scheduledTime": "5:52 PM",
+      "destination": "Dover",
+      "line": "M&E",
+      "track": "3",
+      "status": "All Aboard",
+      "station": "NY Penn",
+      "removedAt": "2026-08-24T21:55:25.420Z",
+      "departedStatus": "Departed",
+      "lastTrack": "3"
     },
     {
-      "trainNumber": "3839",
-      "destination": "Trenton",
-      "line": "NEC",
-      "scheduledTime": "12:38 PM",
-      "currentTrack": "4",
-      "predictedTrack": "4",
-      "confidence": 1,
-      "trackDistribution": {
-        "4": 1
-      },
-      "daysOfData": 1,
-      "totalHistoryDays": 1,
-      "excludedTracks": [],
-      "excludeReasons": {}
+      "trainNumber": "A193",
+      "scheduledTime": "5:47 PM",
+      "destination": "Washington",
+      "line": "AMTK",
+      "track": "12",
+      "status": "All Aboard",
+      "station": "NY Penn",
+      "removedAt": "2026-08-24T21:50:26.409Z",
+      "departedStatus": "Departed",
+      "lastTrack": "12"
     },
     {
-      "trainNumber": "3841",
-      "destination": "Trenton",
+      "trainNumber": "3727",
+      "scheduledTime": "5:41 PM",
+      "destination": "Jersey Ave",
       "line": "NEC",
-      "scheduledTime": "1:04 PM",
-      "currentTrack": "4",
-      "predictedTrack": "4",
-      "confidence": 1,
-      "trackDistribution": {
-        "4": 1
-      },
-      "daysOfData": 1,
-      "totalHistoryDays": 1,
-      "excludedTracks": [],
-      "excludeReasons": {}
+      "track": "14",
+      "status": "All Aboard",
+      "station": "NY Penn",
+      "removedAt": "2026-08-24T21:45:25.876Z",
+      "departedStatus": "Departed",
+      "lastTrack": "14"
     },
     {
-      "trainNumber": "3843",
-      "destination": "Trenton",
+      "trainNumber": "6651",
+      "scheduledTime": "5:43 PM",
+      "destination": "Dover",
+      "line": "M&E",
+      "track": "1",
+      "status": "All Aboard",
+      "station": "NY Penn",
+      "removedAt": "2026-08-24T21:45:25.876Z",
+      "departedStatus": "Departed",
+      "lastTrack": "1"
+    }
+  ],
+  "edisonBoard": [
+    {
+      "trainNumber": "3866",
+      "scheduledTime": "5:56 PM",
+      "destination": "New York",
       "line": "NEC",
-      "scheduledTime": "1:39 PM",
-      "currentTrack": "4",
-      "predictedTrack": "4",
-      "confidence": 1,
-      "trackDistribution": {
-        "4": 1
-      },
-      "daysOfData": 1,
-      "totalHistoryDays": 1,
-      "excludedTracks": [],
-      "excludeReasons": {}
+      "track": "1",
+      "status": "All Aboard",
+      "station": "Edison"
     },
     {
-      "trainNumber": "3845",
-      "destination": "Trenton",
+      "trainNumber": "3725",
+      "scheduledTime": "5:59 PM",
+      "destination": "Jersey Avenue",
       "line": "NEC",
-      "scheduledTime": "2:06 PM",
-      "currentTrack": "4",
-      "predictedTrack": "4",
-      "confidence": 1,
-      "trackDistribution": {
-        "4": 1
-      },
-      "daysOfData": 1,
-      "totalHistoryDays": 1,
-      "excludedTracks": [],
-      "excludeReasons": {}
-    },
-    {
-      "trainNumber": "3847",
-      "destination": "Trenton",
-      "line": "NEC",
-      "scheduledTime": "2:34 PM",
-      "currentTrack": "4",
-      "predictedTrack": "4",
-      "confidence": 1,
-      "trackDistribution": {
-        "4": 1
-      },
-      "daysOfData": 1,
-      "totalHistoryDays": 1,
-      "excludedTracks": [],
-      "excludeReasons": {}
-    },
-    {
-      "trainNumber": "3849",
-      "destination": "Trenton",
-      "line": "NEC",
-      "scheduledTime": "3:09 PM",
-      "currentTrack": "4",
-      "predictedTrack": "4",
-      "confidence": 1,
-      "trackDistribution": {
-        "4": 1
-      },
-      "daysOfData": 1,
-      "totalHistoryDays": 1,
-      "excludedTracks": [],
-      "excludeReasons": {}
-    },
-    {
-      "trainNumber": "3937",
-      "destination": "Trenton",
-      "line": "NEC",
-      "scheduledTime": "3:47 PM",
-      "currentTrack": "4",
-      "predictedTrack": "4",
-      "confidence": 1,
-      "trackDistribution": {
-        "4": 1
-      },
-      "daysOfData": 1,
-      "totalHistoryDays": 1,
-      "excludedTracks": [],
-      "excludeReasons": {}
-    },
-    {
-      "trainNumber": "3855",
-      "destination": "Trenton",
-      "line": "NEC",
-      "scheduledTime": "4:24 PM",
-      "currentTrack": "4",
-      "predictedTrack": "4",
-      "confidence": 0.5,
-      "trackDistribution": {
-        "4": 1,
-        "14": 1
-      },
-      "daysOfData": 2,
-      "totalHistoryDays": 2,
-      "excludedTracks": [],
-      "excludeReasons": {}
+      "track": "4",
+      "status": "All Aboard",
+      "station": "Edison"
     },
     {
       "trainNumber": "3867",
+      "scheduledTime": "6:20 PM",
       "destination": "Trenton",
       "line": "NEC",
-      "scheduledTime": "6:28 PM",
-      "currentTrack": "4",
-      "predictedTrack": "4",
-      "confidence": 0.5,
+      "track": "4",
+      "status": "On Time",
+      "station": "Edison"
+    },
+    {
+      "trainNumber": "3727",
+      "scheduledTime": "6:32 PM",
+      "destination": "Jersey Ave",
+      "line": "NEC",
+      "track": "4",
+      "status": "On Time",
+      "station": "Edison"
+    },
+    {
+      "trainNumber": "3868",
+      "scheduledTime": "6:40 PM",
+      "destination": "New York",
+      "line": "NEC",
+      "track": "1",
+      "status": "On Time",
+      "station": "Edison"
+    },
+    {
+      "trainNumber": "3871",
+      "scheduledTime": "6:40 PM",
+      "destination": "Trenton",
+      "line": "NEC",
+      "track": "4",
+      "status": "On Time",
+      "station": "Edison"
+    },
+    {
+      "trainNumber": "3873",
+      "scheduledTime": "7:11 PM",
+      "destination": "Trenton",
+      "line": "NEC",
+      "track": "4",
+      "status": "On Time",
+      "station": "Edison"
+    },
+    {
+      "trainNumber": "3872",
+      "scheduledTime": "7:18 PM",
+      "destination": "New York",
+      "line": "NEC",
+      "track": "1",
+      "status": "On Time",
+      "station": "Edison"
+    },
+    {
+      "trainNumber": "3875",
+      "scheduledTime": "7:32 PM",
+      "destination": "Trenton",
+      "line": "NEC",
+      "track": "4",
+      "status": "On Time",
+      "station": "Edison"
+    },
+    {
+      "trainNumber": "3874",
+      "scheduledTime": "7:52 PM",
+      "destination": "New York",
+      "line": "NEC",
+      "track": "1",
+      "status": "On Time",
+      "station": "Edison"
+    },
+    {
+      "trainNumber": "3877",
+      "scheduledTime": "7:57 PM",
+      "destination": "Trenton",
+      "line": "NEC",
+      "track": "4",
+      "status": "On Time",
+      "station": "Edison"
+    },
+    {
+      "trainNumber": "3879",
+      "scheduledTime": "8:05 PM",
+      "destination": "Trenton",
+      "line": "NEC",
+      "track": "4",
+      "status": "On Time",
+      "station": "Edison"
+    },
+    {
+      "trainNumber": "3735",
+      "scheduledTime": "8:28 PM",
+      "destination": "Jersey Avenue",
+      "line": "NEC",
+      "track": "4",
+      "status": "On Time",
+      "station": "Edison"
+    },
+    {
+      "trainNumber": "3876",
+      "scheduledTime": "8:29 PM",
+      "destination": "New York",
+      "line": "NEC",
+      "track": "1",
+      "status": "On Time",
+      "station": "Edison"
+    },
+    {
+      "trainNumber": "3883",
+      "scheduledTime": "9:04 PM",
+      "destination": "Trenton",
+      "line": "NEC",
+      "track": "4",
+      "status": "On Time",
+      "station": "Edison"
+    },
+    {
+      "trainNumber": "3880",
+      "scheduledTime": "9:14 PM",
+      "destination": "New York",
+      "line": "NEC",
+      "track": "1",
+      "status": "On Time",
+      "station": "Edison"
+    },
+    {
+      "trainNumber": "3885",
+      "scheduledTime": "9:25 PM",
+      "destination": "Trenton",
+      "line": "NEC",
+      "track": "4",
+      "status": "On Time",
+      "station": "Edison"
+    },
+    {
+      "trainNumber": "3882",
+      "scheduledTime": "9:41 PM",
+      "destination": "New York",
+      "line": "NEC",
+      "track": "1",
+      "status": "On Time",
+      "station": "Edison"
+    },
+    {
+      "trainNumber": "3887",
+      "scheduledTime": "9:56 PM",
+      "destination": "Trenton",
+      "line": "NEC",
+      "track": "4",
+      "status": "On Time",
+      "station": "Edison"
+    }
+  ],
+  "predictions": [
+    {
+      "trainNumber": "3373",
+      "destination": "Bay Head",
+      "line": "NJCL",
+      "scheduledTime": "5:56 PM",
+      "currentTrack": "14",
+      "predictedTrack": "14",
+      "confidence": 1,
       "trackDistribution": {
-        "4": 1,
-        "11": 1
+        "14": 2
       },
       "daysOfData": 2,
       "totalHistoryDays": 2,
+      "excludedTracks": [
+        "2",
+        "9"
+      ],
+      "excludeReasons": {
+        "2": "currently occupied by another train",
+        "9": "currently occupied by another train"
+      }
+    },
+    {
+      "trainNumber": "3271",
+      "destination": "Long Branch",
+      "line": "NJCL",
+      "scheduledTime": "6:01 PM",
+      "currentTrack": "2",
+      "predictedTrack": "2",
+      "confidence": 1,
+      "trackDistribution": {
+        "2": 1
+      },
+      "daysOfData": 1,
+      "totalHistoryDays": 2,
+      "excludedTracks": [
+        "9",
+        "14"
+      ],
+      "excludeReasons": {
+        "9": "currently occupied by another train",
+        "14": "currently occupied by another train"
+      }
+    },
+    {
+      "trainNumber": "A2127",
+      "destination": "Washington",
+      "line": "AMTK",
+      "scheduledTime": "6:05 PM",
+      "currentTrack": "9",
+      "predictedTrack": "9",
+      "confidence": 0.5,
+      "trackDistribution": {
+        "9": 1,
+        "12": 1
+      },
+      "daysOfData": 2,
+      "totalHistoryDays": 2,
+      "excludedTracks": [
+        "2",
+        "14"
+      ],
+      "excludeReasons": {
+        "2": "currently occupied by another train",
+        "14": "currently occupied by another train"
+      }
+    },
+    {
+      "trainNumber": "6437",
+      "destination": "Gladstone",
+      "line": "M&E",
+      "scheduledTime": "6:06 PM",
+      "currentTrack": "",
+      "predictedTrack": null,
+      "confidence": 0,
+      "trackDistribution": {},
+      "daysOfData": 2,
       "excludedTracks": [],
-      "excludeReasons": {}
+      "excludeReasons": {},
+      "note": "No track assignments in history"
+    },
+    {
+      "trainNumber": "A197",
+      "destination": "Washington",
+      "line": "AMTK",
+      "scheduledTime": "6:09 PM",
+      "currentTrack": "",
+      "predictedTrack": "11",
+      "confidence": 1,
+      "trackDistribution": {
+        "11": 1
+      },
+      "daysOfData": 1,
+      "totalHistoryDays": 2,
+      "excludedTracks": [
+        "2",
+        "9",
+        "14"
+      ],
+      "excludeReasons": {
+        "2": "currently occupied by another train",
+        "9": "currently occupied by another train",
+        "14": "currently occupied by another train"
+      }
+    },
+    {
+      "trainNumber": "3957",
+      "destination": "Trenton",
+      "line": "NEC",
+      "scheduledTime": "6:12 PM",
+      "currentTrack": "",
+      "predictedTrack": null,
+      "confidence": 0,
+      "trackDistribution": {},
+      "daysOfData": 2,
+      "excludedTracks": [],
+      "excludeReasons": {},
+      "note": "No track assignments in history"
+    },
+    {
+      "trainNumber": "6279",
+      "destination": "MSU",
+      "line": "MOBO",
+      "scheduledTime": "6:14 PM",
+      "currentTrack": "",
+      "predictedTrack": null,
+      "confidence": 0,
+      "trackDistribution": {},
+      "daysOfData": 2,
+      "excludedTracks": [],
+      "excludeReasons": {},
+      "note": "No track assignments in history"
     },
     {
       "trainNumber": "3873",
       "destination": "Trenton",
       "line": "NEC",
-      "scheduledTime": "7:20 PM",
-      "currentTrack": "4",
+      "scheduledTime": "6:18 PM",
+      "currentTrack": "",
       "predictedTrack": "4",
       "confidence": 1,
       "trackDistribution": {
@@ -369,15 +558,93 @@
       },
       "daysOfData": 1,
       "totalHistoryDays": 2,
+      "excludedTracks": [
+        "2",
+        "9",
+        "14"
+      ],
+      "excludeReasons": {
+        "2": "currently occupied by another train",
+        "9": "currently occupied by another train",
+        "14": "currently occupied by another train"
+      }
+    },
+    {
+      "trainNumber": "6655",
+      "destination": "Dover",
+      "line": "M&E",
+      "scheduledTime": "6:20 PM",
+      "currentTrack": "",
+      "predictedTrack": null,
+      "confidence": 0,
+      "trackDistribution": {},
+      "daysOfData": 2,
       "excludedTracks": [],
-      "excludeReasons": {}
+      "excludeReasons": {},
+      "note": "No track assignments in history"
+    },
+    {
+      "trainNumber": "A137",
+      "destination": "Washington",
+      "line": "AMTK",
+      "scheduledTime": "6:27 PM",
+      "currentTrack": "",
+      "predictedTrack": null,
+      "confidence": 0,
+      "trackDistribution": {},
+      "daysOfData": 2,
+      "excludedTracks": [],
+      "excludeReasons": {},
+      "note": "No track assignments in history"
+    },
+    {
+      "trainNumber": "3515",
+      "destination": "So. Amboy",
+      "line": "NJCL",
+      "scheduledTime": "6:29 PM",
+      "currentTrack": "",
+      "predictedTrack": null,
+      "confidence": 0,
+      "trackDistribution": {},
+      "daysOfData": 2,
+      "excludedTracks": [],
+      "excludeReasons": {},
+      "note": "No track assignments in history"
+    },
+    {
+      "trainNumber": "3275",
+      "destination": "Long Branch",
+      "line": "NJCL",
+      "scheduledTime": "6:31 PM",
+      "currentTrack": "",
+      "predictedTrack": null,
+      "confidence": 0,
+      "trackDistribution": {},
+      "daysOfData": 2,
+      "excludedTracks": [],
+      "excludeReasons": {},
+      "note": "No track assignments in history"
+    },
+    {
+      "trainNumber": "A655",
+      "destination": "Harrisburg",
+      "line": "AMTK",
+      "scheduledTime": "6:35 PM",
+      "currentTrack": "",
+      "predictedTrack": null,
+      "confidence": 0,
+      "trackDistribution": {},
+      "daysOfData": 2,
+      "excludedTracks": [],
+      "excludeReasons": {},
+      "note": "No track assignments in history"
     },
     {
       "trainNumber": "3961",
       "destination": "Trenton",
       "line": "NEC",
-      "scheduledTime": "7:28 PM",
-      "currentTrack": "4",
+      "scheduledTime": "6:37 PM",
+      "currentTrack": "",
       "predictedTrack": "4",
       "confidence": 1,
       "trackDistribution": {
@@ -385,15 +652,51 @@
       },
       "daysOfData": 1,
       "totalHistoryDays": 2,
+      "excludedTracks": [
+        "2",
+        "9",
+        "14"
+      ],
+      "excludeReasons": {
+        "2": "currently occupied by another train",
+        "9": "currently occupied by another train",
+        "14": "currently occupied by another train"
+      }
+    },
+    {
+      "trainNumber": "6283",
+      "destination": "MSU",
+      "line": "MOBO",
+      "scheduledTime": "6:41 PM",
+      "currentTrack": "",
+      "predictedTrack": null,
+      "confidence": 0,
+      "trackDistribution": {},
+      "daysOfData": 2,
       "excludedTracks": [],
-      "excludeReasons": {}
+      "excludeReasons": {},
+      "note": "No track assignments in history"
+    },
+    {
+      "trainNumber": "A55",
+      "destination": "Washington",
+      "line": "AMTK",
+      "scheduledTime": "6:45 PM",
+      "currentTrack": "",
+      "predictedTrack": null,
+      "confidence": 0,
+      "trackDistribution": {},
+      "daysOfData": 2,
+      "excludedTracks": [],
+      "excludeReasons": {},
+      "note": "No track assignments in history"
     },
     {
       "trainNumber": "3875",
       "destination": "Trenton",
       "line": "NEC",
-      "scheduledTime": "7:41 PM",
-      "currentTrack": "4",
+      "scheduledTime": "6:47 PM",
+      "currentTrack": "",
       "predictedTrack": "4",
       "confidence": 1,
       "trackDistribution": {
@@ -401,92 +704,52 @@
       },
       "daysOfData": 1,
       "totalHistoryDays": 2,
-      "excludedTracks": [],
-      "excludeReasons": {}
+      "excludedTracks": [
+        "2",
+        "9",
+        "14"
+      ],
+      "excludeReasons": {
+        "2": "currently occupied by another train",
+        "9": "currently occupied by another train",
+        "14": "currently occupied by another train"
+      }
     },
     {
-      "trainNumber": "3877",
-      "destination": "Trenton",
-      "line": "NEC",
-      "scheduledTime": "8:06 PM",
-      "currentTrack": "4",
-      "predictedTrack": "4",
-      "confidence": 1,
-      "trackDistribution": {
-        "4": 1
-      },
-      "daysOfData": 1,
-      "totalHistoryDays": 1,
+      "trainNumber": "6359",
+      "destination": "Summit",
+      "line": "M&E",
+      "scheduledTime": "6:50 PM",
+      "currentTrack": "",
+      "predictedTrack": null,
+      "confidence": 0,
+      "trackDistribution": {},
+      "daysOfData": 2,
       "excludedTracks": [],
-      "excludeReasons": {}
+      "excludeReasons": {},
+      "note": "No track assignments in history"
     },
     {
-      "trainNumber": "3879",
-      "destination": "Trenton",
-      "line": "NEC",
-      "scheduledTime": "8:14 PM",
-      "currentTrack": "4",
-      "predictedTrack": "4",
-      "confidence": 1,
-      "trackDistribution": {
-        "4": 1
-      },
-      "daysOfData": 1,
-      "totalHistoryDays": 1,
+      "trainNumber": "6659",
+      "destination": "Dover",
+      "line": "M&E",
+      "scheduledTime": "6:56 PM",
+      "currentTrack": "",
+      "predictedTrack": null,
+      "confidence": 0,
+      "trackDistribution": {},
+      "daysOfData": 2,
       "excludedTracks": [],
-      "excludeReasons": {}
-    },
-    {
-      "trainNumber": "3965",
-      "destination": "Trenton",
-      "line": "NEC",
-      "scheduledTime": "8:29 PM",
-      "currentTrack": "4",
-      "predictedTrack": "4",
-      "confidence": 1,
-      "trackDistribution": {
-        "4": 1
-      },
-      "daysOfData": 1,
-      "totalHistoryDays": 1,
-      "excludedTracks": [],
-      "excludeReasons": {}
-    },
-    {
-      "trainNumber": "3969",
-      "destination": "Trenton",
-      "line": "NEC",
-      "scheduledTime": "9:05 PM",
-      "currentTrack": "4",
-      "predictedTrack": "4",
-      "confidence": 1,
-      "trackDistribution": {
-        "4": 1
-      },
-      "daysOfData": 1,
-      "totalHistoryDays": 1,
-      "excludedTracks": [],
-      "excludeReasons": {}
-    },
-    {
-      "trainNumber": "3883",
-      "destination": "Trenton",
-      "line": "NEC",
-      "scheduledTime": "9:12 PM",
-      "currentTrack": "4",
-      "predictedTrack": "4",
-      "confidence": 1,
-      "trackDistribution": {
-        "4": 1
-      },
-      "daysOfData": 1,
-      "totalHistoryDays": 1,
-      "excludedTracks": [],
-      "excludeReasons": {}
+      "excludeReasons": {},
+      "note": "No track assignments in history"
     }
   ],
   "cancellations": {
-    "recentByTrain": {}
+    "recentByTrain": {
+      "3947": [
+        "2026-08-24"
+      ]
+    }
   },
   "enRouteCancellations": [],
   "trackRegistry": [
@@ -495,6 +758,7 @@
     "3",
     "4",
     "5",
+    "6",
     "7",
     "8",
     "9",
