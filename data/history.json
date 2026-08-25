@@ -1096,6 +1096,15 @@
       "destination": "High Bridge"
     }
   },
+  "5179": {
+    "2026-08-25": {
+      "track": "",
+      "status": "On Time",
+      "station": "NY Penn",
+      "scheduledTime": "2:40 PM",
+      "destination": "High Bridge"
+    }
+  },
   "5197": {
     "2026-08-24": {
       "track": "",
@@ -1756,6 +1765,13 @@
     "2026-08-24": {
       "track": "11",
       "status": "All Aboard",
+      "station": "NY Penn",
+      "scheduledTime": "2:30 PM",
+      "destination": "Miami"
+    },
+    "2026-08-25": {
+      "track": "",
+      "status": "On Time",
       "station": "NY Penn",
       "scheduledTime": "2:30 PM",
       "destination": "Miami"

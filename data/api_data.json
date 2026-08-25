@@ -1,54 +1,9 @@
 {
-  "lastUpdated": "2026-08-25T16:45:26.018Z",
+  "lastUpdated": "2026-08-25T16:46:25.949Z",
   "activeStation": "Penn Station NY & Jersey Ave",
   "activeWindow": "live",
-  "scrapeTime": "25602ms",
+  "scrapeTime": "24984ms",
   "currentBoard": [
-    {
-      "trainNumber": "A171",
-      "scheduledTime": "12:40 PM",
-      "destination": "Roanoke",
-      "line": "AMTK",
-      "track": "11",
-      "status": "On Time",
-      "station": "NY Penn",
-      "stops": [
-        "New York Penn Station",
-        "Newark Penn Station",
-        "Metropark",
-        "Trenton",
-        "Philadelphia 30th St",
-        "Wilmington",
-        "Baltimore",
-        "Washington Union Station"
-      ]
-    },
-    {
-      "trainNumber": "5175",
-      "scheduledTime": "12:45 PM",
-      "destination": "High Bridge",
-      "line": "RARV",
-      "track": "4",
-      "status": "All Aboard",
-      "station": "NY Penn",
-      "stops": [
-        "New York Penn Station",
-        "Secaucus Junction",
-        "Newark Penn Station",
-        "Newark Airport",
-        "North Elizabeth",
-        "Elizabeth",
-        "Rahway",
-        "Metropark",
-        "Metuchen",
-        "Edison",
-        "New Brunswick",
-        "Jersey Avenue",
-        "Princeton Junction",
-        "Hamilton",
-        "Trenton"
-      ]
-    },
     {
       "trainNumber": "6627",
       "scheduledTime": "12:47 PM",
@@ -454,6 +409,51 @@
       ]
     },
     {
+      "trainNumber": "A97",
+      "scheduledTime": "2:30 PM",
+      "destination": "Miami",
+      "line": "AMTK",
+      "track": "",
+      "status": "On Time",
+      "station": "NY Penn",
+      "stops": [
+        "New York Penn Station",
+        "Newark Penn Station",
+        "Metropark",
+        "Trenton",
+        "Philadelphia 30th St",
+        "Wilmington",
+        "Baltimore",
+        "Washington Union Station"
+      ]
+    },
+    {
+      "trainNumber": "5179",
+      "scheduledTime": "2:40 PM",
+      "destination": "High Bridge",
+      "line": "RARV",
+      "track": "",
+      "status": "On Time",
+      "station": "NY Penn",
+      "stops": [
+        "New York Penn Station",
+        "Secaucus Junction",
+        "Newark Penn Station",
+        "Newark Airport",
+        "North Elizabeth",
+        "Elizabeth",
+        "Rahway",
+        "Metropark",
+        "Metuchen",
+        "Edison",
+        "New Brunswick",
+        "Jersey Avenue",
+        "Princeton Junction",
+        "Hamilton",
+        "Trenton"
+      ]
+    },
+    {
       "trainNumber": "3841",
       "scheduledTime": "1:04 PM",
       "destination": "Trenton",
@@ -741,6 +741,57 @@
   ],
   "recentlyDeparted": [
     {
+      "trainNumber": "A171",
+      "scheduledTime": "12:40 PM",
+      "destination": "Roanoke",
+      "line": "AMTK",
+      "track": "11",
+      "status": "On Time",
+      "station": "NY Penn",
+      "stops": [
+        "New York Penn Station",
+        "Newark Penn Station",
+        "Metropark",
+        "Trenton",
+        "Philadelphia 30th St",
+        "Wilmington",
+        "Baltimore",
+        "Washington Union Station"
+      ],
+      "removedAt": "2026-08-25T16:46:25.941Z",
+      "departedStatus": "Departed",
+      "lastTrack": "11"
+    },
+    {
+      "trainNumber": "5175",
+      "scheduledTime": "12:45 PM",
+      "destination": "High Bridge",
+      "line": "RARV",
+      "track": "4",
+      "status": "All Aboard",
+      "station": "NY Penn",
+      "stops": [
+        "New York Penn Station",
+        "Secaucus Junction",
+        "Newark Penn Station",
+        "Newark Airport",
+        "North Elizabeth",
+        "Elizabeth",
+        "Rahway",
+        "Metropark",
+        "Metuchen",
+        "Edison",
+        "New Brunswick",
+        "Jersey Avenue",
+        "Princeton Junction",
+        "Hamilton",
+        "Trenton"
+      ],
+      "removedAt": "2026-08-25T16:46:05.511Z",
+      "departedStatus": "Departed",
+      "lastTrack": "4"
+    },
+    {
       "trainNumber": "3243",
       "scheduledTime": "12:43 PM",
       "destination": "Long Branch-BH",
@@ -790,81 +841,6 @@
   ],
   "predictions": [
     {
-      "trainNumber": "A171",
-      "destination": "Roanoke",
-      "line": "AMTK",
-      "scheduledTime": "12:40 PM",
-      "currentTrack": "11",
-      "predictedTrack": "11",
-      "confidence": 1,
-      "trackDistribution": {
-        "11": 1
-      },
-      "daysOfData": 1,
-      "totalHistoryDays": 1,
-      "excludedTracks": [
-        "4",
-        "13",
-        "14"
-      ],
-      "excludeReasons": {
-        "4": "currently occupied by another train",
-        "13": "currently occupied by another train",
-        "14": "currently occupied by another train"
-      },
-      "stops": [
-        "New York Penn Station",
-        "Newark Penn Station",
-        "Metropark",
-        "Trenton",
-        "Philadelphia 30th St",
-        "Wilmington",
-        "Baltimore",
-        "Washington Union Station"
-      ]
-    },
-    {
-      "trainNumber": "5175",
-      "destination": "High Bridge",
-      "line": "RARV",
-      "scheduledTime": "12:45 PM",
-      "currentTrack": "4",
-      "predictedTrack": "4",
-      "confidence": 1,
-      "trackDistribution": {
-        "4": 1
-      },
-      "daysOfData": 1,
-      "totalHistoryDays": 1,
-      "excludedTracks": [
-        "11",
-        "13",
-        "14"
-      ],
-      "excludeReasons": {
-        "11": "currently occupied by another train",
-        "13": "currently occupied by another train",
-        "14": "currently occupied by another train"
-      },
-      "stops": [
-        "New York Penn Station",
-        "Secaucus Junction",
-        "Newark Penn Station",
-        "Newark Airport",
-        "North Elizabeth",
-        "Elizabeth",
-        "Rahway",
-        "Metropark",
-        "Metuchen",
-        "Edison",
-        "New Brunswick",
-        "Jersey Avenue",
-        "Princeton Junction",
-        "Hamilton",
-        "Trenton"
-      ]
-    },
-    {
       "trainNumber": "6627",
       "destination": "Dover",
       "line": "M&E",
@@ -879,12 +855,10 @@
       "totalHistoryDays": 1,
       "excludedTracks": [
         "4",
-        "11",
         "14"
       ],
       "excludeReasons": {
         "4": "currently occupied by another train",
-        "11": "currently occupied by another train",
         "14": "currently occupied by another train"
       },
       "stops": [
@@ -926,12 +900,10 @@
       "totalHistoryDays": 1,
       "excludedTracks": [
         "4",
-        "11",
         "13"
       ],
       "excludeReasons": {
         "4": "currently occupied by another train",
-        "11": "currently occupied by another train",
         "13": "currently occupied by another train"
       },
       "stops": [
@@ -959,12 +931,10 @@
       "daysOfData": 2,
       "totalHistoryDays": 2,
       "excludedTracks": [
-        "11",
         "13",
         "14"
       ],
       "excludeReasons": {
-        "11": "currently occupied by another train",
         "13": "currently occupied by another train",
         "14": "currently occupied by another train"
       },
@@ -989,12 +959,10 @@
       "daysOfData": 2,
       "totalHistoryDays": 2,
       "excludedTracks": [
-        "11",
         "13",
         "14"
       ],
       "excludeReasons": {
-        "11": "currently occupied by another train",
         "13": "currently occupied by another train",
         "14": "currently occupied by another train"
       },
@@ -1019,12 +987,10 @@
       "daysOfData": 2,
       "totalHistoryDays": 2,
       "excludedTracks": [
-        "11",
         "13",
         "14"
       ],
       "excludeReasons": {
-        "11": "currently occupied by another train",
         "13": "currently occupied by another train",
         "14": "currently occupied by another train"
       },
@@ -1049,12 +1015,10 @@
       "daysOfData": 2,
       "totalHistoryDays": 2,
       "excludedTracks": [
-        "11",
         "13",
         "14"
       ],
       "excludeReasons": {
-        "11": "currently occupied by another train",
         "13": "currently occupied by another train",
         "14": "currently occupied by another train"
       },
@@ -1079,12 +1043,10 @@
       "daysOfData": 2,
       "totalHistoryDays": 2,
       "excludedTracks": [
-        "11",
         "13",
         "14"
       ],
       "excludeReasons": {
-        "11": "currently occupied by another train",
         "13": "currently occupied by another train",
         "14": "currently occupied by another train"
       },
@@ -1109,12 +1071,10 @@
       "daysOfData": 2,
       "totalHistoryDays": 2,
       "excludedTracks": [
-        "11",
         "13",
         "14"
       ],
       "excludeReasons": {
-        "11": "currently occupied by another train",
         "13": "currently occupied by another train",
         "14": "currently occupied by another train"
       },
@@ -1139,12 +1099,10 @@
       "daysOfData": 3,
       "totalHistoryDays": 3,
       "excludedTracks": [
-        "11",
         "13",
         "14"
       ],
       "excludeReasons": {
-        "11": "currently occupied by another train",
         "13": "currently occupied by another train",
         "14": "currently occupied by another train"
       },
@@ -1161,20 +1119,19 @@
       "line": "NEC",
       "scheduledTime": "6:28 PM",
       "currentTrack": "4",
-      "predictedTrack": "4",
-      "confidence": 1,
+      "predictedTrack": null,
+      "confidence": 0,
       "trackDistribution": {
-        "4": 1
+        "4": 1,
+        "11": 1
       },
       "daysOfData": 3,
       "totalHistoryDays": 3,
       "excludedTracks": [
-        "11",
         "13",
         "14"
       ],
       "excludeReasons": {
-        "11": "currently occupied by another train",
         "13": "currently occupied by another train",
         "14": "currently occupied by another train"
       },
@@ -1199,12 +1156,10 @@
       "daysOfData": 2,
       "totalHistoryDays": 3,
       "excludedTracks": [
-        "11",
         "13",
         "14"
       ],
       "excludeReasons": {
-        "11": "currently occupied by another train",
         "13": "currently occupied by another train",
         "14": "currently occupied by another train"
       },
@@ -1229,12 +1184,10 @@
       "daysOfData": 2,
       "totalHistoryDays": 3,
       "excludedTracks": [
-        "11",
         "13",
         "14"
       ],
       "excludeReasons": {
-        "11": "currently occupied by another train",
         "13": "currently occupied by another train",
         "14": "currently occupied by another train"
       },
@@ -1259,12 +1212,10 @@
       "daysOfData": 2,
       "totalHistoryDays": 3,
       "excludedTracks": [
-        "11",
         "13",
         "14"
       ],
       "excludeReasons": {
-        "11": "currently occupied by another train",
         "13": "currently occupied by another train",
         "14": "currently occupied by another train"
       },
@@ -1289,12 +1240,10 @@
       "daysOfData": 2,
       "totalHistoryDays": 2,
       "excludedTracks": [
-        "11",
         "13",
         "14"
       ],
       "excludeReasons": {
-        "11": "currently occupied by another train",
         "13": "currently occupied by another train",
         "14": "currently occupied by another train"
       },
@@ -1319,12 +1268,10 @@
       "daysOfData": 2,
       "totalHistoryDays": 2,
       "excludedTracks": [
-        "11",
         "13",
         "14"
       ],
       "excludeReasons": {
-        "11": "currently occupied by another train",
         "13": "currently occupied by another train",
         "14": "currently occupied by another train"
       },
@@ -1349,12 +1296,10 @@
       "daysOfData": 2,
       "totalHistoryDays": 2,
       "excludedTracks": [
-        "11",
         "13",
         "14"
       ],
       "excludeReasons": {
-        "11": "currently occupied by another train",
         "13": "currently occupied by another train",
         "14": "currently occupied by another train"
       },
@@ -1379,12 +1324,10 @@
       "daysOfData": 2,
       "totalHistoryDays": 2,
       "excludedTracks": [
-        "11",
         "13",
         "14"
       ],
       "excludeReasons": {
-        "11": "currently occupied by another train",
         "13": "currently occupied by another train",
         "14": "currently occupied by another train"
       },
@@ -1409,12 +1352,10 @@
       "daysOfData": 2,
       "totalHistoryDays": 2,
       "excludedTracks": [
-        "11",
         "13",
         "14"
       ],
       "excludeReasons": {
-        "11": "currently occupied by another train",
         "13": "currently occupied by another train",
         "14": "currently occupied by another train"
       },
@@ -1439,12 +1380,10 @@
       "daysOfData": 1,
       "totalHistoryDays": 1,
       "excludedTracks": [
-        "11",
         "13",
         "14"
       ],
       "excludeReasons": {
-        "11": "currently occupied by another train",
         "13": "currently occupied by another train",
         "14": "currently occupied by another train"
       },
@@ -1469,12 +1408,10 @@
       "daysOfData": 1,
       "totalHistoryDays": 1,
       "excludedTracks": [
-        "11",
         "13",
         "14"
       ],
       "excludeReasons": {
-        "11": "currently occupied by another train",
         "13": "currently occupied by another train",
         "14": "currently occupied by another train"
       },
@@ -1499,12 +1436,10 @@
       "daysOfData": 1,
       "totalHistoryDays": 1,
       "excludedTracks": [
-        "11",
         "13",
         "14"
       ],
       "excludeReasons": {
-        "11": "currently occupied by another train",
         "13": "currently occupied by another train",
         "14": "currently occupied by another train"
       },
@@ -1552,13 +1487,11 @@
       "totalHistoryDays": 2,
       "excludedTracks": [
         "4",
-        "11",
         "13",
         "14"
       ],
       "excludeReasons": {
         "4": "currently occupied by another train",
-        "11": "currently occupied by another train",
         "13": "currently occupied by another train",
         "14": "currently occupied by another train"
       },
@@ -1621,13 +1554,11 @@
       "totalHistoryDays": 2,
       "excludedTracks": [
         "4",
-        "11",
         "13",
         "14"
       ],
       "excludeReasons": {
         "4": "currently occupied by another train",
-        "11": "currently occupied by another train",
         "13": "currently occupied by another train",
         "14": "currently occupied by another train"
       },
@@ -1809,13 +1740,11 @@
       "totalHistoryDays": 2,
       "excludedTracks": [
         "4",
-        "11",
         "13",
         "14"
       ],
       "excludeReasons": {
         "4": "currently occupied by another train",
-        "11": "currently occupied by another train",
         "13": "currently occupied by another train",
         "14": "currently occupied by another train"
       },
@@ -1971,6 +1900,71 @@
         "Mount Tabor",
         "Denville",
         "Dover"
+      ]
+    },
+    {
+      "trainNumber": "A97",
+      "destination": "Miami",
+      "line": "AMTK",
+      "scheduledTime": "2:30 PM",
+      "currentTrack": "",
+      "predictedTrack": "11",
+      "confidence": 1,
+      "trackDistribution": {
+        "11": 1
+      },
+      "daysOfData": 1,
+      "totalHistoryDays": 2,
+      "excludedTracks": [
+        "4",
+        "13",
+        "14"
+      ],
+      "excludeReasons": {
+        "4": "currently occupied by another train",
+        "13": "currently occupied by another train",
+        "14": "currently occupied by another train"
+      },
+      "stops": [
+        "New York Penn Station",
+        "Newark Penn Station",
+        "Metropark",
+        "Trenton",
+        "Philadelphia 30th St",
+        "Wilmington",
+        "Baltimore",
+        "Washington Union Station"
+      ]
+    },
+    {
+      "trainNumber": "5179",
+      "destination": "High Bridge",
+      "line": "RARV",
+      "scheduledTime": "2:40 PM",
+      "currentTrack": "",
+      "predictedTrack": null,
+      "confidence": 0,
+      "trackDistribution": {},
+      "daysOfData": 1,
+      "excludedTracks": [],
+      "excludeReasons": {},
+      "note": "No track assignments in history",
+      "stops": [
+        "New York Penn Station",
+        "Secaucus Junction",
+        "Newark Penn Station",
+        "Newark Airport",
+        "North Elizabeth",
+        "Elizabeth",
+        "Rahway",
+        "Metropark",
+        "Metuchen",
+        "Edison",
+        "New Brunswick",
+        "Jersey Avenue",
+        "Princeton Junction",
+        "Hamilton",
+        "Trenton"
       ]
     }
   ],
