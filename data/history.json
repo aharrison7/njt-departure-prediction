@@ -60,6 +60,15 @@
       "destination": "Long Branch"
     }
   },
+  "3251": {
+    "2026-08-25": {
+      "track": "",
+      "status": "On Time",
+      "station": "NY Penn",
+      "scheduledTime": "2:46 PM",
+      "destination": "Long Branch-BH"
+    }
+  },
   "3255": {
     "2026-08-21": {
       "track": "",
@@ -621,10 +630,10 @@
       "destination": "Trenton"
     },
     "2026-08-25": {
-      "track": "4",
-      "status": "On Time",
-      "station": "Jersey Ave",
-      "scheduledTime": "2:06 PM",
+      "track": "12",
+      "status": "All Aboard",
+      "station": "NY Penn",
+      "scheduledTime": "1:05 PM",
       "destination": "Trenton"
     }
   },
@@ -1851,8 +1860,8 @@
   },
   "A2159": {
     "2026-08-25": {
-      "track": "",
-      "status": "On Time",
+      "track": "15",
+      "status": "All Aboard",
       "station": "NY Penn",
       "scheduledTime": "1:02 PM",
       "destination": "Washington"
@@ -1901,6 +1910,15 @@
       "station": "NY Penn",
       "scheduledTime": "2:15 PM",
       "destination": "Baltimore"
+    }
+  },
+  "A649": {
+    "2026-08-25": {
+      "track": "",
+      "status": "On Time",
+      "station": "NY Penn",
+      "scheduledTime": "2:44 PM",
+      "destination": "Harrisburg"
     }
   }
 }
