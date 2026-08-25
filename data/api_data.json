@@ -1,8 +1,8 @@
 {
-  "lastUpdated": "2026-08-25T17:09:51.179Z",
-  "activeStation": "Penn Station New York",
+  "lastUpdated": "2026-08-25T17:18:27.024Z",
+  "activeStation": "Penn Station NY & Jersey Ave",
   "activeWindow": "live",
-  "scrapeTime": "110404ms",
+  "scrapeTime": "26121ms",
   "currentBoard": [
     {
       "trainNumber": "6245",
@@ -1757,7 +1757,6 @@
     "Allendale",
     "Allenhurst",
     "Anderson Street",
-    "Annandale",
     "Asbury Park",
     "Atco",
     "Atlantic City",
@@ -1856,7 +1855,6 @@
     "Newark Airport",
     "Newark Broad St",
     "Newark Penn Station",
-    "North Branch",
     "North Elizabeth",
     "Oradell",
     "Orange",
