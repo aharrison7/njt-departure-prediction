@@ -10,9 +10,10 @@
 const cron = require('node-cron');
 
 class Scheduler {
-  constructor(onScrape, onSync) {
+  constructor(onScrape, onSync, onBackfill) {
     this.onScrape = typeof onScrape === 'function' ? onScrape : null;
     this.onSync = typeof onSync === 'function' ? onSync : null;
+    this.onBackfill = typeof onBackfill === 'function' ? onBackfill : null;
     this.jobs = [];
     this.isRunning = false;
   }
@@ -54,8 +55,20 @@ class Scheduler {
       this.jobs.push(syncJob);
     }
 
+    // 24-hour ChooChooTracker backfill importer (runs every 5 minutes while active)
+    if (typeof this.onBackfill === 'function') {
+      const backfillJob = cron.schedule('*/5 * * * *', async () => {
+        try {
+          await this.onBackfill();
+        } catch (error) {
+          console.error('[Scheduler] Backfill cron error:', error.message);
+        }
+      });
+      this.jobs.push(backfillJob);
+    }
+
     this.isRunning = true;
-    console.log('[Scheduler] Started with 1-minute live scrape and periodic GitHub history sync');
+    console.log('[Scheduler] Started with 1-minute live scrape, periodic GitHub sync, and 24-hr ChooChooTracker backfill');
   }
 
   /**

@@ -62,8 +62,8 @@
       "scheduledTime": "1:51 PM",
       "destination": "Dover",
       "line": "M&E",
-      "track": "",
-      "status": "On Time",
+      "track": "4",
+      "status": "All Aboard",
       "station": "NY Penn",
       "stops": [
         "New York Penn Station",
@@ -94,8 +94,8 @@
       "scheduledTime": "2:00 PM",
       "destination": "New Orleans",
       "line": "AMTK",
-      "track": "",
-      "status": "On Time",
+      "track": "12",
+      "status": "All Aboard",
       "station": "NY Penn",
       "stops": [
         "New York Penn Station",
@@ -450,10 +450,7 @@
         "New Brunswick",
         "Jersey Avenue"
       ]
-    }
-  ],
-  "recentlyDeparted": [],
-  "predictions": [
+    },
     {
       "trainNumber": "5127",
       "destination": "Raritan",
@@ -596,13 +593,26 @@
       "line": "AMTK",
       "scheduledTime": "2:02 PM",
       "currentTrack": "",
-      "predictedTrack": null,
-      "confidence": 0,
-      "trackDistribution": {},
-      "daysOfData": 1,
-      "excludedTracks": [],
-      "excludeReasons": {},
-      "note": "No track assignments in history",
+      "predictedTrack": "13",
+      "confidence": 0.5,
+      "trackDistribution": {
+        "7": 1,
+        "9": 2,
+        "11": 1,
+        "13": 6,
+        "14": 1,
+        "15": 1
+      },
+      "daysOfData": 15,
+      "totalHistoryDays": 16,
+      "excludedTracks": [
+        "4",
+        "12"
+      ],
+      "excludeReasons": {
+        "4": "currently occupied by another train",
+        "12": "currently occupied by another train"
+      },
       "stops": [
         "New York Penn Station",
         "Newark Penn Station",
@@ -659,13 +669,26 @@
       "line": "AMTK",
       "scheduledTime": "2:11 PM",
       "currentTrack": "",
-      "predictedTrack": null,
-      "confidence": 0,
-      "trackDistribution": {},
-      "daysOfData": 1,
-      "excludedTracks": [],
-      "excludeReasons": {},
-      "note": "No track assignments in history",
+      "predictedTrack": "7",
+      "confidence": 0.47,
+      "trackDistribution": {
+        "5": 2,
+        "6": 1,
+        "7": 7,
+        "8": 3,
+        "9": 1,
+        "13": 1
+      },
+      "daysOfData": 16,
+      "totalHistoryDays": 17,
+      "excludedTracks": [
+        "4",
+        "12"
+      ],
+      "excludeReasons": {
+        "4": "currently occupied by another train",
+        "12": "currently occupied by another train"
+      },
       "stops": [
         "New York Penn Station",
         "Newark Penn Station",
@@ -683,13 +706,26 @@
       "line": "AMTK",
       "scheduledTime": "2:15 PM",
       "currentTrack": "",
-      "predictedTrack": null,
-      "confidence": 0,
-      "trackDistribution": {},
-      "daysOfData": 1,
-      "excludedTracks": [],
-      "excludeReasons": {},
-      "note": "No track assignments in history",
+      "predictedTrack": "11",
+      "confidence": 0.42,
+      "trackDistribution": {
+        "8": 1,
+        "9": 1,
+        "10": 3,
+        "11": 5,
+        "13": 1,
+        "15": 1
+      },
+      "daysOfData": 15,
+      "totalHistoryDays": 16,
+      "excludedTracks": [
+        "4",
+        "12"
+      ],
+      "excludeReasons": {
+        "4": "currently occupied by another train",
+        "12": "currently occupied by another train"
+      },
       "stops": [
         "New York Penn Station",
         "Newark Penn Station",
@@ -732,11 +768,23 @@
       "currentTrack": "",
       "predictedTrack": null,
       "confidence": 0,
-      "trackDistribution": {},
-      "daysOfData": 1,
-      "excludedTracks": [],
-      "excludeReasons": {},
-      "note": "No track assignments in history",
+      "trackDistribution": {
+        "2": 3,
+        "3": 3,
+        "7": 1,
+        "11": 2,
+        "13": 1
+      },
+      "daysOfData": 14,
+      "totalHistoryDays": 15,
+      "excludedTracks": [
+        "4",
+        "12"
+      ],
+      "excludeReasons": {
+        "4": "currently occupied by another train",
+        "12": "currently occupied by another train"
+      },
       "stops": [
         "New York Penn Station",
         "Secaucus Junction",
@@ -758,13 +806,25 @@
       "line": "M&E",
       "scheduledTime": "2:30 PM",
       "currentTrack": "",
-      "predictedTrack": null,
-      "confidence": 0,
-      "trackDistribution": {},
-      "daysOfData": 1,
-      "excludedTracks": [],
-      "excludeReasons": {},
-      "note": "No track assignments in history",
+      "predictedTrack": "2",
+      "confidence": 0.36,
+      "trackDistribution": {
+        "1": 4,
+        "2": 5,
+        "3": 2,
+        "8": 2,
+        "9": 1
+      },
+      "daysOfData": 16,
+      "totalHistoryDays": 17,
+      "excludedTracks": [
+        "4",
+        "12"
+      ],
+      "excludeReasons": {
+        "4": "currently occupied by another train",
+        "12": "currently occupied by another train"
+      },
       "stops": [
         "New York Penn Station",
         "Secaucus Junction",
@@ -795,13 +855,16 @@
       "line": "AMTK",
       "scheduledTime": "2:30 PM",
       "currentTrack": "",
-      "predictedTrack": "11",
-      "confidence": 1,
+      "predictedTrack": "14",
+      "confidence": 0.47,
       "trackDistribution": {
-        "11": 1
+        "10": 1,
+        "11": 2,
+        "14": 7,
+        "15": 5
       },
-      "daysOfData": 1,
-      "totalHistoryDays": 2,
+      "daysOfData": 17,
+      "totalHistoryDays": 18,
       "excludedTracks": [
         "1",
         "9"
@@ -827,13 +890,28 @@
       "line": "RVL",
       "scheduledTime": "2:40 PM",
       "currentTrack": "",
-      "predictedTrack": null,
-      "confidence": 0,
-      "trackDistribution": {},
-      "daysOfData": 1,
-      "excludedTracks": [],
-      "excludeReasons": {},
-      "note": "No track assignments in history",
+      "predictedTrack": "1",
+      "confidence": 0.31,
+      "trackDistribution": {
+        "1": 4,
+        "2": 2,
+        "3": 1,
+        "6": 1,
+        "9": 1,
+        "10": 2,
+        "11": 1,
+        "13": 1
+      },
+      "daysOfData": 15,
+      "totalHistoryDays": 16,
+      "excludedTracks": [
+        "4",
+        "12"
+      ],
+      "excludeReasons": {
+        "4": "currently occupied by another train",
+        "12": "currently occupied by another train"
+      },
       "stops": [
         "New York Penn Station",
         "Secaucus Junction",
@@ -864,13 +942,26 @@
       "line": "AMTK",
       "scheduledTime": "2:44 PM",
       "currentTrack": "",
-      "predictedTrack": null,
-      "confidence": 0,
-      "trackDistribution": {},
-      "daysOfData": 1,
-      "excludedTracks": [],
-      "excludeReasons": {},
-      "note": "No track assignments in history",
+      "predictedTrack": "6",
+      "confidence": 0.31,
+      "trackDistribution": {
+        "6": 5,
+        "7": 3,
+        "8": 3,
+        "9": 1,
+        "14": 1,
+        "15": 3
+      },
+      "daysOfData": 16,
+      "totalHistoryDays": 17,
+      "excludedTracks": [
+        "4",
+        "12"
+      ],
+      "excludeReasons": {
+        "4": "currently occupied by another train",
+        "12": "currently occupied by another train"
+      },
       "stops": [
         "New York Penn Station",
         "Newark Penn Station",
@@ -888,13 +979,26 @@
       "line": "NJCL",
       "scheduledTime": "2:46 PM",
       "currentTrack": "",
-      "predictedTrack": null,
-      "confidence": 0,
-      "trackDistribution": {},
-      "daysOfData": 1,
-      "excludedTracks": [],
-      "excludeReasons": {},
-      "note": "No track assignments in history",
+      "predictedTrack": "7",
+      "confidence": 0.33,
+      "trackDistribution": {
+        "1": 2,
+        "3": 2,
+        "7": 5,
+        "8": 1,
+        "10": 3,
+        "11": 2
+      },
+      "daysOfData": 16,
+      "totalHistoryDays": 17,
+      "excludedTracks": [
+        "4",
+        "12"
+      ],
+      "excludeReasons": {
+        "4": "currently occupied by another train",
+        "12": "currently occupied by another train"
+      },
       "stops": [
         "New York Penn Station",
         "Secaucus Junction",

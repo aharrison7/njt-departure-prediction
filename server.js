@@ -14,6 +14,7 @@ const DataStore = require('./src/data-store');
 const DepartedTracker = require('./src/departed-tracker');
 const Scheduler = require('./src/scheduler');
 const GitHubSync = require('./src/github-sync');
+const ChooChooImporter = require('./src/choo-choo-importer');
 const { generatePredictions, getRecentCancellations } = require('./src/predictor');
 const { getAllStationStops } = require('./src/route-stops');
 
@@ -24,6 +25,7 @@ const PORT = process.env.PORT || 3000;
 const dataStore = new DataStore();
 const departedTracker = new DepartedTracker();
 const githubSync = new GitHubSync();
+const chooChooImporter = new ChooChooImporter(dataStore);
 
 app.use(express.json());
 
@@ -120,6 +122,7 @@ app.get('/api/status', (req, res) => {
     scheduler: scheduler.getStatus(),
     githubSyncConfigured: githubSync.isConfigured(),
     lastGitHubSync: githubSync.lastSync,
+    backfillStatus: chooChooImporter.status,
     uptime: process.uptime(),
     memoryUsage: process.memoryUsage(),
     publicDataUrl: dataStore.getPublicUrl('api_data.json')
@@ -150,6 +153,10 @@ app.post('/api/scrape', async (req, res) => {
   res.json({ message: 'Live scrape started' });
   await handleScrape();
 });
+app.post('/api/backfill', async (req, res) => {
+  res.json({ message: 'ChooChooTracker backfill started' });
+  await chooChooImporter.runImport();
+});
 app.post('/api/sync-github', async (req, res) => {
   if (!githubSync.isConfigured()) {
     return res.status(400).json({ error: 'GITHUB_TOKEN environment variable is not configured' });
@@ -168,7 +175,11 @@ app.post('/api/scrape/afternoon', async (req, res) => {
 
 // ─── Startup ─────────────────────────────────────────────────────────
 
-const scheduler = new Scheduler(handleScrape, () => githubSync.syncAll());
+const scheduler = new Scheduler(
+  handleScrape, 
+  () => githubSync.syncAll(),
+  () => chooChooImporter.runImport()
+);
 
 async function main() {
   console.log('╔══════════════════════════════════════════════════════════╗');
@@ -179,6 +190,11 @@ async function main() {
   // Initialize data store & pull latest historical dataset from GitHub
   await githubSync.pullAll().catch(e => console.warn('[Server] Initial GitHub pull note:', e.message));
   await dataStore.init();
+
+  // Run immediate ChooChooTracker backfill on startup if active
+  if (chooChooImporter.isActive()) {
+    await chooChooImporter.runImport().catch(e => console.warn('[Server] Initial backfill note:', e.message));
+  }
 
   // Initialize browser
   try {
