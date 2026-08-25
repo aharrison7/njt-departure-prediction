@@ -170,8 +170,7 @@ async function main() {
 
   // Run immediate scrape if configured
   if (process.env.SCRAPE_ON_STARTUP === 'true') {
-      await handleAfternoonScrape();
-    }
+    await handleScrape();
   }
 }
 

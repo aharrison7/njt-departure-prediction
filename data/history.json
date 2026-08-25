@@ -51,6 +51,15 @@
       "destination": "Long Branch-BH"
     }
   },
+  "3247": {
+    "2026-08-25": {
+      "track": "",
+      "status": "On Time",
+      "station": "NY Penn",
+      "scheduledTime": "1:43 PM",
+      "destination": "Long Branch"
+    }
+  },
   "3255": {
     "2026-08-21": {
       "track": "",
@@ -839,6 +848,15 @@
       "destination": "Trenton"
     }
   },
+  "3887": {
+    "2026-08-25": {
+      "track": "4",
+      "status": "On Time",
+      "station": "Jersey Ave",
+      "scheduledTime": "10:05 PM",
+      "destination": "Trenton"
+    }
+  },
   "3893": {
     "2026-08-24": {
       "track": "",
@@ -1039,6 +1057,15 @@
       "status": "All Aboard",
       "station": "NY Penn",
       "scheduledTime": "11:40 AM",
+      "destination": "Raritan"
+    }
+  },
+  "5127": {
+    "2026-08-25": {
+      "track": "",
+      "status": "On Time",
+      "station": "NY Penn",
+      "scheduledTime": "1:40 PM",
       "destination": "Raritan"
     }
   },
@@ -1319,8 +1346,8 @@
   },
   "6625": {
     "2026-08-25": {
-      "track": "",
-      "status": "On Time",
+      "track": "13",
+      "status": "All Aboard",
       "station": "NY Penn",
       "scheduledTime": "11:46 AM",
       "destination": "Dover"
@@ -1727,8 +1754,8 @@
   },
   "A2115": {
     "2026-08-25": {
-      "track": "",
-      "status": "On Time",
+      "track": "14",
+      "status": "All Aboard",
       "station": "NY Penn",
       "scheduledTime": "11:55 AM",
       "destination": "Washington"

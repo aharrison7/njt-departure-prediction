@@ -2,8 +2,8 @@ name: NJT Live Scraper & GitHub Pages Update
 
 on:
   schedule:
-    # Run every 1 minute continuously
-    - cron: '* * * * *'
+    # Trigger every 5 minutes (GitHub Actions minimum schedule interval)
+    - cron: '*/5 * * * *'
   workflow_dispatch: # Allows manual trigger from GitHub UI
 
 permissions:
@@ -12,14 +12,15 @@ permissions:
 jobs:
   scrape:
     runs-on: ubuntu-latest
+    timeout-minutes: 5
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
       - name: Setup Node.js
-        uses: actions/checkout@v4
+        uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: '22'
 
       - name: Install Dependencies
         run: npm ci || npm install
@@ -27,47 +28,51 @@ jobs:
       - name: Run Scraper & Update Data
         run: |
           node -e "
-            const { scrapeActiveStations } = require('./src/scraper');
+            const { scrapeActiveStations, closeBrowser } = require('./src/scraper');
             const DataStore = require('./src/data-store');
             const DepartedTracker = require('./src/departed-tracker');
             const { generatePredictions, getRecentCancellations } = require('./src/predictor');
             const { getAllStationStops } = require('./src/route-stops');
 
             async function run() {
-              const dataStore = new DataStore();
-              await dataStore.init();
-              const tracker = new DepartedTracker();
+              try {
+                const dataStore = new DataStore();
+                await dataStore.init();
+                const tracker = new DepartedTracker();
 
-              const result = await scrapeActiveStations();
-              const penn = result.stations.nyPenn || [];
-              const jersey = result.stations.jerseyAve || [];
-              const currentBoard = [...penn, ...jersey];
+                const result = await scrapeActiveStations();
+                const penn = result.stations.nyPenn || [];
+                const jersey = result.stations.jerseyAve || [];
+                const currentBoard = [...penn, ...jersey];
 
-              const recentlyDeparted = tracker.update(currentBoard, 'NJ Transit');
-              const history = await dataStore.updateHistory(currentBoard);
-              const cancellations = await dataStore.recordCancellations(currentBoard);
-              const trackRegistry = await dataStore.updateTrackRegistry(currentBoard);
-              const predictions = generatePredictions(currentBoard, history, trackRegistry);
-              const recentCancellations = getRecentCancellations(cancellations);
+                const recentlyDeparted = tracker.update(currentBoard, 'NJ Transit');
+                const history = await dataStore.updateHistory(currentBoard);
+                const cancellations = await dataStore.recordCancellations(currentBoard);
+                const trackRegistry = await dataStore.updateTrackRegistry(currentBoard);
+                const predictions = generatePredictions(currentBoard, history, trackRegistry);
+                const recentCancellations = getRecentCancellations(cancellations);
 
-              const apiData = {
-                lastUpdated: new Date().toISOString(),
-                activeStation: 'Penn Station NY & Jersey Ave',
-                activeWindow: 'live',
-                scrapeTime: 'github-actions',
-                currentBoard,
-                recentlyDeparted,
-                predictions,
-                cancellations: { recentByTrain: recentCancellations },
-                enRouteCancellations: [],
-                trackRegistry: trackRegistry.tracks || [],
-                allStops: getAllStationStops()
-              };
+                const apiData = {
+                  lastUpdated: new Date().toISOString(),
+                  activeStation: 'Penn Station NY & Jersey Ave',
+                  activeWindow: 'live',
+                  scrapeTime: 'github-actions',
+                  currentBoard,
+                  recentlyDeparted,
+                  predictions,
+                  cancellations: { recentByTrain: recentCancellations },
+                  enRouteCancellations: [],
+                  trackRegistry: trackRegistry.tracks || [],
+                  allStops: getAllStationStops()
+                };
 
-              await dataStore.writeApiData(apiData);
-              console.log('GitHub Actions 1-minute live scrape complete:', currentBoard.length, 'trains');
+                await dataStore.writeApiData(apiData);
+                console.log('GitHub Actions live scrape complete:', currentBoard.length, 'trains');
+              } finally {
+                await closeBrowser();
+              }
             }
-            run().catch(err => { console.error(err); process.exit(1); });
+            run().then(() => process.exit(0)).catch(err => { console.error(err); process.exit(1); });
           "
 
       - name: Commit and Push Updated Data
@@ -75,4 +80,5 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add data/
-          git diff --quiet && git diff --staged --quiet || (git commit -m "Automated 1-Minute Live Data Scrape [skip ci]" && git push)
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Automated Live Data Scrape [skip ci]" && git push)
+
