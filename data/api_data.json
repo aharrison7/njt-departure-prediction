@@ -1,8 +1,8 @@
 {
-  "lastUpdated": "2026-08-25T21:19:52.923Z",
+  "lastUpdated": "2026-08-25T21:29:55.529Z",
   "activeStation": "Penn Station New York",
   "activeWindow": "live",
-  "scrapeTime": "112700ms",
+  "scrapeTime": "114699ms",
   "currentBoard": [
     {
       "trainNumber": "A2167",
@@ -905,16 +905,16 @@
       "line": "NEC",
       "scheduledTime": "5:20 PM",
       "currentTrack": "",
-      "predictedTrack": "12",
-      "confidence": 0.38,
+      "predictedTrack": "14",
+      "confidence": 0.4,
       "trackDistribution": {
         "6": 2,
         "7": 1,
         "12": 3,
-        "14": 2
+        "14": 4
       },
-      "daysOfData": 16,
-      "totalHistoryDays": 17,
+      "daysOfData": 18,
+      "totalHistoryDays": 18,
       "excludedTracks": [
         "1",
         "10",
@@ -1002,17 +1002,17 @@
       "scheduledTime": "5:29 PM",
       "currentTrack": "",
       "predictedTrack": "14",
-      "confidence": 0.33,
+      "confidence": 0.38,
       "trackDistribution": {
         "4": 1,
         "7": 1,
         "8": 3,
         "11": 2,
         "12": 1,
-        "14": 4
+        "14": 5
       },
-      "daysOfData": 15,
-      "totalHistoryDays": 16,
+      "daysOfData": 17,
+      "totalHistoryDays": 17,
       "excludedTracks": [
         "1",
         "10",
@@ -1043,20 +1043,20 @@
       "line": "MOBO",
       "scheduledTime": "5:31 PM",
       "currentTrack": "",
-      "predictedTrack": "7",
-      "confidence": 0.25,
+      "predictedTrack": null,
+      "confidence": 0,
       "trackDistribution": {
         "3": 2,
-        "4": 2,
+        "4": 3,
         "6": 1,
         "7": 3,
         "8": 1,
         "9": 1,
         "11": 1,
-        "14": 1
+        "14": 2
       },
-      "daysOfData": 16,
-      "totalHistoryDays": 17,
+      "daysOfData": 18,
+      "totalHistoryDays": 18,
       "excludedTracks": [
         "1",
         "10",
@@ -1091,7 +1091,7 @@
       "scheduledTime": "5:34 PM",
       "currentTrack": "",
       "predictedTrack": "11",
-      "confidence": 0.31,
+      "confidence": 0.29,
       "trackDistribution": {
         "2": 1,
         "3": 2,
@@ -1100,10 +1100,10 @@
         "8": 3,
         "9": 1,
         "11": 5,
-        "12": 1
+        "12": 2
       },
-      "daysOfData": 16,
-      "totalHistoryDays": 17,
+      "daysOfData": 18,
+      "totalHistoryDays": 18,
       "excludedTracks": [
         "1",
         "10",
