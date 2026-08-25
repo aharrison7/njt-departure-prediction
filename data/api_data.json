@@ -1,8 +1,8 @@
 {
-  "lastUpdated": "2026-08-25T21:29:55.529Z",
+  "lastUpdated": "2026-08-25T21:39:52.530Z",
   "activeStation": "Penn Station New York",
   "activeWindow": "live",
-  "scrapeTime": "114699ms",
+  "scrapeTime": "111600ms",
   "currentBoard": [
     {
       "trainNumber": "A2167",
@@ -1140,19 +1140,19 @@
       "line": "M&E",
       "scheduledTime": "5:36 PM",
       "currentTrack": "",
-      "predictedTrack": null,
-      "confidence": 0,
+      "predictedTrack": "2",
+      "confidence": 0.29,
       "trackDistribution": {
-        "2": 4,
+        "2": 5,
         "3": 4,
         "5": 1,
         "6": 2,
         "7": 1,
         "8": 2,
-        "14": 1
+        "14": 2
       },
-      "daysOfData": 15,
-      "totalHistoryDays": 16,
+      "daysOfData": 17,
+      "totalHistoryDays": 17,
       "excludedTracks": [
         "1",
         "10",
@@ -1187,18 +1187,18 @@
       "line": "NEC",
       "scheduledTime": "5:38 PM",
       "currentTrack": "",
-      "predictedTrack": "4",
-      "confidence": 0.33,
+      "predictedTrack": null,
+      "confidence": 0,
       "trackDistribution": {
         "2": 1,
         "3": 2,
         "4": 4,
         "6": 1,
         "9": 1,
-        "11": 3
+        "11": 4
       },
-      "daysOfData": 15,
-      "totalHistoryDays": 16,
+      "daysOfData": 17,
+      "totalHistoryDays": 17,
       "excludedTracks": [
         "1",
         "10",
@@ -1235,15 +1235,15 @@
       "line": "NEC",
       "scheduledTime": "5:41 PM",
       "currentTrack": "",
-      "predictedTrack": null,
-      "confidence": 0,
+      "predictedTrack": "14",
+      "confidence": 0.5,
       "trackDistribution": {
         "9": 4,
         "12": 2,
-        "14": 4
+        "14": 6
       },
-      "daysOfData": 15,
-      "totalHistoryDays": 16,
+      "daysOfData": 17,
+      "totalHistoryDays": 17,
       "excludedTracks": [
         "1",
         "10",
@@ -1281,14 +1281,14 @@
       "confidence": 0,
       "trackDistribution": {
         "2": 3,
-        "3": 2,
+        "3": 3,
         "4": 3,
         "6": 1,
         "8": 1,
-        "11": 1
+        "11": 2
       },
-      "daysOfData": 16,
-      "totalHistoryDays": 17,
+      "daysOfData": 18,
+      "totalHistoryDays": 18,
       "excludedTracks": [
         "1",
         "10",
@@ -1332,16 +1332,16 @@
       "scheduledTime": "5:47 PM",
       "currentTrack": "",
       "predictedTrack": "12",
-      "confidence": 0.4,
+      "confidence": 0.36,
       "trackDistribution": {
         "8": 1,
         "9": 1,
         "11": 2,
         "12": 4,
-        "14": 2
+        "14": 3
       },
-      "daysOfData": 14,
-      "totalHistoryDays": 15,
+      "daysOfData": 16,
+      "totalHistoryDays": 16,
       "excludedTracks": [
         "1",
         "10",
