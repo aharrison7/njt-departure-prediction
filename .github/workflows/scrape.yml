@@ -1,10 +1,9 @@
-name: NJT Live Scraper & GitHub Pages Update
+name: NJT Live Scraper (Manual Fallback Only)
 
+# Automated scheduled scraping is handled 24/7 directly by the Render server.
+# GitHub Actions runs only on manual dispatch to prevent overwriting Render.
 on:
-  schedule:
-    # Trigger every 1 minute
-    - cron: '* * * * *'
-  workflow_dispatch: # Allows manual trigger from GitHub UI
+  workflow_dispatch: # Allows optional manual trigger from GitHub UI
 
 concurrency:
   group: njt-live-scraper

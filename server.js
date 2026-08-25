@@ -176,7 +176,8 @@ async function main() {
   console.log('╚══════════════════════════════════════════════════════════╝');
   console.log();
 
-  // Initialize data store
+  // Initialize data store & pull latest historical dataset from GitHub
+  await githubSync.pullAll().catch(e => console.warn('[Server] Initial GitHub pull note:', e.message));
   await dataStore.init();
 
   // Initialize browser

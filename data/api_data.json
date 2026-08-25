@@ -1,86 +1,16 @@
 {
-  "lastUpdated": "2026-08-25T16:47:26.289Z",
+  "lastUpdated": "2026-08-25T17:03:25.587Z",
   "activeStation": "Penn Station NY & Jersey Ave",
   "activeWindow": "live",
-  "scrapeTime": "25777ms",
+  "scrapeTime": "25110ms",
   "currentBoard": [
-    {
-      "trainNumber": "6627",
-      "scheduledTime": "12:47 PM",
-      "destination": "Dover",
-      "line": "M&E",
-      "track": "13",
-      "status": "All Aboard",
-      "station": "NY Penn",
-      "stops": [
-        "New York Penn Station",
-        "Secaucus Junction",
-        "Newark Broad St",
-        "East Orange",
-        "Brick Church",
-        "Orange",
-        "Highland Ave",
-        "Mountain Station",
-        "South Orange",
-        "Maplewood",
-        "Millburn",
-        "Short Hills",
-        "Summit",
-        "Chatham",
-        "Madison",
-        "Convent Station",
-        "Morristown",
-        "Morris Plains",
-        "Mount Tabor",
-        "Denville",
-        "Dover"
-      ]
-    },
-    {
-      "trainNumber": "A609",
-      "scheduledTime": "12:54 PM",
-      "destination": "Harrisburg",
-      "line": "AMTK",
-      "track": "14",
-      "status": "All Aboard",
-      "station": "NY Penn",
-      "stops": [
-        "New York Penn Station",
-        "Newark Penn Station",
-        "Metropark",
-        "Trenton",
-        "Philadelphia 30th St",
-        "Wilmington",
-        "Baltimore",
-        "Washington Union Station"
-      ]
-    },
-    {
-      "trainNumber": "A2159",
-      "scheduledTime": "1:02 PM",
-      "destination": "Washington",
-      "line": "AMTK",
-      "track": "",
-      "status": "On Time",
-      "station": "NY Penn",
-      "stops": [
-        "New York Penn Station",
-        "Newark Penn Station",
-        "Metropark",
-        "Trenton",
-        "Philadelphia 30th St",
-        "Wilmington",
-        "Baltimore",
-        "Washington Union Station"
-      ]
-    },
     {
       "trainNumber": "3845",
       "scheduledTime": "1:05 PM",
       "destination": "Trenton",
       "line": "NEC",
-      "track": "",
-      "status": "On Time",
+      "track": "12",
+      "status": "All Aboard",
       "station": "NY Penn",
       "stops": [
         "New York Penn Station",
@@ -454,12 +384,80 @@
       ]
     },
     {
+      "trainNumber": "A649",
+      "scheduledTime": "2:44 PM",
+      "destination": "Harrisburg",
+      "line": "AMTK",
+      "track": "",
+      "status": "On Time",
+      "station": "NY Penn",
+      "stops": [
+        "New York Penn Station",
+        "Newark Penn Station",
+        "Metropark",
+        "Trenton",
+        "Philadelphia 30th St",
+        "Wilmington",
+        "Baltimore",
+        "Washington Union Station"
+      ]
+    },
+    {
+      "trainNumber": "3251",
+      "scheduledTime": "2:46 PM",
+      "destination": "Long Branch-BH",
+      "line": "NJCL",
+      "track": "",
+      "status": "On Time",
+      "station": "NY Penn",
+      "stops": [
+        "New York Penn Station",
+        "Secaucus Junction",
+        "Newark Penn Station",
+        "Elizabeth",
+        "Rahway",
+        "Avenel",
+        "Woodbridge",
+        "Perth Amboy",
+        "South Amboy",
+        "Matawan",
+        "Hazlet",
+        "Middletown",
+        "Red Bank",
+        "Little Silver",
+        "Long Branch"
+      ]
+    },
+    {
+      "trainNumber": "6251",
+      "scheduledTime": "2:51 PM",
+      "destination": "MSU",
+      "line": "MOBO",
+      "track": "",
+      "status": "On Time",
+      "station": "NY Penn",
+      "stops": [
+        "New York Penn Station",
+        "Secaucus Junction",
+        "Newark Broad St",
+        "Broad Street Bloomfield",
+        "Glen Ridge",
+        "Bay Street Montclair",
+        "Walnut Street",
+        "Watchung Avenue",
+        "Upper Montclair",
+        "Mountain Avenue",
+        "Montclair Heights",
+        "Montclair State University (MSU)"
+      ]
+    },
+    {
       "trainNumber": "3841",
       "scheduledTime": "1:04 PM",
       "destination": "Trenton",
       "line": "NEC",
       "track": "4",
-      "status": "On Time",
+      "status": "All Aboard",
       "station": "Jersey Ave",
       "stops": [
         "Jersey Avenue",
@@ -741,12 +739,12 @@
   ],
   "recentlyDeparted": [
     {
-      "trainNumber": "A171",
-      "scheduledTime": "12:40 PM",
-      "destination": "Roanoke",
+      "trainNumber": "A2159",
+      "scheduledTime": "1:02 PM",
+      "destination": "Washington",
       "line": "AMTK",
-      "track": "11",
-      "status": "On Time",
+      "track": "15",
+      "status": "All Aboard",
       "station": "NY Penn",
       "stops": [
         "New York Penn Station",
@@ -758,18 +756,51 @@
         "Baltimore",
         "Washington Union Station"
       ],
-      "removedAt": "2026-08-25T16:46:25.941Z",
+      "removedAt": "2026-08-25T17:03:25.581Z",
       "departedStatus": "Departed",
-      "lastTrack": "11"
+      "lastTrack": "15"
     },
     {
-      "trainNumber": "5175",
-      "scheduledTime": "12:45 PM",
-      "destination": "High Bridge",
-      "line": "RARV",
-      "track": "4",
+      "trainNumber": "A609",
+      "scheduledTime": "12:54 PM",
+      "destination": "Harrisburg",
+      "line": "AMTK",
+      "track": "14",
       "status": "All Aboard",
       "station": "NY Penn",
+      "stops": [
+        "New York Penn Station",
+        "Newark Penn Station",
+        "Metropark",
+        "Trenton",
+        "Philadelphia 30th St",
+        "Wilmington",
+        "Baltimore",
+        "Washington Union Station"
+      ],
+      "removedAt": "2026-08-25T16:55:26.696Z",
+      "departedStatus": "Departed",
+      "lastTrack": "14"
+    }
+  ],
+  "predictions": [
+    {
+      "trainNumber": "3845",
+      "destination": "Trenton",
+      "line": "NEC",
+      "scheduledTime": "1:05 PM",
+      "currentTrack": "12",
+      "predictedTrack": null,
+      "confidence": 0,
+      "trackDistribution": {},
+      "daysOfData": 2,
+      "totalHistoryDays": 2,
+      "excludedTracks": [
+        "4"
+      ],
+      "excludeReasons": {
+        "4": "currently occupied by another train"
+      },
       "stops": [
         "New York Penn Station",
         "Secaucus Junction",
@@ -786,135 +817,6 @@
         "Princeton Junction",
         "Hamilton",
         "Trenton"
-      ],
-      "removedAt": "2026-08-25T16:46:05.511Z",
-      "departedStatus": "Departed",
-      "lastTrack": "4"
-    },
-    {
-      "trainNumber": "3243",
-      "scheduledTime": "12:43 PM",
-      "destination": "Long Branch-BH",
-      "line": "NJCL",
-      "track": "3",
-      "status": "All Aboard",
-      "station": "NY Penn",
-      "stops": [
-        "New York Penn Station",
-        "Secaucus Junction",
-        "Newark Penn Station",
-        "Elizabeth",
-        "Rahway",
-        "Avenel",
-        "Woodbridge",
-        "Perth Amboy",
-        "South Amboy",
-        "Matawan",
-        "Hazlet",
-        "Middletown",
-        "Red Bank",
-        "Little Silver",
-        "Long Branch"
-      ],
-      "removedAt": "2026-08-25T16:44:26.770Z",
-      "departedStatus": "Departed",
-      "lastTrack": "3"
-    },
-    {
-      "trainNumber": "3839",
-      "scheduledTime": "12:38 PM",
-      "destination": "Trenton",
-      "line": "NEC",
-      "track": "4",
-      "status": "All Aboard",
-      "station": "Jersey Ave",
-      "stops": [
-        "Jersey Avenue",
-        "Princeton Junction",
-        "Hamilton",
-        "Trenton"
-      ],
-      "removedAt": "2026-08-25T16:44:26.770Z",
-      "departedStatus": "Departed",
-      "lastTrack": "4"
-    }
-  ],
-  "predictions": [
-    {
-      "trainNumber": "6627",
-      "destination": "Dover",
-      "line": "M&E",
-      "scheduledTime": "12:47 PM",
-      "currentTrack": "13",
-      "predictedTrack": "13",
-      "confidence": 1,
-      "trackDistribution": {
-        "13": 1
-      },
-      "daysOfData": 1,
-      "totalHistoryDays": 1,
-      "excludedTracks": [
-        "4",
-        "14"
-      ],
-      "excludeReasons": {
-        "4": "currently occupied by another train",
-        "14": "currently occupied by another train"
-      },
-      "stops": [
-        "New York Penn Station",
-        "Secaucus Junction",
-        "Newark Broad St",
-        "East Orange",
-        "Brick Church",
-        "Orange",
-        "Highland Ave",
-        "Mountain Station",
-        "South Orange",
-        "Maplewood",
-        "Millburn",
-        "Short Hills",
-        "Summit",
-        "Chatham",
-        "Madison",
-        "Convent Station",
-        "Morristown",
-        "Morris Plains",
-        "Mount Tabor",
-        "Denville",
-        "Dover"
-      ]
-    },
-    {
-      "trainNumber": "A609",
-      "destination": "Harrisburg",
-      "line": "AMTK",
-      "scheduledTime": "12:54 PM",
-      "currentTrack": "14",
-      "predictedTrack": "14",
-      "confidence": 1,
-      "trackDistribution": {
-        "14": 1
-      },
-      "daysOfData": 1,
-      "totalHistoryDays": 1,
-      "excludedTracks": [
-        "4",
-        "13"
-      ],
-      "excludeReasons": {
-        "4": "currently occupied by another train",
-        "13": "currently occupied by another train"
-      },
-      "stops": [
-        "New York Penn Station",
-        "Newark Penn Station",
-        "Metropark",
-        "Trenton",
-        "Philadelphia 30th St",
-        "Wilmington",
-        "Baltimore",
-        "Washington Union Station"
       ]
     },
     {
@@ -931,12 +833,10 @@
       "daysOfData": 2,
       "totalHistoryDays": 2,
       "excludedTracks": [
-        "13",
-        "14"
+        "12"
       ],
       "excludeReasons": {
-        "13": "currently occupied by another train",
-        "14": "currently occupied by another train"
+        "12": "currently occupied by another train"
       },
       "stops": [
         "Jersey Avenue",
@@ -959,12 +859,10 @@
       "daysOfData": 2,
       "totalHistoryDays": 2,
       "excludedTracks": [
-        "13",
-        "14"
+        "12"
       ],
       "excludeReasons": {
-        "13": "currently occupied by another train",
-        "14": "currently occupied by another train"
+        "12": "currently occupied by another train"
       },
       "stops": [
         "Jersey Avenue",
@@ -987,12 +885,10 @@
       "daysOfData": 2,
       "totalHistoryDays": 2,
       "excludedTracks": [
-        "13",
-        "14"
+        "12"
       ],
       "excludeReasons": {
-        "13": "currently occupied by another train",
-        "14": "currently occupied by another train"
+        "12": "currently occupied by another train"
       },
       "stops": [
         "Jersey Avenue",
@@ -1015,12 +911,10 @@
       "daysOfData": 2,
       "totalHistoryDays": 2,
       "excludedTracks": [
-        "13",
-        "14"
+        "12"
       ],
       "excludeReasons": {
-        "13": "currently occupied by another train",
-        "14": "currently occupied by another train"
+        "12": "currently occupied by another train"
       },
       "stops": [
         "Jersey Avenue",
@@ -1043,12 +937,10 @@
       "daysOfData": 2,
       "totalHistoryDays": 2,
       "excludedTracks": [
-        "13",
-        "14"
+        "12"
       ],
       "excludeReasons": {
-        "13": "currently occupied by another train",
-        "14": "currently occupied by another train"
+        "12": "currently occupied by another train"
       },
       "stops": [
         "Jersey Avenue",
@@ -1071,12 +963,10 @@
       "daysOfData": 2,
       "totalHistoryDays": 2,
       "excludedTracks": [
-        "13",
-        "14"
+        "12"
       ],
       "excludeReasons": {
-        "13": "currently occupied by another train",
-        "14": "currently occupied by another train"
+        "12": "currently occupied by another train"
       },
       "stops": [
         "Jersey Avenue",
@@ -1091,20 +981,19 @@
       "line": "NEC",
       "scheduledTime": "4:24 PM",
       "currentTrack": "4",
-      "predictedTrack": "4",
-      "confidence": 1,
+      "predictedTrack": "14",
+      "confidence": 0.67,
       "trackDistribution": {
-        "4": 1
+        "4": 1,
+        "14": 2
       },
       "daysOfData": 3,
       "totalHistoryDays": 3,
       "excludedTracks": [
-        "13",
-        "14"
+        "12"
       ],
       "excludeReasons": {
-        "13": "currently occupied by another train",
-        "14": "currently occupied by another train"
+        "12": "currently occupied by another train"
       },
       "stops": [
         "Jersey Avenue",
@@ -1123,17 +1012,16 @@
       "confidence": 0,
       "trackDistribution": {
         "4": 1,
-        "11": 1
+        "11": 1,
+        "14": 1
       },
       "daysOfData": 3,
       "totalHistoryDays": 3,
       "excludedTracks": [
-        "13",
-        "14"
+        "12"
       ],
       "excludeReasons": {
-        "13": "currently occupied by another train",
-        "14": "currently occupied by another train"
+        "12": "currently occupied by another train"
       },
       "stops": [
         "Jersey Avenue",
@@ -1156,12 +1044,10 @@
       "daysOfData": 2,
       "totalHistoryDays": 3,
       "excludedTracks": [
-        "13",
-        "14"
+        "12"
       ],
       "excludeReasons": {
-        "13": "currently occupied by another train",
-        "14": "currently occupied by another train"
+        "12": "currently occupied by another train"
       },
       "stops": [
         "Jersey Avenue",
@@ -1184,12 +1070,10 @@
       "daysOfData": 2,
       "totalHistoryDays": 3,
       "excludedTracks": [
-        "13",
-        "14"
+        "12"
       ],
       "excludeReasons": {
-        "13": "currently occupied by another train",
-        "14": "currently occupied by another train"
+        "12": "currently occupied by another train"
       },
       "stops": [
         "Jersey Avenue",
@@ -1212,12 +1096,10 @@
       "daysOfData": 2,
       "totalHistoryDays": 3,
       "excludedTracks": [
-        "13",
-        "14"
+        "12"
       ],
       "excludeReasons": {
-        "13": "currently occupied by another train",
-        "14": "currently occupied by another train"
+        "12": "currently occupied by another train"
       },
       "stops": [
         "Jersey Avenue",
@@ -1240,12 +1122,10 @@
       "daysOfData": 2,
       "totalHistoryDays": 2,
       "excludedTracks": [
-        "13",
-        "14"
+        "12"
       ],
       "excludeReasons": {
-        "13": "currently occupied by another train",
-        "14": "currently occupied by another train"
+        "12": "currently occupied by another train"
       },
       "stops": [
         "Jersey Avenue",
@@ -1268,12 +1148,10 @@
       "daysOfData": 2,
       "totalHistoryDays": 2,
       "excludedTracks": [
-        "13",
-        "14"
+        "12"
       ],
       "excludeReasons": {
-        "13": "currently occupied by another train",
-        "14": "currently occupied by another train"
+        "12": "currently occupied by another train"
       },
       "stops": [
         "Jersey Avenue",
@@ -1296,12 +1174,10 @@
       "daysOfData": 2,
       "totalHistoryDays": 2,
       "excludedTracks": [
-        "13",
-        "14"
+        "12"
       ],
       "excludeReasons": {
-        "13": "currently occupied by another train",
-        "14": "currently occupied by another train"
+        "12": "currently occupied by another train"
       },
       "stops": [
         "Jersey Avenue",
@@ -1324,12 +1200,10 @@
       "daysOfData": 2,
       "totalHistoryDays": 2,
       "excludedTracks": [
-        "13",
-        "14"
+        "12"
       ],
       "excludeReasons": {
-        "13": "currently occupied by another train",
-        "14": "currently occupied by another train"
+        "12": "currently occupied by another train"
       },
       "stops": [
         "Jersey Avenue",
@@ -1352,12 +1226,10 @@
       "daysOfData": 2,
       "totalHistoryDays": 2,
       "excludedTracks": [
-        "13",
-        "14"
+        "12"
       ],
       "excludeReasons": {
-        "13": "currently occupied by another train",
-        "14": "currently occupied by another train"
+        "12": "currently occupied by another train"
       },
       "stops": [
         "Jersey Avenue",
@@ -1380,12 +1252,10 @@
       "daysOfData": 1,
       "totalHistoryDays": 1,
       "excludedTracks": [
-        "13",
-        "14"
+        "12"
       ],
       "excludeReasons": {
-        "13": "currently occupied by another train",
-        "14": "currently occupied by another train"
+        "12": "currently occupied by another train"
       },
       "stops": [
         "Jersey Avenue",
@@ -1408,12 +1278,10 @@
       "daysOfData": 1,
       "totalHistoryDays": 1,
       "excludedTracks": [
-        "13",
-        "14"
+        "12"
       ],
       "excludeReasons": {
-        "13": "currently occupied by another train",
-        "14": "currently occupied by another train"
+        "12": "currently occupied by another train"
       },
       "stops": [
         "Jersey Avenue",
@@ -1436,77 +1304,12 @@
       "daysOfData": 1,
       "totalHistoryDays": 1,
       "excludedTracks": [
-        "13",
-        "14"
+        "12"
       ],
       "excludeReasons": {
-        "13": "currently occupied by another train",
-        "14": "currently occupied by another train"
+        "12": "currently occupied by another train"
       },
       "stops": [
-        "Jersey Avenue",
-        "Princeton Junction",
-        "Hamilton",
-        "Trenton"
-      ]
-    },
-    {
-      "trainNumber": "A2159",
-      "destination": "Washington",
-      "line": "AMTK",
-      "scheduledTime": "1:02 PM",
-      "currentTrack": "",
-      "predictedTrack": null,
-      "confidence": 0,
-      "trackDistribution": {},
-      "daysOfData": 1,
-      "excludedTracks": [],
-      "excludeReasons": {},
-      "note": "No track assignments in history",
-      "stops": [
-        "New York Penn Station",
-        "Newark Penn Station",
-        "Metropark",
-        "Trenton",
-        "Philadelphia 30th St",
-        "Wilmington",
-        "Baltimore",
-        "Washington Union Station"
-      ]
-    },
-    {
-      "trainNumber": "3845",
-      "destination": "Trenton",
-      "line": "NEC",
-      "scheduledTime": "1:05 PM",
-      "currentTrack": "",
-      "predictedTrack": null,
-      "confidence": 0,
-      "trackDistribution": {},
-      "daysOfData": 2,
-      "totalHistoryDays": 2,
-      "excludedTracks": [
-        "4",
-        "13",
-        "14"
-      ],
-      "excludeReasons": {
-        "4": "currently occupied by another train",
-        "13": "currently occupied by another train",
-        "14": "currently occupied by another train"
-      },
-      "stops": [
-        "New York Penn Station",
-        "Secaucus Junction",
-        "Newark Penn Station",
-        "Newark Airport",
-        "North Elizabeth",
-        "Elizabeth",
-        "Rahway",
-        "Metropark",
-        "Metuchen",
-        "Edison",
-        "New Brunswick",
         "Jersey Avenue",
         "Princeton Junction",
         "Hamilton",
@@ -1554,13 +1357,11 @@
       "totalHistoryDays": 2,
       "excludedTracks": [
         "4",
-        "13",
-        "14"
+        "12"
       ],
       "excludeReasons": {
         "4": "currently occupied by another train",
-        "13": "currently occupied by another train",
-        "14": "currently occupied by another train"
+        "12": "currently occupied by another train"
       },
       "stops": [
         "New York Penn Station",
@@ -1740,13 +1541,11 @@
       "totalHistoryDays": 2,
       "excludedTracks": [
         "4",
-        "13",
-        "14"
+        "12"
       ],
       "excludeReasons": {
         "4": "currently occupied by another train",
-        "13": "currently occupied by another train",
-        "14": "currently occupied by another train"
+        "12": "currently occupied by another train"
       },
       "stops": [
         "New York Penn Station",
@@ -1917,13 +1716,11 @@
       "totalHistoryDays": 2,
       "excludedTracks": [
         "4",
-        "13",
-        "14"
+        "12"
       ],
       "excludeReasons": {
         "4": "currently occupied by another train",
-        "13": "currently occupied by another train",
-        "14": "currently occupied by another train"
+        "12": "currently occupied by another train"
       },
       "stops": [
         "New York Penn Station",
@@ -1965,6 +1762,97 @@
         "Princeton Junction",
         "Hamilton",
         "Trenton"
+      ]
+    },
+    {
+      "trainNumber": "A649",
+      "destination": "Harrisburg",
+      "line": "AMTK",
+      "scheduledTime": "2:44 PM",
+      "currentTrack": "",
+      "predictedTrack": null,
+      "confidence": 0,
+      "trackDistribution": {},
+      "daysOfData": 1,
+      "excludedTracks": [],
+      "excludeReasons": {},
+      "note": "No track assignments in history",
+      "stops": [
+        "New York Penn Station",
+        "Newark Penn Station",
+        "Metropark",
+        "Trenton",
+        "Philadelphia 30th St",
+        "Wilmington",
+        "Baltimore",
+        "Washington Union Station"
+      ]
+    },
+    {
+      "trainNumber": "3251",
+      "destination": "Long Branch-BH",
+      "line": "NJCL",
+      "scheduledTime": "2:46 PM",
+      "currentTrack": "",
+      "predictedTrack": null,
+      "confidence": 0,
+      "trackDistribution": {},
+      "daysOfData": 1,
+      "excludedTracks": [],
+      "excludeReasons": {},
+      "note": "No track assignments in history",
+      "stops": [
+        "New York Penn Station",
+        "Secaucus Junction",
+        "Newark Penn Station",
+        "Elizabeth",
+        "Rahway",
+        "Avenel",
+        "Woodbridge",
+        "Perth Amboy",
+        "South Amboy",
+        "Matawan",
+        "Hazlet",
+        "Middletown",
+        "Red Bank",
+        "Little Silver",
+        "Long Branch"
+      ]
+    },
+    {
+      "trainNumber": "6251",
+      "destination": "MSU",
+      "line": "MOBO",
+      "scheduledTime": "2:51 PM",
+      "currentTrack": "",
+      "predictedTrack": "9",
+      "confidence": 1,
+      "trackDistribution": {
+        "9": 1
+      },
+      "daysOfData": 1,
+      "totalHistoryDays": 2,
+      "excludedTracks": [
+        "4",
+        "12"
+      ],
+      "excludeReasons": {
+        "4": "currently occupied by another train",
+        "12": "currently occupied by another train"
+      },
+      "stops": [
+        "New York Penn Station",
+        "Secaucus Junction",
+        "Newark Broad St",
+        "Broad Street Bloomfield",
+        "Glen Ridge",
+        "Bay Street Montclair",
+        "Walnut Street",
+        "Watchung Avenue",
+        "Upper Montclair",
+        "Mountain Avenue",
+        "Montclair Heights",
+        "Montclair State University (MSU)"
       ]
     }
   ],
