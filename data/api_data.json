@@ -1,8 +1,8 @@
 {
-  "lastUpdated": "2026-08-25T18:59:52.298Z",
+  "lastUpdated": "2026-08-25T19:09:54.744Z",
   "activeStation": "Penn Station New York",
   "activeWindow": "live",
-  "scrapeTime": "112100ms",
+  "scrapeTime": "114302ms",
   "currentBoard": [
     {
       "trainNumber": "A19",
@@ -1937,16 +1937,16 @@
       "scheduledTime": "3:07 PM",
       "currentTrack": "",
       "predictedTrack": "13",
-      "confidence": 0.3,
+      "confidence": 0.36,
       "trackDistribution": {
         "1": 2,
         "2": 2,
         "9": 1,
         "10": 2,
-        "13": 3
+        "13": 4
       },
-      "daysOfData": 16,
-      "totalHistoryDays": 17,
+      "daysOfData": 18,
+      "totalHistoryDays": 18,
       "excludedTracks": [
         "3",
         "4",
