@@ -1,8 +1,8 @@
 {
-  "lastUpdated": "2026-08-25T17:52:25.951Z",
-  "activeStation": "Penn Station NY & Jersey Ave",
+  "lastUpdated": "2026-08-25T17:59:50.858Z",
+  "activeStation": "Penn Station New York",
   "activeWindow": "live",
-  "scrapeTime": "25782ms",
+  "scrapeTime": "110200ms",
   "currentBoard": [
     {
       "trainNumber": "A19",
@@ -709,90 +709,7 @@
       ]
     }
   ],
-  "recentlyDeparted": [
-    {
-      "trainNumber": "6631",
-      "scheduledTime": "1:51 PM",
-      "destination": "Dover",
-      "line": "M&E",
-      "track": "4",
-      "status": "All Aboard",
-      "station": "NY Penn",
-      "stops": [
-        "New York Penn Station",
-        "Secaucus Junction",
-        "Newark Broad St",
-        "East Orange",
-        "Brick Church",
-        "Orange",
-        "Highland Ave",
-        "Mountain Station",
-        "South Orange",
-        "Maplewood",
-        "Millburn",
-        "Short Hills",
-        "Summit",
-        "Chatham",
-        "Madison",
-        "Convent Station",
-        "Morristown",
-        "Morris Plains",
-        "Mount Tabor",
-        "Denville",
-        "Dover"
-      ],
-      "removedAt": "2026-08-25T17:52:19.423Z",
-      "departedStatus": "Departed",
-      "lastTrack": "4"
-    },
-    {
-      "trainNumber": "3843",
-      "scheduledTime": "1:39 PM",
-      "destination": "Trenton",
-      "line": "NEC",
-      "track": "4",
-      "status": "All Aboard",
-      "station": "Jersey Ave",
-      "stops": [
-        "Jersey Avenue",
-        "Princeton Junction",
-        "Hamilton",
-        "Trenton"
-      ],
-      "removedAt": "2026-08-25T17:49:25.575Z",
-      "departedStatus": "Departed",
-      "lastTrack": "4"
-    },
-    {
-      "trainNumber": "3247",
-      "scheduledTime": "1:43 PM",
-      "destination": "Long Branch",
-      "line": "NJCL",
-      "track": "1",
-      "status": "All Aboard",
-      "station": "NY Penn",
-      "stops": [
-        "New York Penn Station",
-        "Secaucus Junction",
-        "Newark Penn Station",
-        "Elizabeth",
-        "Rahway",
-        "Avenel",
-        "Woodbridge",
-        "Perth Amboy",
-        "South Amboy",
-        "Matawan",
-        "Hazlet",
-        "Middletown",
-        "Red Bank",
-        "Little Silver",
-        "Long Branch"
-      ],
-      "removedAt": "2026-08-25T17:44:26.455Z",
-      "departedStatus": "Departed",
-      "lastTrack": "1"
-    }
-  ],
+  "recentlyDeparted": [],
   "predictions": [
     {
       "trainNumber": "A19",
@@ -1857,13 +1774,17 @@
       "line": "AMTK",
       "scheduledTime": "3:05 PM",
       "currentTrack": "",
-      "predictedTrack": "8",
-      "confidence": 1,
+      "predictedTrack": "13",
+      "confidence": 0.56,
       "trackDistribution": {
-        "8": 1
+        "8": 1,
+        "10": 1,
+        "13": 5,
+        "14": 1,
+        "15": 1
       },
-      "daysOfData": 1,
-      "totalHistoryDays": 2,
+      "daysOfData": 16,
+      "totalHistoryDays": 17,
       "excludedTracks": [
         "4",
         "12"
@@ -1889,13 +1810,19 @@
       "line": "NEC",
       "scheduledTime": "3:07 PM",
       "currentTrack": "",
-      "predictedTrack": "13",
-      "confidence": 1,
+      "predictedTrack": null,
+      "confidence": 0,
       "trackDistribution": {
-        "13": 1
+        "1": 2,
+        "2": 2,
+        "3": 3,
+        "7": 1,
+        "9": 1,
+        "10": 2,
+        "13": 3
       },
-      "daysOfData": 1,
-      "totalHistoryDays": 2,
+      "daysOfData": 16,
+      "totalHistoryDays": 17,
       "excludedTracks": [
         "4",
         "12"
@@ -2067,6 +1994,7 @@
     "Allendale",
     "Allenhurst",
     "Anderson Street",
+    "Annandale",
     "Asbury Park",
     "Atco",
     "Atlantic City",
@@ -2165,6 +2093,7 @@
     "Newark Airport",
     "Newark Broad St",
     "Newark Penn Station",
+    "North Branch",
     "North Elizabeth",
     "Oradell",
     "Orange",
