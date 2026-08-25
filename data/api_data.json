@@ -1,8 +1,8 @@
 {
-  "lastUpdated": "2026-08-25T18:39:51.678Z",
+  "lastUpdated": "2026-08-25T18:49:56.605Z",
   "activeStation": "Penn Station New York",
   "activeWindow": "live",
-  "scrapeTime": "110704ms",
+  "scrapeTime": "115701ms",
   "currentBoard": [
     {
       "trainNumber": "A19",
@@ -1720,16 +1720,16 @@
       "scheduledTime": "2:44 PM",
       "currentTrack": "",
       "predictedTrack": "6",
-      "confidence": 0.38,
+      "confidence": 0.36,
       "trackDistribution": {
         "6": 5,
         "8": 3,
         "9": 1,
         "14": 1,
-        "15": 3
+        "15": 4
       },
-      "daysOfData": 16,
-      "totalHistoryDays": 17,
+      "daysOfData": 18,
+      "totalHistoryDays": 18,
       "excludedTracks": [
         "3",
         "4",
@@ -1759,16 +1759,16 @@
       "line": "NJCL",
       "scheduledTime": "2:46 PM",
       "currentTrack": "",
-      "predictedTrack": "10",
-      "confidence": 0.38,
+      "predictedTrack": null,
+      "confidence": 0,
       "trackDistribution": {
         "1": 2,
         "8": 1,
         "10": 3,
-        "11": 2
+        "11": 3
       },
-      "daysOfData": 16,
-      "totalHistoryDays": 17,
+      "daysOfData": 18,
+      "totalHistoryDays": 18,
       "excludedTracks": [
         "3",
         "4",
@@ -1806,16 +1806,16 @@
       "scheduledTime": "2:51 PM",
       "currentTrack": "",
       "predictedTrack": "9",
-      "confidence": 0.33,
+      "confidence": 0.3,
       "trackDistribution": {
         "8": 1,
         "9": 3,
         "10": 2,
         "11": 2,
-        "13": 1
+        "13": 2
       },
-      "daysOfData": 16,
-      "totalHistoryDays": 17,
+      "daysOfData": 18,
+      "totalHistoryDays": 18,
       "excludedTracks": [
         "3",
         "4",
