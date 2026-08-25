@@ -17,7 +17,7 @@
   let currentTab = 'board';
   let refreshTimer = null;
   let rawData = null;
-  let selectedStop = 'Jersey Avenue'; // Default filter: Jersey Avenue
+  let selectedStop = ''; // Default filter: All Trains (Any Stop)
   let focusedOptionIndex = -1;
 
   // Complete NJ Transit line stops
@@ -27,6 +27,8 @@
     "M&E": ["New York Penn Station", "Secaucus Junction", "Newark Broad St", "East Orange", "Brick Church", "Orange", "Highland Ave", "Mountain Station", "South Orange", "Maplewood", "Millburn", "Short Hills", "Summit", "Chatham", "Madison", "Convent Station", "Morristown", "Morris Plains", "Mount Tabor", "Denville", "Dover"],
     MOBO: ["New York Penn Station", "Secaucus Junction", "Newark Broad St", "Broad Street Bloomfield", "Glen Ridge", "Bay Street Montclair", "Walnut Street", "Watchung Avenue", "Upper Montclair", "Mountain Avenue", "Montclair Heights", "Montclair State University (MSU)", "Little Falls", "Mountain View", "Wayne Route 23", "Towaco", "Lincoln Park", "Boonton", "Denville", "Lake Hopatcong", "Netcong", "Mount Arlington", "Mount Olive", "Hackettstown"],
     RVL: ["New York Penn Station", "Secaucus Junction", "Newark Penn Station", "Union", "Roselle Park", "Cranford", "Garwood", "Westfield", "Fanwood", "Netherwood", "Plainfield", "Dunellen", "Bound Brook", "Bridgewater", "Somerville", "Raritan", "North Branch", "White House", "Lebanon", "Annandale", "High Bridge"],
+    RARV: ["New York Penn Station", "Secaucus Junction", "Newark Penn Station", "Union", "Roselle Park", "Cranford", "Garwood", "Westfield", "Fanwood", "Netherwood", "Plainfield", "Dunellen", "Bound Brook", "Bridgewater", "Somerville", "Raritan", "North Branch", "White House", "Lebanon", "Annandale", "High Bridge"],
+    RV: ["New York Penn Station", "Secaucus Junction", "Newark Penn Station", "Union", "Roselle Park", "Cranford", "Garwood", "Westfield", "Fanwood", "Netherwood", "Plainfield", "Dunellen", "Bound Brook", "Bridgewater", "Somerville", "Raritan", "North Branch", "White House", "Lebanon", "Annandale", "High Bridge"],
     MAIN: ["Hoboken", "Secaucus Junction", "Kingsland", "Lyndhurst", "Delawanna", "Passaic", "Clifton", "Paterson", "Fair Lawn (Broadway)", "Fair Lawn (Radburn)", "Glen Rock", "Ridgewood", "Ho-Ho-Kus", "Waldwick", "Allendale", "Ramsey", "Ramsey Route 17", "Mahwah", "Suffern"],
     BGN: ["Hoboken", "Secaucus Junction", "Rutherford", "Garfield", "Plauderville", "Fair Lawn (Broadway)", "Glen Rock", "Ridgewood", "Ho-Ho-Kus", "Waldwick", "Allendale", "Ramsey", "Ramsey Route 17", "Mahwah", "Suffern"],
     PVL: ["Hoboken", "Secaucus Junction", "Wood-Ridge", "Teterboro", "Essex Street", "Anderson Street", "New Bridge Landing", "River Edge", "Oradell", "Emerson", "Westwood", "Hillsdale", "Woodcliff Lake", "Park Ridge", "Montvale", "Pearl River", "Nanuet", "Spring Valley"],
@@ -229,8 +231,9 @@
     const countHeader = $('#dropdown-count-header');
     const clearInputBtn = $('#station-clear-btn');
 
-    const pillJersey = $('#pill-jersey-ave');
-    const pillNYPenn = $('#pill-ny-penn');
+    const pillMetropark = $('#pill-metropark');
+    const pillRaritan = $('#pill-raritan');
+    const pillTrenton = $('#pill-trenton');
     const pillAll = $('#pill-all');
     const clearBannerBtn = $('#clear-filter-btn');
 
@@ -392,8 +395,9 @@
     });
 
     // Pill event listeners
-    if (pillJersey) pillJersey.addEventListener('click', () => setStationFilter('Jersey Avenue'));
-    if (pillNYPenn) pillNYPenn.addEventListener('click', () => setStationFilter('New York Penn Station'));
+    if (pillMetropark) pillMetropark.addEventListener('click', () => setStationFilter('Metropark'));
+    if (pillRaritan) pillRaritan.addEventListener('click', () => setStationFilter('Raritan'));
+    if (pillTrenton) pillTrenton.addEventListener('click', () => setStationFilter('Trenton'));
     if (pillAll) pillAll.addEventListener('click', () => setStationFilter(''));
     if (clearBannerBtn) clearBannerBtn.addEventListener('click', () => setStationFilter(''));
 
@@ -423,12 +427,14 @@
     }
 
     // Update Pills
-    const pillJersey = $('#pill-jersey-ave');
-    const pillNYPenn = $('#pill-ny-penn');
+    const pillMetropark = $('#pill-metropark');
+    const pillRaritan = $('#pill-raritan');
+    const pillTrenton = $('#pill-trenton');
     const pillAll = $('#pill-all');
 
-    if (pillJersey) pillJersey.classList.toggle('active', selectedStop === 'Jersey Avenue');
-    if (pillNYPenn) pillNYPenn.classList.toggle('active', selectedStop === 'New York Penn Station');
+    if (pillMetropark) pillMetropark.classList.toggle('active', selectedStop === 'Metropark');
+    if (pillRaritan) pillRaritan.classList.toggle('active', selectedStop === 'Raritan');
+    if (pillTrenton) pillTrenton.classList.toggle('active', selectedStop === 'Trenton');
     if (pillAll) pillAll.classList.toggle('active', selectedStop === '');
 
     // Update Banner

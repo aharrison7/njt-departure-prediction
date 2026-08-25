@@ -45,9 +45,7 @@ jobs:
                 const tracker = new DepartedTracker();
 
                 const result = await scrapeActiveStations();
-                const penn = result.stations.nyPenn || [];
-                const jersey = result.stations.jerseyAve || [];
-                const currentBoard = [...penn, ...jersey];
+                const currentBoard = result.stations.nyPenn || [];
 
                 const recentlyDeparted = tracker.update(currentBoard, 'NJ Transit');
                 const history = await dataStore.updateHistory(currentBoard);
@@ -58,7 +56,7 @@ jobs:
 
                 const apiData = {
                   lastUpdated: new Date().toISOString(),
-                  activeStation: 'Penn Station NY & Jersey Ave',
+                  activeStation: 'Penn Station New York',
                   activeWindow: 'live',
                   scrapeTime: 'github-actions',
                   currentBoard,

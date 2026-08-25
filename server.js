@@ -40,33 +40,29 @@ app.use('/data', express.static(path.join(__dirname, 'data')));
 // ─── Scrape Handler ──────────────────────────────────────────────────
 
 /**
- * Process a scrape: Penn Station New York + Jersey Avenue Station ONLY.
+ * Process a scrape: Penn Station New York ONLY.
  */
 async function handleScrape() {
   const startTime = Date.now();
   console.log('\n' + '='.repeat(60));
-  console.log(`[Server] LIVE SCRAPE (Penn Station + Jersey Ave) — ${new Date().toLocaleString('en-US', { timeZone: 'America/New_York' })}`);
+  console.log(`[Server] LIVE SCRAPE (Penn Station New York) — ${new Date().toLocaleString('en-US', { timeZone: 'America/New_York' })}`);
 
   try {
     const result = await scrapeActiveStations();
-    const pennDepartures = result.stations.nyPenn || [];
-    const jerseyAveDepartures = result.stations.jerseyAve || [];
+    const currentBoard = result.stations.nyPenn || [];
 
-    // Combine departures from Penn Station NY & Jersey Avenue
-    const currentBoard = [...pennDepartures, ...jerseyAveDepartures];
-
-    console.log(`[Server] Scraped ${pennDepartures.length} departures from NY Penn, ${jerseyAveDepartures.length} from Jersey Ave`);
+    console.log(`[Server] Scraped ${currentBoard.length} departures from Penn Station New York`);
 
     // Update recently departed tracker
     const recentlyDeparted = departedTracker.update(currentBoard, 'NJ Transit');
 
-    // Update history for Penn & Jersey Ave trains
+    // Update history for Penn Station trains
     const history = await dataStore.updateHistory(currentBoard);
 
     // Record cancellations
     const cancellations = await dataStore.recordCancellations(currentBoard);
 
-    // Update track registry with valid tracks used at Penn & Jersey Ave
+    // Update track registry with valid tracks used at Penn Station
     const trackRegistry = await dataStore.updateTrackRegistry(currentBoard);
 
     // Generate predictions for current active trains
@@ -78,7 +74,7 @@ async function handleScrape() {
     // Build and write api_data.json
     const apiData = {
       lastUpdated: new Date().toISOString(),
-      activeStation: 'Penn Station NY & Jersey Ave',
+      activeStation: 'Penn Station New York',
       activeWindow: 'live',
       scrapeTime: `${Date.now() - startTime}ms`,
       currentBoard,

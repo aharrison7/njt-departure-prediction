@@ -73,12 +73,12 @@
               type="text" 
               id="station-search-input" 
               class="station-search-input" 
-              placeholder="Search station..." 
-              value="Jersey Avenue"
+              placeholder="Search station stop (e.g. Raritan, Metropark)..." 
+              value=""
               autocomplete="off" 
               spellcheck="false"
             />
-            <button type="button" id="station-clear-btn" class="station-clear-btn" title="Clear station filter">✕</button>
+            <button type="button" id="station-clear-btn" class="station-clear-btn" title="Clear station filter" style="display:none;">✕</button>
             <span class="combobox-arrow">▼</span>
           </div>
 
@@ -91,14 +91,14 @@
         </div>
 
         <select id="station-filter-select" class="station-select-hidden" style="display:none;">
-          <option value="">All Trains (Any Stop)</option>
-          <option value="Jersey Avenue" selected>Jersey Avenue</option>
+          <option value="" selected>All Trains (Any Stop)</option>
         </select>
 
         <div class="filter-pills">
-          <button class="pill-btn active" data-stop="Jersey Avenue" id="pill-jersey-ave">📍 Jersey Ave</button>
-          <button class="pill-btn" data-stop="New York Penn Station" id="pill-ny-penn">🗽 NY Penn</button>
-          <button class="pill-btn" data-stop="" id="pill-all">All Trains</button>
+          <button class="pill-btn active" data-stop="" id="pill-all">✨ All Trains</button>
+          <button class="pill-btn" data-stop="Metropark" id="pill-metropark">📍 Metropark</button>
+          <button class="pill-btn" data-stop="Raritan" id="pill-raritan">📍 Raritan</button>
+          <button class="pill-btn" data-stop="Trenton" id="pill-trenton">📍 Trenton</button>
         </div>
       </div>
     </div>
@@ -106,7 +106,7 @@
 
   <!-- Filter Active Notification Banner -->
   <div id="filter-banner" class="filter-banner" style="display:none;">
-    <span>Filtering for trains stopping at <strong id="filter-banner-target">Jersey Avenue</strong> — showing calculated arrival times</span>
+    <span>Filtering for trains stopping at <strong id="filter-banner-target">—</strong> — showing calculated arrival times</span>
     <button id="clear-filter-btn" class="clear-btn">Clear Filter</button>
   </div>
 

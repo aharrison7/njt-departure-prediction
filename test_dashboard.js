@@ -61,9 +61,9 @@ async function runComprehensiveTests() {
     await page.screenshot({ path: path.join(screenshotDir, 'test_2_dropdown_open.png') });
     console.log('  📸 Screenshot: test_2_dropdown_open.png');
 
-    // Type 'Metropark'
-    await page.click('#station-clear-btn');
-    await new Promise(r => setTimeout(r, 200));
+    // Type 'Metropark' into the search input
+    await page.click('#station-search-input');
+    await page.evaluate(() => { document.querySelector('#station-search-input').value = ''; });
     await page.type('#station-search-input', 'Metropark', { delay: 40 });
     await new Promise(r => setTimeout(r, 400));
 

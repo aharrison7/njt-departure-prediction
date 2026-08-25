@@ -574,7 +574,7 @@
     },
     "2026-08-25": {
       "track": "4",
-      "status": "On Time",
+      "status": "All Aboard",
       "station": "Jersey Ave",
       "scheduledTime": "12:38 PM",
       "destination": "Trenton"
@@ -1364,8 +1364,8 @@
   },
   "6627": {
     "2026-08-25": {
-      "track": "",
-      "status": "On Time",
+      "track": "13",
+      "status": "All Aboard",
       "station": "NY Penn",
       "scheduledTime": "12:47 PM",
       "destination": "Dover"
@@ -1800,7 +1800,7 @@
   "A171": {
     "2026-08-25": {
       "track": "11",
-      "status": "All Aboard",
+      "status": "On Time",
       "station": "NY Penn",
       "scheduledTime": "12:40 PM",
       "destination": "Roanoke"
@@ -1808,8 +1808,8 @@
   },
   "A609": {
     "2026-08-25": {
-      "track": "",
-      "status": "On Time",
+      "track": "14",
+      "status": "All Aboard",
       "station": "NY Penn",
       "scheduledTime": "12:54 PM",
       "destination": "Harrisburg"

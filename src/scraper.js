@@ -8,17 +8,12 @@
 const puppeteer = require('puppeteer');
 const { getTrainStops, resolveLine } = require('./route-stops');
 
-// Station URLs — ONLY Penn Station NY and Jersey Avenue Station
+// Station URLs — ONLY Penn Station New York
 const STATIONS = {
   nyPenn: {
     name: 'Penn Station New York',
     url: 'https://www.njtransit.com/dv-to/Penn%20Station%20New%20York',
     shortName: 'NY Penn'
-  },
-  jerseyAve: {
-    name: 'Jersey Avenue Station',
-    url: 'https://www.njtransit.com/dv-to/Jersey%20Avenue%20Station%20(Northeast%20Corridor)',
-    shortName: 'Jersey Ave'
   }
 };
 
@@ -246,19 +241,15 @@ async function scrapeDepartureBoard(stationKey, retries = 3) {
 }
 
 /**
- * Scrape NY Penn & Jersey Ave stations ONLY.
+ * Scrape Penn Station New York ONLY.
  */
 async function scrapeActiveStations() {
-  console.log(`[Scraper] === Scrape NY Penn & Jersey Ave at ${new Date().toLocaleTimeString('en-US', { timeZone: 'America/New_York' })} ===`);
-  const [nyPenn, jerseyAve] = await Promise.all([
-    scrapeDepartureBoard('nyPenn'),
-    scrapeDepartureBoard('jerseyAve')
-  ]);
+  console.log(`[Scraper] === Scrape Penn Station New York at ${new Date().toLocaleTimeString('en-US', { timeZone: 'America/New_York' })} ===`);
+  const nyPenn = await scrapeDepartureBoard('nyPenn');
   return {
     timestamp: new Date().toISOString(),
     stations: {
-      nyPenn,
-      jerseyAve
+      nyPenn
     }
   };
 }
