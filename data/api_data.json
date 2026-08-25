@@ -1,8 +1,8 @@
 {
-  "lastUpdated": "2026-08-25T17:05:26.403Z",
-  "activeStation": "Penn Station NY & Jersey Ave",
+  "lastUpdated": "2026-08-25T17:09:51.179Z",
+  "activeStation": "Penn Station New York",
   "activeWindow": "live",
-  "scrapeTime": "25761ms",
+  "scrapeTime": "110404ms",
   "currentBoard": [
     {
       "trainNumber": "3845",
@@ -737,70 +737,7 @@
       ]
     }
   ],
-  "recentlyDeparted": [
-    {
-      "trainNumber": "3841",
-      "scheduledTime": "1:04 PM",
-      "destination": "Trenton",
-      "line": "NEC",
-      "track": "4",
-      "status": "All Aboard",
-      "station": "Jersey Ave",
-      "stops": [
-        "Jersey Avenue",
-        "Princeton Junction",
-        "Hamilton",
-        "Trenton"
-      ],
-      "removedAt": "2026-08-25T17:05:26.391Z",
-      "departedStatus": "Departed",
-      "lastTrack": "4"
-    },
-    {
-      "trainNumber": "A2159",
-      "scheduledTime": "1:02 PM",
-      "destination": "Washington",
-      "line": "AMTK",
-      "track": "15",
-      "status": "All Aboard",
-      "station": "NY Penn",
-      "stops": [
-        "New York Penn Station",
-        "Newark Penn Station",
-        "Metropark",
-        "Trenton",
-        "Philadelphia 30th St",
-        "Wilmington",
-        "Baltimore",
-        "Washington Union Station"
-      ],
-      "removedAt": "2026-08-25T17:03:25.581Z",
-      "departedStatus": "Departed",
-      "lastTrack": "15"
-    },
-    {
-      "trainNumber": "A609",
-      "scheduledTime": "12:54 PM",
-      "destination": "Harrisburg",
-      "line": "AMTK",
-      "track": "14",
-      "status": "All Aboard",
-      "station": "NY Penn",
-      "stops": [
-        "New York Penn Station",
-        "Newark Penn Station",
-        "Metropark",
-        "Trenton",
-        "Philadelphia 30th St",
-        "Wilmington",
-        "Baltimore",
-        "Washington Union Station"
-      ],
-      "removedAt": "2026-08-25T16:55:26.696Z",
-      "departedStatus": "Departed",
-      "lastTrack": "14"
-    }
-  ],
+  "recentlyDeparted": [],
   "predictions": [
     {
       "trainNumber": "3845",
@@ -1904,6 +1841,7 @@
     "Allendale",
     "Allenhurst",
     "Anderson Street",
+    "Annandale",
     "Asbury Park",
     "Atco",
     "Atlantic City",
@@ -2002,6 +1940,7 @@
     "Newark Airport",
     "Newark Broad St",
     "Newark Penn Station",
+    "North Branch",
     "North Elizabeth",
     "Oradell",
     "Orange",
