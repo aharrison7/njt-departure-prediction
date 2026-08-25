@@ -1,8 +1,8 @@
 {
-  "lastUpdated": "2026-08-25T20:19:57.667Z",
+  "lastUpdated": "2026-08-25T20:29:54.828Z",
   "activeStation": "Penn Station New York",
   "activeWindow": "live",
-  "scrapeTime": "116901ms",
+  "scrapeTime": "114301ms",
   "currentBoard": [
     {
       "trainNumber": "6641",
@@ -487,79 +487,7 @@
       ]
     }
   ],
-  "recentlyDeparted": [
-    {
-      "trainNumber": "A651",
-      "scheduledTime": "4:03 PM",
-      "destination": "Harrisburg",
-      "line": "AMTK",
-      "track": "6",
-      "status": "All Aboard",
-      "station": "NY Penn",
-      "stops": [
-        "New York Penn Station",
-        "Newark Penn Station",
-        "Metropark",
-        "Trenton",
-        "Philadelphia 30th St",
-        "Wilmington",
-        "Baltimore",
-        "Washington Union Station"
-      ],
-      "removedAt": "2026-08-25T20:14:17.766Z",
-      "departedStatus": "Departed",
-      "lastTrack": "6"
-    },
-    {
-      "trainNumber": "A173",
-      "scheduledTime": "4:05 PM",
-      "destination": "Washington",
-      "line": "AMTK",
-      "track": "",
-      "status": "DELAYED",
-      "station": "NY Penn",
-      "stops": [
-        "New York Penn Station",
-        "Newark Penn Station",
-        "Metropark",
-        "Trenton",
-        "Philadelphia 30th St",
-        "Wilmington",
-        "Baltimore",
-        "Washington Union Station"
-      ],
-      "removedAt": "2026-08-25T20:14:17.766Z",
-      "departedStatus": "Departed",
-      "lastTrack": "—"
-    },
-    {
-      "trainNumber": "6341",
-      "scheduledTime": "4:07 PM",
-      "destination": "Summit",
-      "line": "M&E",
-      "track": "2",
-      "status": "All Aboard",
-      "station": "NY Penn",
-      "stops": [
-        "New York Penn Station",
-        "Secaucus Junction",
-        "Newark Broad St",
-        "East Orange",
-        "Brick Church",
-        "Orange",
-        "Highland Ave",
-        "Mountain Station",
-        "South Orange",
-        "Maplewood",
-        "Millburn",
-        "Short Hills",
-        "Summit"
-      ],
-      "removedAt": "2026-08-25T20:14:17.766Z",
-      "departedStatus": "Departed",
-      "lastTrack": "2"
-    }
-  ],
+  "recentlyDeparted": [],
   "predictions": [
     {
       "trainNumber": "6641",
@@ -791,15 +719,16 @@
       "scheduledTime": "4:30 PM",
       "currentTrack": "",
       "predictedTrack": "13",
-      "confidence": 0.44,
+      "confidence": 0.36,
       "trackDistribution": {
         "8": 1,
         "11": 2,
         "13": 4,
-        "14": 2
+        "14": 2,
+        "15": 2
       },
-      "daysOfData": 16,
-      "totalHistoryDays": 17,
+      "daysOfData": 18,
+      "totalHistoryDays": 18,
       "excludedTracks": [
         "1",
         "3",
