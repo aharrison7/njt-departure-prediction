@@ -40,10 +40,19 @@ async function initBrowser() {
       ]
     };
 
-    // Fallback to system Chrome / Edge if available on Windows
+    // Find Chrome / Chromium across Linux (Docker/Koyeb) and Windows environments
     const systemChrome = 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe';
     const systemEdge = 'C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe';
-    if (fs.existsSync(systemChrome)) {
+
+    if (process.env.PUPPETEER_EXECUTABLE_PATH && fs.existsSync(process.env.PUPPETEER_EXECUTABLE_PATH)) {
+      launchOptions.executablePath = process.env.PUPPETEER_EXECUTABLE_PATH;
+    } else if (fs.existsSync('/usr/bin/chromium')) {
+      launchOptions.executablePath = '/usr/bin/chromium';
+    } else if (fs.existsSync('/usr/bin/chromium-browser')) {
+      launchOptions.executablePath = '/usr/bin/chromium-browser';
+    } else if (fs.existsSync('/usr/bin/google-chrome-stable')) {
+      launchOptions.executablePath = '/usr/bin/google-chrome-stable';
+    } else if (fs.existsSync(systemChrome)) {
       launchOptions.executablePath = systemChrome;
     } else if (fs.existsSync(systemEdge)) {
       launchOptions.executablePath = systemEdge;
