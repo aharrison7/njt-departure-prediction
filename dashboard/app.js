@@ -695,6 +695,12 @@
     }
 
     // Filter out Amtrak trains from display (they remain in backend to detect occupied tracks for predictions)
+    const activeTrainNumbers = new Set(
+      (data.currentBoard || [])
+        .filter(dep => !isAmtrakTrain(dep))
+        .map(dep => dep.trainNumber)
+    );
+
     const filteredBoard = (data.currentBoard || [])
       .filter(dep => !isAmtrakTrain(dep))
       .filter(dep => trainStopsAt(dep, selectedStop));
@@ -703,8 +709,9 @@
       .filter(dep => !isAmtrakTrain(dep))
       .filter(dep => trainStopsAt(dep, selectedStop));
 
+    // Ensure predictions tab ONLY includes trains currently on the live departure vision board
     const filteredPreds = (data.predictions || [])
-      .filter(pred => !isAmtrakTrain(pred))
+      .filter(pred => activeTrainNumbers.has(pred.trainNumber))
       .filter(pred => trainStopsAt(pred, selectedStop));
 
     renderBoard(filteredBoard, filteredDeparted, data.activeStation, data.predictions || []);
