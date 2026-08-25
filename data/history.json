@@ -33,6 +33,24 @@
       "destination": "Long Branch"
     }
   },
+  "3241": {
+    "2026-08-25": {
+      "track": "",
+      "status": "On Time",
+      "station": "NY Penn",
+      "scheduledTime": "12:12 PM",
+      "destination": "Long Branch"
+    }
+  },
+  "3243": {
+    "2026-08-25": {
+      "track": "",
+      "status": "On Time",
+      "station": "NY Penn",
+      "scheduledTime": "12:43 PM",
+      "destination": "Long Branch-BH"
+    }
+  },
   "3255": {
     "2026-08-21": {
       "track": "",
@@ -243,10 +261,24 @@
       "station": "Jersey Ave",
       "scheduledTime": "6:16 AM",
       "destination": "New York"
+    },
+    "2026-08-25": {
+      "track": "",
+      "status": "On Time",
+      "station": "Jersey Ave",
+      "scheduledTime": "6:16 AM",
+      "destination": "New York"
     }
   },
   "3708": {
     "2026-08-24": {
+      "track": "",
+      "status": "On Time",
+      "station": "Jersey Ave",
+      "scheduledTime": "6:40 AM",
+      "destination": "New York"
+    },
+    "2026-08-25": {
       "track": "",
       "status": "On Time",
       "station": "Jersey Ave",
@@ -261,10 +293,24 @@
       "station": "Jersey Ave",
       "scheduledTime": "7:06 AM",
       "destination": "New York"
+    },
+    "2026-08-25": {
+      "track": "",
+      "status": "On Time",
+      "station": "Jersey Ave",
+      "scheduledTime": "7:06 AM",
+      "destination": "New York"
     }
   },
   "3712": {
     "2026-08-24": {
+      "track": "",
+      "status": "On Time",
+      "station": "Jersey Ave",
+      "scheduledTime": "7:38 AM",
+      "destination": "New York"
+    },
+    "2026-08-25": {
       "track": "",
       "status": "On Time",
       "station": "Jersey Ave",
@@ -279,10 +325,24 @@
       "station": "Jersey Ave",
       "scheduledTime": "7:55 AM",
       "destination": "New York"
+    },
+    "2026-08-25": {
+      "track": "",
+      "status": "On Time",
+      "station": "Jersey Ave",
+      "scheduledTime": "7:55 AM",
+      "destination": "New York"
     }
   },
   "3716": {
     "2026-08-24": {
+      "track": "",
+      "status": "On Time",
+      "station": "Jersey Ave",
+      "scheduledTime": "8:19 AM",
+      "destination": "New York"
+    },
+    "2026-08-25": {
       "track": "",
       "status": "On Time",
       "station": "Jersey Ave",
@@ -297,10 +357,24 @@
       "station": "Jersey Ave",
       "scheduledTime": "8:40 AM",
       "destination": "New York"
+    },
+    "2026-08-25": {
+      "track": "4",
+      "status": "All Aboard",
+      "station": "Jersey Ave",
+      "scheduledTime": "8:40 AM",
+      "destination": "New York"
     }
   },
   "3720": {
     "2026-08-24": {
+      "track": "",
+      "status": "On Time",
+      "station": "Jersey Ave",
+      "scheduledTime": "9:02 AM",
+      "destination": "New York"
+    },
+    "2026-08-25": {
       "track": "",
       "status": "On Time",
       "station": "Jersey Ave",
@@ -326,6 +400,13 @@
   },
   "3722": {
     "2026-08-24": {
+      "track": "",
+      "status": "On Time",
+      "station": "Jersey Ave",
+      "scheduledTime": "9:31 AM",
+      "destination": "New York"
+    },
+    "2026-08-25": {
       "track": "",
       "status": "On Time",
       "station": "Jersey Ave",
@@ -424,10 +505,24 @@
       "station": "Jersey Ave",
       "scheduledTime": "8:54 AM",
       "destination": "Trenton"
+    },
+    "2026-08-25": {
+      "track": "4",
+      "status": "On Time",
+      "station": "Jersey Ave",
+      "scheduledTime": "8:54 AM",
+      "destination": "Trenton"
     }
   },
   "3831": {
     "2026-08-24": {
+      "track": "4",
+      "status": "On Time",
+      "station": "Jersey Ave",
+      "scheduledTime": "10:38 AM",
+      "destination": "Trenton"
+    },
+    "2026-08-25": {
       "track": "4",
       "status": "On Time",
       "station": "Jersey Ave",
@@ -442,10 +537,24 @@
       "station": "Jersey Ave",
       "scheduledTime": "11:37 AM",
       "destination": "Trenton"
+    },
+    "2026-08-25": {
+      "track": "4",
+      "status": "On Time",
+      "station": "Jersey Ave",
+      "scheduledTime": "11:37 AM",
+      "destination": "Trenton"
     }
   },
   "3839": {
     "2026-08-24": {
+      "track": "4",
+      "status": "On Time",
+      "station": "Jersey Ave",
+      "scheduledTime": "12:38 PM",
+      "destination": "Trenton"
+    },
+    "2026-08-25": {
       "track": "4",
       "status": "On Time",
       "station": "Jersey Ave",
@@ -460,10 +569,24 @@
       "station": "Jersey Ave",
       "scheduledTime": "1:04 PM",
       "destination": "Trenton"
+    },
+    "2026-08-25": {
+      "track": "4",
+      "status": "On Time",
+      "station": "Jersey Ave",
+      "scheduledTime": "1:04 PM",
+      "destination": "Trenton"
     }
   },
   "3843": {
     "2026-08-24": {
+      "track": "4",
+      "status": "On Time",
+      "station": "Jersey Ave",
+      "scheduledTime": "1:39 PM",
+      "destination": "Trenton"
+    },
+    "2026-08-25": {
       "track": "4",
       "status": "On Time",
       "station": "Jersey Ave",
@@ -478,6 +601,13 @@
       "station": "Jersey Ave",
       "scheduledTime": "2:06 PM",
       "destination": "Trenton"
+    },
+    "2026-08-25": {
+      "track": "4",
+      "status": "On Time",
+      "station": "Jersey Ave",
+      "scheduledTime": "2:06 PM",
+      "destination": "Trenton"
     }
   },
   "3847": {
@@ -487,10 +617,24 @@
       "station": "Jersey Ave",
       "scheduledTime": "2:34 PM",
       "destination": "Trenton"
+    },
+    "2026-08-25": {
+      "track": "4",
+      "status": "On Time",
+      "station": "Jersey Ave",
+      "scheduledTime": "2:34 PM",
+      "destination": "Trenton"
     }
   },
   "3849": {
     "2026-08-24": {
+      "track": "4",
+      "status": "On Time",
+      "station": "Jersey Ave",
+      "scheduledTime": "3:09 PM",
+      "destination": "Trenton"
+    },
+    "2026-08-25": {
       "track": "4",
       "status": "On Time",
       "station": "Jersey Ave",
@@ -511,6 +655,13 @@
       "status": "All Aboard",
       "station": "NY Penn",
       "scheduledTime": "3:30 PM",
+      "destination": "Trenton"
+    },
+    "2026-08-25": {
+      "track": "4",
+      "status": "On Time",
+      "station": "Jersey Ave",
+      "scheduledTime": "4:24 PM",
       "destination": "Trenton"
     }
   },
@@ -560,6 +711,13 @@
       "station": "NY Penn",
       "scheduledTime": "5:25 PM",
       "destination": "Trenton"
+    },
+    "2026-08-25": {
+      "track": "4",
+      "status": "On Time",
+      "station": "Jersey Ave",
+      "scheduledTime": "6:28 PM",
+      "destination": "Trenton"
     }
   },
   "3871": {
@@ -592,6 +750,13 @@
       "station": "Jersey Ave",
       "scheduledTime": "7:20 PM",
       "destination": "Trenton"
+    },
+    "2026-08-25": {
+      "track": "4",
+      "status": "On Time",
+      "station": "Jersey Ave",
+      "scheduledTime": "7:20 PM",
+      "destination": "Trenton"
     }
   },
   "3875": {
@@ -608,10 +773,24 @@
       "station": "Jersey Ave",
       "scheduledTime": "7:41 PM",
       "destination": "Trenton"
+    },
+    "2026-08-25": {
+      "track": "4",
+      "status": "On Time",
+      "station": "Jersey Ave",
+      "scheduledTime": "7:41 PM",
+      "destination": "Trenton"
     }
   },
   "3877": {
     "2026-08-24": {
+      "track": "4",
+      "status": "On Time",
+      "station": "Jersey Ave",
+      "scheduledTime": "8:06 PM",
+      "destination": "Trenton"
+    },
+    "2026-08-25": {
       "track": "4",
       "status": "On Time",
       "station": "Jersey Ave",
@@ -626,6 +805,13 @@
       "station": "Jersey Ave",
       "scheduledTime": "8:14 PM",
       "destination": "Trenton"
+    },
+    "2026-08-25": {
+      "track": "4",
+      "status": "On Time",
+      "station": "Jersey Ave",
+      "scheduledTime": "8:14 PM",
+      "destination": "Trenton"
     }
   },
   "3883": {
@@ -634,6 +820,22 @@
       "status": "On Time",
       "station": "Jersey Ave",
       "scheduledTime": "9:12 PM",
+      "destination": "Trenton"
+    },
+    "2026-08-25": {
+      "track": "4",
+      "status": "On Time",
+      "station": "Jersey Ave",
+      "scheduledTime": "9:12 PM",
+      "destination": "Trenton"
+    }
+  },
+  "3885": {
+    "2026-08-25": {
+      "track": "4",
+      "status": "On Time",
+      "station": "Jersey Ave",
+      "scheduledTime": "9:34 PM",
       "destination": "Trenton"
     }
   },
@@ -661,6 +863,13 @@
       "status": "All Aboard",
       "station": "NY Penn",
       "scheduledTime": "3:01 PM",
+      "destination": "Trenton"
+    },
+    "2026-08-25": {
+      "track": "4",
+      "status": "On Time",
+      "station": "Jersey Ave",
+      "scheduledTime": "3:47 PM",
       "destination": "Trenton"
     }
   },
@@ -774,10 +983,24 @@
       "station": "Jersey Ave",
       "scheduledTime": "7:28 PM",
       "destination": "Trenton"
+    },
+    "2026-08-25": {
+      "track": "4",
+      "status": "On Time",
+      "station": "Jersey Ave",
+      "scheduledTime": "7:28 PM",
+      "destination": "Trenton"
     }
   },
   "3965": {
     "2026-08-24": {
+      "track": "4",
+      "status": "On Time",
+      "station": "Jersey Ave",
+      "scheduledTime": "8:29 PM",
+      "destination": "Trenton"
+    },
+    "2026-08-25": {
       "track": "4",
       "status": "On Time",
       "station": "Jersey Ave",
@@ -792,6 +1015,13 @@
       "station": "Jersey Ave",
       "scheduledTime": "9:05 PM",
       "destination": "Trenton"
+    },
+    "2026-08-25": {
+      "track": "4",
+      "status": "On Time",
+      "station": "Jersey Ave",
+      "scheduledTime": "9:05 PM",
+      "destination": "Trenton"
     }
   },
   "3979": {
@@ -801,6 +1031,24 @@
       "station": "NY Penn",
       "scheduledTime": "10:11 PM",
       "destination": "Trenton"
+    }
+  },
+  "5123": {
+    "2026-08-25": {
+      "track": "3",
+      "status": "All Aboard",
+      "station": "NY Penn",
+      "scheduledTime": "11:40 AM",
+      "destination": "Raritan"
+    }
+  },
+  "5175": {
+    "2026-08-25": {
+      "track": "",
+      "status": "On Time",
+      "station": "NY Penn",
+      "scheduledTime": "12:45 PM",
+      "destination": "High Bridge"
     }
   },
   "5197": {
@@ -818,6 +1066,24 @@
       "status": "On Time",
       "station": "NY Penn",
       "scheduledTime": "12:34 AM",
+      "destination": "MSU"
+    }
+  },
+  "6241": {
+    "2026-08-25": {
+      "track": "",
+      "status": "On Time",
+      "station": "NY Penn",
+      "scheduledTime": "12:29 PM",
+      "destination": "MSU"
+    }
+  },
+  "6245": {
+    "2026-08-25": {
+      "track": "",
+      "status": "On Time",
+      "station": "NY Penn",
+      "scheduledTime": "1:29 PM",
       "destination": "MSU"
     }
   },
@@ -1048,6 +1314,24 @@
       "status": "On Time",
       "station": "NY Penn",
       "scheduledTime": "12:56 AM",
+      "destination": "Dover"
+    }
+  },
+  "6625": {
+    "2026-08-25": {
+      "track": "",
+      "status": "On Time",
+      "station": "NY Penn",
+      "scheduledTime": "11:46 AM",
+      "destination": "Dover"
+    }
+  },
+  "6627": {
+    "2026-08-25": {
+      "track": "",
+      "status": "On Time",
+      "station": "NY Penn",
+      "scheduledTime": "12:47 PM",
       "destination": "Dover"
     }
   },
@@ -1430,6 +1714,69 @@
       "station": "NY Penn",
       "scheduledTime": "12:11 AM",
       "destination": "Philadelphia"
+    }
+  },
+  "A125": {
+    "2026-08-25": {
+      "track": "9",
+      "status": "All Aboard",
+      "station": "NY Penn",
+      "scheduledTime": "11:35 AM",
+      "destination": "Newport News"
+    }
+  },
+  "A2115": {
+    "2026-08-25": {
+      "track": "",
+      "status": "On Time",
+      "station": "NY Penn",
+      "scheduledTime": "11:55 AM",
+      "destination": "Washington"
+    }
+  },
+  "A645": {
+    "2026-08-25": {
+      "track": "",
+      "status": "On Time",
+      "station": "NY Penn",
+      "scheduledTime": "12:05 PM",
+      "destination": "Harrisburg"
+    }
+  },
+  "A131": {
+    "2026-08-25": {
+      "track": "",
+      "status": "On Time",
+      "station": "NY Penn",
+      "scheduledTime": "12:10 PM",
+      "destination": "Washington"
+    }
+  },
+  "A171": {
+    "2026-08-25": {
+      "track": "",
+      "status": "On Time",
+      "station": "NY Penn",
+      "scheduledTime": "12:40 PM",
+      "destination": "Roanoke"
+    }
+  },
+  "A609": {
+    "2026-08-25": {
+      "track": "",
+      "status": "On Time",
+      "station": "NY Penn",
+      "scheduledTime": "12:54 PM",
+      "destination": "Harrisburg"
+    }
+  },
+  "A2159": {
+    "2026-08-25": {
+      "track": "",
+      "status": "On Time",
+      "station": "NY Penn",
+      "scheduledTime": "1:02 PM",
+      "destination": "Washington"
     }
   }
 }

@@ -9,24 +9,21 @@ require('dotenv').config();
 
 const express = require('express');
 const path = require('path');
-const { scrapeMorning, scrapeAfternoon, initBrowser, closeBrowser } = require('./src/scraper');
+const { initBrowser, closeBrowser, scrapeActiveStations } = require('./src/scraper');
 const DataStore = require('./src/data-store');
 const DepartedTracker = require('./src/departed-tracker');
-const { generatePredictions, detectEnRouteCancellations, getRecentCancellations } = require('./src/predictor');
-const { getAllStationStops } = require('./src/route-stops');
 const Scheduler = require('./src/scheduler');
+const { generatePredictions, getRecentCancellations } = require('./src/predictor');
+const { getAllStationStops } = require('./src/route-stops');
 
-// ─── Configuration ───────────────────────────────────────────────────
-
-const PORT = process.env.PORT || 3000;
-const CREDENTIALS_PATH = process.env.GOOGLE_CREDENTIALS_PATH || './credentials.json';
-const FOLDER_ID = process.env.GOOGLE_DRIVE_FOLDER_ID || '';
-
-// ─── Initialize Services ────────────────────────────────────────────
-
-const dataStore = new DataStore(CREDENTIALS_PATH, FOLDER_ID);
-const departedTracker = new DepartedTracker();
 const app = express();
+const PORT = process.env.PORT || 3000;
+
+// Initialize components
+const dataStore = new DataStore();
+const departedTracker = new DepartedTracker();
+
+app.use(express.json());
 
 // Serve dashboard static files
 app.use('/dashboard', express.static(path.join(__dirname, 'dashboard')));
@@ -34,37 +31,40 @@ app.use('/dashboard', express.static(path.join(__dirname, 'dashboard')));
 // Also serve local data files for dev/testing
 app.use('/data', express.static(path.join(__dirname, 'data')));
 
-// ─── Scrape Handlers ────────────────────────────────────────────────
+// ─── Scrape Handler ──────────────────────────────────────────────────
 
 /**
- * Process a morning scrape: Jersey Ave Station.
+ * Process a scrape: Penn Station New York + Jersey Avenue Station ONLY.
  */
-async function handleMorningScrape() {
+async function handleScrape() {
   const startTime = Date.now();
   console.log('\n' + '='.repeat(60));
-  console.log(`[Server] MORNING SCRAPE — ${new Date().toLocaleString('en-US', { timeZone: 'America/New_York' })}`);
+  console.log(`[Server] LIVE SCRAPE (Penn Station + Jersey Ave) — ${new Date().toLocaleString('en-US', { timeZone: 'America/New_York' })}`);
 
   try {
-    const result = await scrapeMorning();
-    const departures = result.stations.jerseyAve || [];
-    
-    console.log(`[Server] Scraped ${departures.length} departures from Jersey Ave`);
+    const result = await scrapeActiveStations();
+    const pennDepartures = result.stations.nyPenn || [];
+    const jerseyAveDepartures = result.stations.jerseyAve || [];
+
+    // Combine departures from Penn Station NY & Jersey Avenue
+    const currentBoard = [...pennDepartures, ...jerseyAveDepartures];
+
+    console.log(`[Server] Scraped ${pennDepartures.length} departures from NY Penn, ${jerseyAveDepartures.length} from Jersey Ave`);
 
     // Update recently departed tracker
-    const recentlyDeparted = departedTracker.update(departures, 'Jersey Ave');
-    console.log(`[Server] ${recentlyDeparted.length} recently departed trains`);
+    const recentlyDeparted = departedTracker.update(currentBoard, 'NJ Transit');
 
-    // Update history
-    const history = await dataStore.updateHistory(departures);
+    // Update history for Penn & Jersey Ave trains
+    const history = await dataStore.updateHistory(currentBoard);
 
     // Record cancellations
-    const cancellations = await dataStore.recordCancellations(departures);
+    const cancellations = await dataStore.recordCancellations(currentBoard);
 
-    // Update track registry
-    const trackRegistry = await dataStore.updateTrackRegistry(departures);
+    // Update track registry with valid tracks used at Penn & Jersey Ave
+    const trackRegistry = await dataStore.updateTrackRegistry(currentBoard);
 
-    // Generate predictions
-    const predictions = generatePredictions(departures, history, trackRegistry);
+    // Generate predictions for current active trains
+    const predictions = generatePredictions(currentBoard, history, trackRegistry);
 
     // Get recent cancellations (last 7 days)
     const recentCancellations = getRecentCancellations(cancellations);
@@ -72,11 +72,11 @@ async function handleMorningScrape() {
     // Build and write api_data.json
     const apiData = {
       lastUpdated: new Date().toISOString(),
-      activeStation: 'Jersey Avenue Station',
-      activeWindow: 'morning',
+      activeStation: 'Penn Station NY & Jersey Ave',
+      activeWindow: 'live',
       scrapeTime: `${Date.now() - startTime}ms`,
-      currentBoard: departures,
-      recentlyDeparted: recentlyDeparted,
+      currentBoard,
+      recentlyDeparted,
       predictions,
       cancellations: {
         recentByTrain: recentCancellations
@@ -87,75 +87,9 @@ async function handleMorningScrape() {
     };
 
     await dataStore.writeApiData(apiData);
-    console.log(`[Server] Morning scrape complete in ${Date.now() - startTime}ms`);
+    console.log(`[Server] Live scrape complete in ${Date.now() - startTime}ms`);
   } catch (error) {
-    console.error('[Server] Morning scrape failed:', error);
-  }
-}
-
-/**
- * Process an afternoon scrape: Penn Station + Edison Station.
- */
-async function handleAfternoonScrape() {
-  const startTime = Date.now();
-  console.log('\n' + '='.repeat(60));
-  console.log(`[Server] AFTERNOON SCRAPE — ${new Date().toLocaleString('en-US', { timeZone: 'America/New_York' })}`);
-
-  try {
-    const result = await scrapeAfternoon();
-    const pennDepartures = result.stations.nyPenn || [];
-    const edisonDepartures = result.stations.edison || [];
-
-    console.log(`[Server] Scraped ${pennDepartures.length} departures from Penn, ${edisonDepartures.length} from Edison`);
-
-    // Update recently departed tracker (Penn Station)
-    const recentlyDeparted = departedTracker.update(pennDepartures, 'NY Penn');
-    console.log(`[Server] ${recentlyDeparted.length} recently departed trains`);
-
-    // Update history (Penn departures are the primary tracking)
-    const history = await dataStore.updateHistory(pennDepartures);
-
-    // Record cancellations from both stations
-    const allDepartures = [...pennDepartures, ...edisonDepartures];
-    const cancellations = await dataStore.recordCancellations(allDepartures);
-
-    // Update track registry
-    const trackRegistry = await dataStore.updateTrackRegistry(pennDepartures);
-
-    // Generate predictions for Penn Station board
-    const predictions = generatePredictions(pennDepartures, history, trackRegistry);
-
-    // Detect en-route cancellations (departed Penn but cancelled at Edison)
-    const enRouteCancellations = detectEnRouteCancellations(pennDepartures, edisonDepartures);
-    if (enRouteCancellations.length > 0) {
-      console.log(`[Server] ⚠ ${enRouteCancellations.length} en-route cancellations detected!`);
-    }
-
-    // Get recent cancellations (last 7 days)
-    const recentCancellations = getRecentCancellations(cancellations);
-
-    // Build and write api_data.json
-    const apiData = {
-      lastUpdated: new Date().toISOString(),
-      activeStation: 'Penn Station New York',
-      activeWindow: 'afternoon',
-      scrapeTime: `${Date.now() - startTime}ms`,
-      currentBoard: pennDepartures,
-      recentlyDeparted: recentlyDeparted,
-      edisonBoard: edisonDepartures,
-      predictions,
-      cancellations: {
-        recentByTrain: recentCancellations
-      },
-      enRouteCancellations,
-      trackRegistry: trackRegistry.tracks || [],
-      allStops: getAllStationStops()
-    };
-
-    await dataStore.writeApiData(apiData);
-    console.log(`[Server] Afternoon scrape complete in ${Date.now() - startTime}ms`);
-  } catch (error) {
-    console.error('[Server] Afternoon scrape failed:', error);
+    console.error('[Server] Live scrape failed:', error);
   }
 }
 
@@ -188,20 +122,23 @@ app.get('/api/data', async (req, res) => {
   }
 });
 
-// Manual trigger endpoints (useful for testing)
-app.post('/api/scrape/morning', async (req, res) => {
-  res.json({ message: 'Morning scrape started' });
-  await handleMorningScrape();
+// Manual trigger endpoints
+app.post('/api/scrape', async (req, res) => {
+  res.json({ message: 'Live scrape started' });
+  await handleScrape();
 });
-
+app.post('/api/scrape/morning', async (req, res) => {
+  res.json({ message: 'Live scrape started' });
+  await handleScrape();
+});
 app.post('/api/scrape/afternoon', async (req, res) => {
-  res.json({ message: 'Afternoon scrape started' });
-  await handleAfternoonScrape();
+  res.json({ message: 'Live scrape started' });
+  await handleScrape();
 });
 
 // ─── Startup ─────────────────────────────────────────────────────────
 
-const scheduler = new Scheduler(handleMorningScrape, handleAfternoonScrape);
+const scheduler = new Scheduler(handleScrape);
 
 async function main() {
   console.log('╔══════════════════════════════════════════════════════════╗');
@@ -228,19 +165,11 @@ async function main() {
     console.log(`[Server] Dashboard: http://localhost:${PORT}/dashboard/`);
     console.log(`[Server] API data:  http://localhost:${PORT}/api/data`);
     console.log(`[Server] Status:    http://localhost:${PORT}/api/status`);
-    console.log(`[Server] Manual scrape: POST /api/scrape/morning or /api/scrape/afternoon`);
+    console.log(`[Server] Manual scrape: POST /api/scrape`);
   });
 
   // Run immediate scrape if configured
   if (process.env.SCRAPE_ON_STARTUP === 'true') {
-    const window = Scheduler.getCurrentWindow();
-    console.log(`\n[Server] Startup scrape requested (current window: ${window})`);
-    if (window === 'morning') {
-      await handleMorningScrape();
-    } else if (window === 'afternoon') {
-      await handleAfternoonScrape();
-    } else {
-      console.log('[Server] Outside active hours — running afternoon scrape for testing');
       await handleAfternoonScrape();
     }
   }

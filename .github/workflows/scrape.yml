@@ -2,8 +2,8 @@ name: NJT Live Scraper & GitHub Pages Update
 
 on:
   schedule:
-    # Run every 5 minutes continuously
-    - cron: '*/5 * * * *'
+    # Run every 1 minute continuously
+    - cron: '* * * * *'
   workflow_dispatch: # Allows manual trigger from GitHub UI
 
 permissions:
@@ -25,14 +25,12 @@ jobs:
         run: npm ci || npm install
 
       - name: Run Scraper & Update Data
-        env:
-          SCRAPE_ON_STARTUP: 'true'
         run: |
           node -e "
-            const { scrapeAfternoon } = require('./src/scraper');
+            const { scrapeActiveStations } = require('./src/scraper');
             const DataStore = require('./src/data-store');
             const DepartedTracker = require('./src/departed-tracker');
-            const { generatePredictions, detectEnRouteCancellations, getRecentCancellations } = require('./src/predictor');
+            const { generatePredictions, getRecentCancellations } = require('./src/predictor');
             const { getAllStationStops } = require('./src/route-stops');
 
             async function run() {
@@ -40,34 +38,34 @@ jobs:
               await dataStore.init();
               const tracker = new DepartedTracker();
 
-              const result = await scrapeAfternoon();
+              const result = await scrapeActiveStations();
               const penn = result.stations.nyPenn || [];
-              const edison = result.stations.edison || [];
-              const recentlyDeparted = tracker.update(penn, 'NY Penn');
-              const history = await dataStore.updateHistory(penn);
-              const cancellations = await dataStore.recordCancellations([...penn, ...edison]);
-              const trackRegistry = await dataStore.updateTrackRegistry(penn);
-              const predictions = generatePredictions(penn, history, trackRegistry);
-              const enRoute = detectEnRouteCancellations(penn, edison);
+              const jersey = result.stations.jerseyAve || [];
+              const currentBoard = [...penn, ...jersey];
+
+              const recentlyDeparted = tracker.update(currentBoard, 'NJ Transit');
+              const history = await dataStore.updateHistory(currentBoard);
+              const cancellations = await dataStore.recordCancellations(currentBoard);
+              const trackRegistry = await dataStore.updateTrackRegistry(currentBoard);
+              const predictions = generatePredictions(currentBoard, history, trackRegistry);
               const recentCancellations = getRecentCancellations(cancellations);
 
               const apiData = {
                 lastUpdated: new Date().toISOString(),
-                activeStation: 'Penn Station New York',
+                activeStation: 'Penn Station NY & Jersey Ave',
                 activeWindow: 'live',
                 scrapeTime: 'github-actions',
-                currentBoard: penn,
-                recentlyDeparted: recentlyDeparted,
-                edisonBoard: edison,
+                currentBoard,
+                recentlyDeparted,
                 predictions,
                 cancellations: { recentByTrain: recentCancellations },
-                enRouteCancellations: enRoute,
+                enRouteCancellations: [],
                 trackRegistry: trackRegistry.tracks || [],
                 allStops: getAllStationStops()
               };
 
               await dataStore.writeApiData(apiData);
-              console.log('GitHub Actions live scrape complete');
+              console.log('GitHub Actions 1-minute live scrape complete:', currentBoard.length, 'trains');
             }
             run().catch(err => { console.error(err); process.exit(1); });
           "
@@ -77,4 +75,4 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add data/
-          git diff --quiet && git diff --staged --quiet || (git commit -m "Automated Live Data Scrape [skip ci]" && git push)
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Automated 1-Minute Live Data Scrape [skip ci]" && git push)

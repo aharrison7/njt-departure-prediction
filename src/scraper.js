@@ -8,22 +8,17 @@
 const puppeteer = require('puppeteer');
 const { getTrainStops } = require('./route-stops');
 
-// Station URLs
+// Station URLs — ONLY Penn Station NY and Jersey Avenue Station
 const STATIONS = {
-  jerseyAve: {
-    name: 'Jersey Avenue Station',
-    url: 'https://www.njtransit.com/dv-to/Jersey%20Avenue%20Station%20(Northeast%20Corridor)',
-    shortName: 'Jersey Ave'
-  },
   nyPenn: {
     name: 'Penn Station New York',
     url: 'https://www.njtransit.com/dv-to/Penn%20Station%20New%20York',
     shortName: 'NY Penn'
   },
-  edison: {
-    name: 'Edison Station',
-    url: 'https://www.njtransit.com/dv-to/Edison%20Station',
-    shortName: 'Edison'
+  jerseyAve: {
+    name: 'Jersey Avenue Station',
+    url: 'https://www.njtransit.com/dv-to/Jersey%20Avenue%20Station%20(Northeast%20Corridor)',
+    shortName: 'Jersey Ave'
   }
 };
 
@@ -74,7 +69,7 @@ async function closeBrowser() {
 /**
  * Scrape a single DepartureVision station page.
  * 
- * @param {string} stationKey - Key from STATIONS object ('jerseyAve', 'nyPenn', 'edison')
+ * @param {string} stationKey - Key from STATIONS object ('nyPenn', 'jerseyAve')
  * @param {number} retries - Number of retry attempts (default: 3)
  * @returns {Promise<Array>} Array of departure objects
  */
@@ -105,10 +100,7 @@ async function scrapeDepartureBoard(stationKey, retries = 3) {
       });
 
       // Wait for the departure table to render
-      // The DV page is Vue.js — departure data loads dynamically
-      // We look for common selectors used in the NJT departure board
       await page.waitForFunction(() => {
-        // Look for a table or repeated row structure with departure data
         const tables = document.querySelectorAll('table');
         const rows = document.querySelectorAll('tr, .departure-row, [class*="departure"], [class*="dv-"]');
         return tables.length > 0 || rows.length > 3;
@@ -123,7 +115,7 @@ async function scrapeDepartureBoard(stationKey, retries = 3) {
       const departures = await page.evaluate((stationShortName) => {
         const results = [];
 
-        // Strategy 1: Text-based parsing matching NJT DV pattern (e.g. NECTrain 3855)
+        // Strategy 1: Text-based parsing matching NJT DV pattern
         const fullText = document.body.innerText;
         let boardText = fullText;
         const startIdx = boardText.indexOf('GET REAL-TIME DEPARTURES');
@@ -205,7 +197,7 @@ async function scrapeDepartureBoard(stationKey, retries = 3) {
             else if (!scheduledTime && /\d{1,2}:\d{2}\s*(AM|PM)?/i.test(cell)) scheduledTime = cell;
             else if (!track && /^(\d{1,2}[A-Z]?|[A-Z])$/i.test(cell) && cell.length <= 3) track = cell;
             else if (!status && /(on time|delayed|cancelled|canceled|in delay|all aboard|boarding|hold|departed|standby)/i.test(cell)) status = cell;
-            else if (!line && /^[A-Z]{2,5}$/.test(cell)) line = cell;
+            else if (!line && /^[A-Z]{2,6}$/.test(cell)) line = cell;
             else if (!destination && cell.length > 3 && !/^\d+$/.test(cell)) destination = cell;
           }
           if (trainNumber || scheduledTime) {
@@ -244,44 +236,33 @@ async function scrapeDepartureBoard(stationKey, retries = 3) {
 }
 
 /**
- * Scrape all stations for the morning window (Jersey Ave only).
+ * Scrape NY Penn & Jersey Ave stations ONLY.
  */
-async function scrapeMorning() {
-  console.log(`[Scraper] === Morning scrape at ${new Date().toLocaleTimeString('en-US', { timeZone: 'America/New_York' })} ===`);
-  const jerseyAve = await scrapeDepartureBoard('jerseyAve');
+async function scrapeActiveStations() {
+  console.log(`[Scraper] === Scrape NY Penn & Jersey Ave at ${new Date().toLocaleTimeString('en-US', { timeZone: 'America/New_York' })} ===`);
+  const [nyPenn, jerseyAve] = await Promise.all([
+    scrapeDepartureBoard('nyPenn'),
+    scrapeDepartureBoard('jerseyAve')
+  ]);
   return {
     timestamp: new Date().toISOString(),
-    window: 'morning',
     stations: {
+      nyPenn,
       jerseyAve
     }
   };
 }
 
-/**
- * Scrape all stations for the afternoon window (NY Penn + Edison).
- */
-async function scrapeAfternoon() {
-  console.log(`[Scraper] === Afternoon scrape at ${new Date().toLocaleTimeString('en-US', { timeZone: 'America/New_York' })} ===`);
-  const [nyPenn, edison] = await Promise.all([
-    scrapeDepartureBoard('nyPenn'),
-    scrapeDepartureBoard('edison')
-  ]);
-  return {
-    timestamp: new Date().toISOString(),
-    window: 'afternoon',
-    stations: {
-      nyPenn,
-      edison
-    }
-  };
-}
+// Backward compatibility aliases
+async function scrapeMorning() { return scrapeActiveStations(); }
+async function scrapeAfternoon() { return scrapeActiveStations(); }
 
 module.exports = {
   STATIONS,
   initBrowser,
   closeBrowser,
   scrapeDepartureBoard,
+  scrapeActiveStations,
   scrapeMorning,
   scrapeAfternoon
 };
