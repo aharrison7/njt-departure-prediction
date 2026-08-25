@@ -1098,8 +1098,8 @@
   },
   "6241": {
     "2026-08-25": {
-      "track": "",
-      "status": "On Time",
+      "track": "1",
+      "status": "All Aboard",
       "station": "NY Penn",
       "scheduledTime": "12:29 PM",
       "destination": "MSU"
@@ -1831,6 +1831,24 @@
       "station": "NY Penn",
       "scheduledTime": "2:02 PM",
       "destination": "Norfolk"
+    }
+  },
+  "A647": {
+    "2026-08-25": {
+      "track": "",
+      "status": "On Time",
+      "station": "NY Penn",
+      "scheduledTime": "2:11 PM",
+      "destination": "Harrisburg"
+    }
+  },
+  "A2119": {
+    "2026-08-25": {
+      "track": "",
+      "status": "On Time",
+      "station": "NY Penn",
+      "scheduledTime": "2:15 PM",
+      "destination": "Washington"
     }
   }
 }

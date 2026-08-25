@@ -394,8 +394,17 @@ a:hover {
   z-index: 1000;
   overflow: hidden;
   max-height: 280px;
-  display: flex;
+  display: none;
   flex-direction: column;
+}
+
+.station-dropdown-menu[hidden],
+.searchable-station-container:not(.open) .station-dropdown-menu {
+  display: none !important;
+}
+
+.searchable-station-container.open .station-dropdown-menu:not([hidden]) {
+  display: flex !important;
 }
 
 .dropdown-header-bar {
