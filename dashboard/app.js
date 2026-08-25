@@ -155,11 +155,15 @@
     const pillAll = $('#pill-all');
     const clearBannerBtn = $('#clear-filter-btn');
 
-    function openDropdown() {
+    function openDropdown(forceAll = true) {
       if (!combobox) return;
       combobox.classList.add('open');
       dropdownMenu.removeAttribute('hidden');
-      renderOptions(searchInput.value.trim());
+      if (forceAll) {
+        renderOptions('');
+      } else {
+        renderOptions(searchInput.value.trim());
+      }
     }
 
     function closeDropdown() {
@@ -227,13 +231,13 @@
     });
 
     searchInput.addEventListener('input', () => {
-      openDropdown();
+      openDropdown(false);
       updateClearBtnVisibility();
     });
 
     searchInput.addEventListener('click', (e) => {
       e.stopPropagation();
-      openDropdown();
+      openDropdown(true);
     });
 
     // Keyboard Navigation
