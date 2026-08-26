@@ -1,8 +1,8 @@
 {
-  "lastUpdated": "2026-08-26T02:09:54.266Z",
+  "lastUpdated": "2026-08-26T02:19:51.568Z",
   "activeStation": "Penn Station New York",
   "activeWindow": "live",
-  "scrapeTime": "114002ms",
+  "scrapeTime": "111503ms",
   "currentBoard": [
     {
       "trainNumber": "5155",
@@ -759,19 +759,19 @@
       "line": "NJCL",
       "scheduledTime": "10:23 PM",
       "currentTrack": "",
-      "predictedTrack": null,
-      "confidence": 0,
+      "predictedTrack": "14",
+      "confidence": 0.25,
       "trackDistribution": {
         "3": 1,
         "4": 1,
         "6": 1,
-        "9": 1,
+        "9": 2,
         "10": 2,
         "13": 2,
-        "14": 2
+        "14": 3
       },
-      "daysOfData": 11,
-      "totalHistoryDays": 12,
+      "daysOfData": 13,
+      "totalHistoryDays": 14,
       "excludedTracks": [
         "1"
       ],
