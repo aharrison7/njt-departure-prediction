@@ -5126,11 +5126,11 @@
   },
   "3813": {
     "2026-08-26": {
-      "track": "",
-      "status": "On Time",
+      "track": "13",
+      "destination": "Trenton",
       "station": "NY Penn",
-      "scheduledTime": "5:14 AM",
-      "destination": "Trenton"
+      "status": "BOARDING",
+      "source": "choochootracker_live"
     },
     "2026-08-25": {
       "track": "8",
@@ -5231,6 +5231,13 @@
       "source": "choochootracker"
     },
     "2026-08-11": {
+      "track": "15",
+      "destination": "Trenton",
+      "station": "NY Penn",
+      "status": "On Time",
+      "source": "choochootracker"
+    },
+    "2026-08-10": {
       "track": "15",
       "destination": "Trenton",
       "station": "NY Penn",
