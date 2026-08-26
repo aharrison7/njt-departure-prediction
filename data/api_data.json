@@ -1,8 +1,8 @@
 {
-  "lastUpdated": "2026-08-26T12:09:53.470Z",
+  "lastUpdated": "2026-08-26T12:19:51.405Z",
   "activeStation": "Penn Station New York",
   "activeWindow": "live",
-  "scrapeTime": "112900ms",
+  "scrapeTime": "111398ms",
   "currentBoard": [
     {
       "trainNumber": "6613",
@@ -471,189 +471,7 @@
       ]
     }
   ],
-  "recentlyDeparted": [
-    {
-      "trainNumber": "A183",
-      "scheduledTime": "7:25 AM",
-      "destination": "Washington",
-      "line": "AMTK",
-      "track": "13",
-      "status": "All Aboard",
-      "station": "NY Penn",
-      "stops": [
-        "New York Penn Station",
-        "Newark Penn Station",
-        "Metropark",
-        "Trenton",
-        "Philadelphia 30th St",
-        "Wilmington",
-        "Baltimore",
-        "Washington Union Station"
-      ],
-      "removedAt": "2026-08-26T12:01:19.366Z",
-      "departedStatus": "Departed",
-      "lastTrack": "13"
-    },
-    {
-      "trainNumber": "6215",
-      "scheduledTime": "7:29 AM",
-      "destination": "MSU",
-      "line": "MOBO",
-      "track": "3",
-      "status": "All Aboard",
-      "station": "NY Penn",
-      "stops": [
-        "New York Penn Station",
-        "Secaucus Junction",
-        "Newark Broad St",
-        "Broad Street Bloomfield",
-        "Glen Ridge",
-        "Bay Street Montclair",
-        "Walnut Street",
-        "Watchung Avenue",
-        "Upper Montclair",
-        "Mountain Avenue",
-        "Montclair Heights",
-        "Montclair State University (MSU)"
-      ],
-      "removedAt": "2026-08-26T12:01:19.366Z",
-      "departedStatus": "Departed",
-      "lastTrack": "3"
-    },
-    {
-      "trainNumber": "3709",
-      "scheduledTime": "7:31 AM",
-      "destination": "Jersey Avenue",
-      "line": "NEC",
-      "track": "1",
-      "status": "All Aboard",
-      "station": "NY Penn",
-      "stops": [
-        "New York Penn Station",
-        "Secaucus Junction",
-        "Newark Penn Station",
-        "Newark Airport",
-        "North Elizabeth",
-        "Elizabeth",
-        "Rahway",
-        "Metropark",
-        "Metuchen",
-        "Edison",
-        "New Brunswick",
-        "Jersey Avenue"
-      ],
-      "removedAt": "2026-08-26T12:01:19.366Z",
-      "departedStatus": "Departed",
-      "lastTrack": "1"
-    },
-    {
-      "trainNumber": "A2107",
-      "scheduledTime": "7:35 AM",
-      "destination": "Washington",
-      "line": "AMTK",
-      "track": "10",
-      "status": "All Aboard",
-      "station": "NY Penn",
-      "stops": [
-        "New York Penn Station",
-        "Newark Penn Station",
-        "Metropark",
-        "Trenton",
-        "Philadelphia 30th St",
-        "Wilmington",
-        "Baltimore",
-        "Washington Union Station"
-      ],
-      "removedAt": "2026-08-26T12:01:19.366Z",
-      "departedStatus": "Departed",
-      "lastTrack": "10"
-    },
-    {
-      "trainNumber": "6311",
-      "scheduledTime": "7:40 AM",
-      "destination": "Summit",
-      "line": "M&E",
-      "track": "",
-      "status": "CANCELLED",
-      "station": "NY Penn",
-      "stops": [
-        "New York Penn Station",
-        "Secaucus Junction",
-        "Newark Broad St",
-        "East Orange",
-        "Brick Church",
-        "Orange",
-        "Highland Ave",
-        "Mountain Station",
-        "South Orange",
-        "Maplewood",
-        "Millburn",
-        "Short Hills",
-        "Summit"
-      ],
-      "removedAt": "2026-08-26T12:01:19.366Z",
-      "departedStatus": "Cancelled",
-      "lastTrack": "—"
-    },
-    {
-      "trainNumber": "3223",
-      "scheduledTime": "7:44 AM",
-      "destination": "Long Branch-BH",
-      "line": "NJCL",
-      "track": "",
-      "status": "On Time",
-      "station": "NY Penn",
-      "stops": [
-        "New York Penn Station",
-        "Secaucus Junction",
-        "Newark Penn Station",
-        "Elizabeth",
-        "Rahway",
-        "Avenel",
-        "Woodbridge",
-        "Perth Amboy",
-        "South Amboy",
-        "Matawan",
-        "Hazlet",
-        "Middletown",
-        "Red Bank",
-        "Little Silver",
-        "Long Branch"
-      ],
-      "removedAt": "2026-08-26T12:01:19.366Z",
-      "departedStatus": "Departed",
-      "lastTrack": "—"
-    },
-    {
-      "trainNumber": "3823",
-      "scheduledTime": "7:56 AM",
-      "destination": "Trenton",
-      "line": "NEC",
-      "track": "",
-      "status": "On Time",
-      "station": "NY Penn",
-      "stops": [
-        "New York Penn Station",
-        "Secaucus Junction",
-        "Newark Penn Station",
-        "Newark Airport",
-        "North Elizabeth",
-        "Elizabeth",
-        "Rahway",
-        "Metropark",
-        "Metuchen",
-        "Edison",
-        "New Brunswick",
-        "Jersey Avenue",
-        "Princeton Junction",
-        "Hamilton",
-        "Trenton"
-      ],
-      "removedAt": "2026-08-26T12:01:19.366Z",
-      "departedStatus": "Departed",
-      "lastTrack": "—"
-    }
-  ],
+  "recentlyDeparted": [],
   "predictions": [
     {
       "trainNumber": "6613",
@@ -871,15 +689,16 @@
       "scheduledTime": "8:23 AM",
       "currentTrack": "",
       "predictedTrack": "14",
-      "confidence": 0.63,
+      "confidence": 0.61,
       "trackDistribution": {
         "8": 3,
+        "9": 1,
         "12": 1,
         "13": 2,
-        "14": 10
+        "14": 11
       },
-      "daysOfData": 16,
-      "totalHistoryDays": 17,
+      "daysOfData": 18,
+      "totalHistoryDays": 18,
       "excludedTracks": [
         "1",
         "2"
@@ -910,11 +729,11 @@
       "trackDistribution": {
         "3": 3,
         "4": 3,
-        "10": 1,
-        "13": 1
+        "10": 2,
+        "13": 2
       },
-      "daysOfData": 16,
-      "totalHistoryDays": 17,
+      "daysOfData": 18,
+      "totalHistoryDays": 18,
       "excludedTracks": [
         "1",
         "2"
