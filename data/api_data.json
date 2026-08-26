@@ -1,8 +1,8 @@
 {
-  "lastUpdated": "2026-08-26T03:59:24.388Z",
+  "lastUpdated": "2026-08-26T04:09:52.237Z",
   "activeStation": "Penn Station New York",
   "activeWindow": "live",
-  "scrapeTime": "144036ms",
+  "scrapeTime": "112002ms",
   "currentBoard": [
     {
       "trainNumber": "6679",
@@ -401,14 +401,14 @@
       "scheduledTime": "11:06 PM",
       "currentTrack": "4",
       "predictedTrack": "4",
-      "confidence": 0.5,
+      "confidence": 0.56,
       "trackDistribution": {
-        "4": 4,
+        "4": 5,
         "10": 3,
         "12": 1
       },
-      "daysOfData": 13,
-      "totalHistoryDays": 14,
+      "daysOfData": 14,
+      "totalHistoryDays": 15,
       "excludedTracks": [
         "3"
       ],
@@ -449,7 +449,7 @@
         "13": 1
       },
       "daysOfData": 13,
-      "totalHistoryDays": 14,
+      "totalHistoryDays": 15,
       "excludedTracks": [
         "3",
         "4"
@@ -491,7 +491,7 @@
         "12": 2
       },
       "daysOfData": 13,
-      "totalHistoryDays": 14,
+      "totalHistoryDays": 15,
       "excludedTracks": [
         "3",
         "4"
@@ -618,16 +618,17 @@
       "scheduledTime": "12:11 AM",
       "currentTrack": "",
       "predictedTrack": "14",
-      "confidence": 0.42,
+      "confidence": 0.36,
       "trackDistribution": {
         "8": 1,
+        "12": 1,
         "13": 2,
         "14": 5,
         "15": 2,
-        "16": 2
+        "16": 3
       },
-      "daysOfData": 12,
-      "totalHistoryDays": 13,
+      "daysOfData": 14,
+      "totalHistoryDays": 15,
       "excludedTracks": [
         "3",
         "4"
@@ -650,17 +651,18 @@
       "line": "NEC",
       "scheduledTime": "12:14 AM",
       "currentTrack": "",
-      "predictedTrack": null,
-      "confidence": 0,
+      "predictedTrack": "12",
+      "confidence": 0.3,
       "trackDistribution": {
         "1": 1,
         "6": 2,
         "7": 2,
         "9": 1,
-        "12": 2
+        "10": 1,
+        "12": 3
       },
-      "daysOfData": 14,
-      "totalHistoryDays": 15,
+      "daysOfData": 16,
+      "totalHistoryDays": 17,
       "excludedTracks": [
         "3",
         "4"
@@ -703,7 +705,7 @@
         "10": 2
       },
       "daysOfData": 13,
-      "totalHistoryDays": 14,
+      "totalHistoryDays": 15,
       "excludedTracks": [
         "3",
         "4"
@@ -744,7 +746,7 @@
         "11": 3
       },
       "daysOfData": 15,
-      "totalHistoryDays": 16,
+      "totalHistoryDays": 17,
       "excludedTracks": [
         "3",
         "4"
@@ -785,7 +787,7 @@
         "13": 2
       },
       "daysOfData": 13,
-      "totalHistoryDays": 14,
+      "totalHistoryDays": 15,
       "excludedTracks": [
         "3",
         "4"
@@ -834,7 +836,7 @@
         "12": 1
       },
       "daysOfData": 15,
-      "totalHistoryDays": 16,
+      "totalHistoryDays": 17,
       "excludedTracks": [
         "3",
         "4"
@@ -877,7 +879,7 @@
         "12": 1
       },
       "daysOfData": 15,
-      "totalHistoryDays": 16,
+      "totalHistoryDays": 17,
       "excludedTracks": [
         "3",
         "4"
