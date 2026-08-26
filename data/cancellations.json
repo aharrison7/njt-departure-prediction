@@ -12,5 +12,12 @@
       "station": "NY Penn",
       "status": "CANCELLED"
     }
+  ],
+  "6311": [
+    {
+      "date": "2026-08-26",
+      "station": "NY Penn",
+      "status": "CANCELLED"
+    }
   ]
 }
