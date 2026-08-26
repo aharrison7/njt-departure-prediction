@@ -1,8 +1,8 @@
 {
-  "lastUpdated": "2026-08-26T12:29:15.270Z",
+  "lastUpdated": "2026-08-26T12:39:52.944Z",
   "activeStation": "Penn Station New York",
   "activeWindow": "live",
-  "scrapeTime": "254217ms",
+  "scrapeTime": "112305ms",
   "currentBoard": [
     {
       "trainNumber": "6613",
@@ -817,8 +817,8 @@
       "line": "M&E",
       "scheduledTime": "8:36 AM",
       "currentTrack": "",
-      "predictedTrack": "4",
-      "confidence": 0.25,
+      "predictedTrack": null,
+      "confidence": 0,
       "trackDistribution": {
         "3": 1,
         "4": 3,
@@ -826,10 +826,10 @@
         "10": 1,
         "11": 2,
         "12": 2,
-        "13": 2
+        "13": 3
       },
-      "daysOfData": 16,
-      "totalHistoryDays": 17,
+      "daysOfData": 18,
+      "totalHistoryDays": 18,
       "excludedTracks": [
         "1",
         "2"
@@ -868,18 +868,18 @@
       "line": "NEC",
       "scheduledTime": "8:41 AM",
       "currentTrack": "",
-      "predictedTrack": null,
-      "confidence": 0,
+      "predictedTrack": "3",
+      "confidence": 0.27,
       "trackDistribution": {
-        "3": 3,
+        "3": 4,
         "9": 2,
         "11": 3,
         "12": 3,
         "13": 1,
-        "14": 1
+        "14": 2
       },
-      "daysOfData": 16,
-      "totalHistoryDays": 17,
+      "daysOfData": 18,
+      "totalHistoryDays": 18,
       "excludedTracks": [
         "1",
         "2"
