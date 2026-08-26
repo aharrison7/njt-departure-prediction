@@ -1,8 +1,8 @@
 {
-  "lastUpdated": "2026-08-26T02:59:54.739Z",
+  "lastUpdated": "2026-08-26T03:59:24.388Z",
   "activeStation": "Penn Station New York",
   "activeWindow": "live",
-  "scrapeTime": "114600ms",
+  "scrapeTime": "144036ms",
   "currentBoard": [
     {
       "trainNumber": "6679",
@@ -345,98 +345,7 @@
       ]
     }
   ],
-  "recentlyDeparted": [
-    {
-      "trainNumber": "3893",
-      "scheduledTime": "10:38 PM",
-      "destination": "Trenton",
-      "line": "NEC",
-      "track": "11",
-      "status": "All Aboard",
-      "station": "NY Penn",
-      "stops": [
-        "New York Penn Station",
-        "Secaucus Junction",
-        "Newark Penn Station",
-        "Newark Airport",
-        "North Elizabeth",
-        "Elizabeth",
-        "Rahway",
-        "Metropark",
-        "Metuchen",
-        "Edison",
-        "New Brunswick",
-        "Jersey Avenue",
-        "Princeton Junction",
-        "Hamilton",
-        "Trenton"
-      ],
-      "removedAt": "2026-08-26T02:56:12.839Z",
-      "departedStatus": "Departed",
-      "lastTrack": "11"
-    },
-    {
-      "trainNumber": "6297",
-      "scheduledTime": "10:41 PM",
-      "destination": "MSU",
-      "line": "MOBO",
-      "track": "",
-      "status": "On Time",
-      "station": "NY Penn",
-      "stops": [
-        "New York Penn Station",
-        "Secaucus Junction",
-        "Newark Broad St",
-        "Broad Street Bloomfield",
-        "Glen Ridge",
-        "Bay Street Montclair",
-        "Walnut Street",
-        "Watchung Avenue",
-        "Upper Montclair",
-        "Mountain Avenue",
-        "Montclair Heights",
-        "Montclair State University (MSU)"
-      ],
-      "removedAt": "2026-08-26T02:56:12.839Z",
-      "departedStatus": "Departed",
-      "lastTrack": "—"
-    },
-    {
-      "trainNumber": "5197",
-      "scheduledTime": "10:48 PM",
-      "destination": "High Bridge",
-      "line": "RVL",
-      "track": "",
-      "status": "On Time",
-      "station": "NY Penn",
-      "stops": [
-        "New York Penn Station",
-        "Secaucus Junction",
-        "Newark Penn Station",
-        "Union",
-        "Roselle Park",
-        "Cranford",
-        "Garwood",
-        "Westfield",
-        "Fanwood",
-        "Netherwood",
-        "Plainfield",
-        "Dunellen",
-        "Bound Brook",
-        "Bridgewater",
-        "Somerville",
-        "Raritan",
-        "North Branch",
-        "White House",
-        "Lebanon",
-        "Annandale",
-        "High Bridge"
-      ],
-      "removedAt": "2026-08-26T02:56:12.839Z",
-      "departedStatus": "Departed",
-      "lastTrack": "—"
-    }
-  ],
+  "recentlyDeparted": [],
   "predictions": [
     {
       "trainNumber": "6679",
@@ -613,17 +522,18 @@
       "scheduledTime": "12:02 AM",
       "currentTrack": "",
       "predictedTrack": "2",
-      "confidence": 0.3,
+      "confidence": 0.25,
       "trackDistribution": {
         "1": 1,
         "2": 3,
         "8": 1,
+        "9": 1,
         "10": 2,
         "11": 2,
-        "12": 1
+        "12": 2
       },
-      "daysOfData": 13,
-      "totalHistoryDays": 14,
+      "daysOfData": 15,
+      "totalHistoryDays": 16,
       "excludedTracks": [
         "3",
         "4"
@@ -662,19 +572,19 @@
       "line": "NJCL",
       "scheduledTime": "12:05 AM",
       "currentTrack": "",
-      "predictedTrack": "7",
-      "confidence": 0.25,
+      "predictedTrack": null,
+      "confidence": 0,
       "trackDistribution": {
         "1": 1,
-        "2": 2,
+        "2": 3,
         "7": 3,
         "9": 1,
         "10": 2,
         "11": 1,
-        "12": 2
+        "12": 3
       },
-      "daysOfData": 14,
-      "totalHistoryDays": 15,
+      "daysOfData": 16,
+      "totalHistoryDays": 17,
       "excludedTracks": [
         "3",
         "4"
