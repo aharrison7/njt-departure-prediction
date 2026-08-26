@@ -1,8 +1,8 @@
 {
-  "lastUpdated": "2026-08-26T17:29:52.501Z",
+  "lastUpdated": "2026-08-26T17:39:52.954Z",
   "activeStation": "Penn Station New York",
   "activeWindow": "live",
-  "scrapeTime": "112201ms",
+  "scrapeTime": "112100ms",
   "currentBoard": [
     {
       "trainNumber": "6241",
@@ -889,16 +889,16 @@
       "scheduledTime": "1:40 PM",
       "currentTrack": "",
       "predictedTrack": "4",
-      "confidence": 0.31,
+      "confidence": 0.33,
       "trackDistribution": {
         "1": 1,
         "2": 3,
         "3": 4,
-        "4": 5,
-        "9": 3
+        "4": 6,
+        "9": 4
       },
-      "daysOfData": 16,
-      "totalHistoryDays": 17,
+      "daysOfData": 18,
+      "totalHistoryDays": 18,
       "excludedTracks": [],
       "excludeReasons": {},
       "stops": [
@@ -926,18 +926,18 @@
       "line": "NJCL",
       "scheduledTime": "1:43 PM",
       "currentTrack": "",
-      "predictedTrack": null,
-      "confidence": 0,
+      "predictedTrack": "1",
+      "confidence": 0.32,
       "trackDistribution": {
-        "1": 5,
+        "1": 6,
         "2": 5,
         "3": 2,
         "4": 2,
         "11": 2,
-        "13": 1
+        "13": 2
       },
-      "daysOfData": 17,
-      "totalHistoryDays": 18,
+      "daysOfData": 19,
+      "totalHistoryDays": 19,
       "excludedTracks": [],
       "excludeReasons": {},
       "stops": [
