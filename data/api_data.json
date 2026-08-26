@@ -1,97 +1,16 @@
 {
-  "lastUpdated": "2026-08-26T02:49:14.961Z",
+  "lastUpdated": "2026-08-26T02:59:54.739Z",
   "activeStation": "Penn Station New York",
   "activeWindow": "live",
-  "scrapeTime": "134899ms",
+  "scrapeTime": "114600ms",
   "currentBoard": [
-    {
-      "trainNumber": "3893",
-      "scheduledTime": "10:38 PM",
-      "destination": "Trenton",
-      "line": "NEC",
-      "track": "11",
-      "status": "All Aboard",
-      "station": "NY Penn",
-      "stops": [
-        "New York Penn Station",
-        "Secaucus Junction",
-        "Newark Penn Station",
-        "Newark Airport",
-        "North Elizabeth",
-        "Elizabeth",
-        "Rahway",
-        "Metropark",
-        "Metuchen",
-        "Edison",
-        "New Brunswick",
-        "Jersey Avenue",
-        "Princeton Junction",
-        "Hamilton",
-        "Trenton"
-      ]
-    },
-    {
-      "trainNumber": "6297",
-      "scheduledTime": "10:41 PM",
-      "destination": "MSU",
-      "line": "MOBO",
-      "track": "",
-      "status": "On Time",
-      "station": "NY Penn",
-      "stops": [
-        "New York Penn Station",
-        "Secaucus Junction",
-        "Newark Broad St",
-        "Broad Street Bloomfield",
-        "Glen Ridge",
-        "Bay Street Montclair",
-        "Walnut Street",
-        "Watchung Avenue",
-        "Upper Montclair",
-        "Mountain Avenue",
-        "Montclair Heights",
-        "Montclair State University (MSU)"
-      ]
-    },
-    {
-      "trainNumber": "5197",
-      "scheduledTime": "10:48 PM",
-      "destination": "High Bridge",
-      "line": "RVL",
-      "track": "",
-      "status": "On Time",
-      "station": "NY Penn",
-      "stops": [
-        "New York Penn Station",
-        "Secaucus Junction",
-        "Newark Penn Station",
-        "Union",
-        "Roselle Park",
-        "Cranford",
-        "Garwood",
-        "Westfield",
-        "Fanwood",
-        "Netherwood",
-        "Plainfield",
-        "Dunellen",
-        "Bound Brook",
-        "Bridgewater",
-        "Somerville",
-        "Raritan",
-        "North Branch",
-        "White House",
-        "Lebanon",
-        "Annandale",
-        "High Bridge"
-      ]
-    },
     {
       "trainNumber": "6679",
       "scheduledTime": "10:56 PM",
       "destination": "Dover",
       "line": "M&E",
-      "track": "",
-      "status": "On Time",
+      "track": "3",
+      "status": "All Aboard",
       "station": "NY Penn",
       "stops": [
         "New York Penn Station",
@@ -122,8 +41,8 @@
       "scheduledTime": "11:06 PM",
       "destination": "Trenton",
       "line": "NEC",
-      "track": "",
-      "status": "On Time",
+      "track": "4",
+      "status": "All Aboard",
       "station": "NY Penn",
       "stops": [
         "New York Penn Station",
@@ -426,27 +345,15 @@
       ]
     }
   ],
-  "recentlyDeparted": [],
-  "predictions": [
+  "recentlyDeparted": [
     {
       "trainNumber": "3893",
+      "scheduledTime": "10:38 PM",
       "destination": "Trenton",
       "line": "NEC",
-      "scheduledTime": "10:38 PM",
-      "currentTrack": "11",
-      "predictedTrack": "7",
-      "confidence": 0.47,
-      "trackDistribution": {
-        "7": 7,
-        "8": 2,
-        "9": 1,
-        "10": 1,
-        "11": 4
-      },
-      "daysOfData": 15,
-      "totalHistoryDays": 16,
-      "excludedTracks": [],
-      "excludeReasons": {},
+      "track": "11",
+      "status": "All Aboard",
+      "station": "NY Penn",
       "stops": [
         "New York Penn Station",
         "Secaucus Junction",
@@ -463,33 +370,19 @@
         "Princeton Junction",
         "Hamilton",
         "Trenton"
-      ]
+      ],
+      "removedAt": "2026-08-26T02:56:12.839Z",
+      "departedStatus": "Departed",
+      "lastTrack": "11"
     },
     {
       "trainNumber": "6297",
+      "scheduledTime": "10:41 PM",
       "destination": "MSU",
       "line": "MOBO",
-      "scheduledTime": "10:41 PM",
-      "currentTrack": "",
-      "predictedTrack": null,
-      "confidence": 0,
-      "trackDistribution": {
-        "1": 3,
-        "2": 2,
-        "4": 3,
-        "9": 1,
-        "10": 1,
-        "12": 1,
-        "13": 2
-      },
-      "daysOfData": 14,
-      "totalHistoryDays": 15,
-      "excludedTracks": [
-        "11"
-      ],
-      "excludeReasons": {
-        "11": "currently occupied by another train"
-      },
+      "track": "",
+      "status": "On Time",
+      "station": "NY Penn",
       "stops": [
         "New York Penn Station",
         "Secaucus Junction",
@@ -503,33 +396,19 @@
         "Mountain Avenue",
         "Montclair Heights",
         "Montclair State University (MSU)"
-      ]
+      ],
+      "removedAt": "2026-08-26T02:56:12.839Z",
+      "departedStatus": "Departed",
+      "lastTrack": "—"
     },
     {
       "trainNumber": "5197",
+      "scheduledTime": "10:48 PM",
       "destination": "High Bridge",
       "line": "RVL",
-      "scheduledTime": "10:48 PM",
-      "currentTrack": "",
-      "predictedTrack": "2",
-      "confidence": 0.23,
-      "trackDistribution": {
-        "1": 1,
-        "2": 3,
-        "3": 1,
-        "4": 2,
-        "8": 2,
-        "12": 2,
-        "14": 2
-      },
-      "daysOfData": 15,
-      "totalHistoryDays": 16,
-      "excludedTracks": [
-        "11"
-      ],
-      "excludeReasons": {
-        "11": "currently occupied by another train"
-      },
+      "track": "",
+      "status": "On Time",
+      "station": "NY Penn",
       "stops": [
         "New York Penn Station",
         "Secaucus Junction",
@@ -552,31 +431,35 @@
         "Lebanon",
         "Annandale",
         "High Bridge"
-      ]
-    },
+      ],
+      "removedAt": "2026-08-26T02:56:12.839Z",
+      "departedStatus": "Departed",
+      "lastTrack": "—"
+    }
+  ],
+  "predictions": [
     {
       "trainNumber": "6679",
       "destination": "Dover",
       "line": "M&E",
       "scheduledTime": "10:56 PM",
-      "currentTrack": "",
-      "predictedTrack": "2",
-      "confidence": 0.33,
+      "currentTrack": "3",
+      "predictedTrack": null,
+      "confidence": 0,
       "trackDistribution": {
-        "1": 1,
         "2": 3,
-        "3": 1,
-        "4": 2,
+        "3": 3,
         "9": 1,
-        "12": 1
+        "11": 2,
+        "12": 2
       },
-      "daysOfData": 11,
-      "totalHistoryDays": 12,
+      "daysOfData": 13,
+      "totalHistoryDays": 14,
       "excludedTracks": [
-        "11"
+        "4"
       ],
       "excludeReasons": {
-        "11": "currently occupied by another train"
+        "4": "currently occupied by another train"
       },
       "stops": [
         "New York Penn Station",
@@ -607,11 +490,10 @@
       "destination": "Trenton",
       "line": "NEC",
       "scheduledTime": "11:06 PM",
-      "currentTrack": "",
-      "predictedTrack": "3",
-      "confidence": 0.38,
+      "currentTrack": "4",
+      "predictedTrack": "4",
+      "confidence": 0.5,
       "trackDistribution": {
-        "3": 5,
         "4": 4,
         "10": 3,
         "12": 1
@@ -619,10 +501,10 @@
       "daysOfData": 13,
       "totalHistoryDays": 14,
       "excludedTracks": [
-        "11"
+        "3"
       ],
       "excludeReasons": {
-        "11": "currently occupied by another train"
+        "3": "currently occupied by another train"
       },
       "stops": [
         "New York Penn Station",
@@ -649,12 +531,10 @@
       "scheduledTime": "11:18 PM",
       "currentTrack": "",
       "predictedTrack": "1",
-      "confidence": 0.31,
+      "confidence": 0.44,
       "trackDistribution": {
         "1": 4,
         "2": 2,
-        "3": 1,
-        "4": 3,
         "7": 1,
         "10": 1,
         "13": 1
@@ -662,10 +542,12 @@
       "daysOfData": 13,
       "totalHistoryDays": 14,
       "excludedTracks": [
-        "11"
+        "3",
+        "4"
       ],
       "excludeReasons": {
-        "11": "currently occupied by another train"
+        "3": "currently occupied by another train",
+        "4": "currently occupied by another train"
       },
       "stops": [
         "New York Penn Station",
@@ -695,8 +577,6 @@
       "confidence": 0,
       "trackDistribution": {
         "2": 2,
-        "3": 3,
-        "4": 3,
         "7": 2,
         "10": 1,
         "12": 2
@@ -704,10 +584,12 @@
       "daysOfData": 13,
       "totalHistoryDays": 14,
       "excludedTracks": [
-        "11"
+        "3",
+        "4"
       ],
       "excludeReasons": {
-        "11": "currently occupied by another train"
+        "3": "currently occupied by another train",
+        "4": "currently occupied by another train"
       },
       "stops": [
         "New York Penn Station",
@@ -731,23 +613,24 @@
       "scheduledTime": "12:02 AM",
       "currentTrack": "",
       "predictedTrack": "2",
-      "confidence": 0.27,
+      "confidence": 0.3,
       "trackDistribution": {
         "1": 1,
         "2": 3,
-        "3": 1,
-        "4": 2,
         "8": 1,
         "10": 2,
+        "11": 2,
         "12": 1
       },
       "daysOfData": 13,
       "totalHistoryDays": 14,
       "excludedTracks": [
-        "11"
+        "3",
+        "4"
       ],
       "excludeReasons": {
-        "11": "currently occupied by another train"
+        "3": "currently occupied by another train",
+        "4": "currently occupied by another train"
       },
       "stops": [
         "New York Penn Station",
@@ -780,24 +663,25 @@
       "scheduledTime": "12:05 AM",
       "currentTrack": "",
       "predictedTrack": "7",
-      "confidence": 0.23,
+      "confidence": 0.25,
       "trackDistribution": {
         "1": 1,
         "2": 2,
-        "3": 1,
-        "4": 1,
         "7": 3,
         "9": 1,
         "10": 2,
+        "11": 1,
         "12": 2
       },
       "daysOfData": 14,
       "totalHistoryDays": 15,
       "excludedTracks": [
-        "11"
+        "3",
+        "4"
       ],
       "excludeReasons": {
-        "11": "currently occupied by another train"
+        "3": "currently occupied by another train",
+        "4": "currently occupied by another train"
       },
       "stops": [
         "New York Penn Station",
@@ -835,10 +719,12 @@
       "daysOfData": 12,
       "totalHistoryDays": 13,
       "excludedTracks": [
-        "11"
+        "3",
+        "4"
       ],
       "excludeReasons": {
-        "11": "currently occupied by another train"
+        "3": "currently occupied by another train",
+        "4": "currently occupied by another train"
       },
       "stops": [
         "New York Penn Station",
@@ -854,12 +740,10 @@
       "line": "NEC",
       "scheduledTime": "12:14 AM",
       "currentTrack": "",
-      "predictedTrack": "4",
-      "confidence": 0.29,
+      "predictedTrack": null,
+      "confidence": 0,
       "trackDistribution": {
         "1": 1,
-        "3": 2,
-        "4": 4,
         "6": 2,
         "7": 2,
         "9": 1,
@@ -868,10 +752,12 @@
       "daysOfData": 14,
       "totalHistoryDays": 15,
       "excludedTracks": [
-        "11"
+        "3",
+        "4"
       ],
       "excludeReasons": {
-        "11": "currently occupied by another train"
+        "3": "currently occupied by another train",
+        "4": "currently occupied by another train"
       },
       "stops": [
         "New York Penn Station",
@@ -898,11 +784,9 @@
       "scheduledTime": "12:34 AM",
       "currentTrack": "",
       "predictedTrack": "6",
-      "confidence": 0.23,
+      "confidence": 0.3,
       "trackDistribution": {
         "2": 2,
-        "3": 1,
-        "4": 2,
         "6": 3,
         "7": 2,
         "9": 1,
@@ -911,10 +795,12 @@
       "daysOfData": 13,
       "totalHistoryDays": 14,
       "excludedTracks": [
-        "11"
+        "3",
+        "4"
       ],
       "excludeReasons": {
-        "11": "currently occupied by another train"
+        "3": "currently occupied by another train",
+        "4": "currently occupied by another train"
       },
       "stops": [
         "New York Penn Station",
@@ -937,24 +823,25 @@
       "line": "NEC",
       "scheduledTime": "12:43 AM",
       "currentTrack": "",
-      "predictedTrack": "3",
-      "confidence": 0.25,
+      "predictedTrack": "11",
+      "confidence": 0.27,
       "trackDistribution": {
         "2": 2,
-        "3": 3,
-        "4": 1,
         "7": 2,
         "8": 2,
         "9": 1,
-        "10": 1
+        "10": 1,
+        "11": 3
       },
       "daysOfData": 15,
       "totalHistoryDays": 16,
       "excludedTracks": [
-        "11"
+        "3",
+        "4"
       ],
       "excludeReasons": {
-        "11": "currently occupied by another train"
+        "3": "currently occupied by another train",
+        "4": "currently occupied by another train"
       },
       "stops": [
         "New York Penn Station",
@@ -983,8 +870,6 @@
       "predictedTrack": null,
       "confidence": 0,
       "trackDistribution": {
-        "3": 4,
-        "4": 4,
         "10": 2,
         "12": 1,
         "13": 2
@@ -992,10 +877,12 @@
       "daysOfData": 13,
       "totalHistoryDays": 14,
       "excludedTracks": [
-        "11"
+        "3",
+        "4"
       ],
       "excludeReasons": {
-        "11": "currently occupied by another train"
+        "3": "currently occupied by another train",
+        "4": "currently occupied by another train"
       },
       "stops": [
         "New York Penn Station",
@@ -1028,12 +915,10 @@
       "scheduledTime": "1:00 AM",
       "currentTrack": "",
       "predictedTrack": "2",
-      "confidence": 0.33,
+      "confidence": 0.5,
       "trackDistribution": {
         "1": 1,
         "2": 5,
-        "3": 2,
-        "4": 3,
         "7": 1,
         "10": 2,
         "12": 1
@@ -1041,10 +926,12 @@
       "daysOfData": 15,
       "totalHistoryDays": 16,
       "excludedTracks": [
-        "11"
+        "3",
+        "4"
       ],
       "excludeReasons": {
-        "11": "currently occupied by another train"
+        "3": "currently occupied by another train",
+        "4": "currently occupied by another train"
       },
       "stops": [
         "New York Penn Station",
@@ -1070,13 +957,11 @@
       "line": "NEC",
       "scheduledTime": "1:22 AM",
       "currentTrack": "",
-      "predictedTrack": "4",
-      "confidence": 0.33,
+      "predictedTrack": null,
+      "confidence": 0,
       "trackDistribution": {
         "1": 1,
         "2": 2,
-        "3": 3,
-        "4": 5,
         "9": 1,
         "10": 2,
         "12": 1
@@ -1084,10 +969,12 @@
       "daysOfData": 15,
       "totalHistoryDays": 16,
       "excludedTracks": [
-        "11"
+        "3",
+        "4"
       ],
       "excludeReasons": {
-        "11": "currently occupied by another train"
+        "3": "currently occupied by another train",
+        "4": "currently occupied by another train"
       },
       "stops": [
         "New York Penn Station",
