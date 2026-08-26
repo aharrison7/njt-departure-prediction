@@ -18587,11 +18587,18 @@
       "source": "choochootracker"
     },
     "2026-08-26": {
-      "track": "",
-      "status": "On Time",
+      "track": "3",
+      "destination": "Dover",
       "station": "NY Penn",
-      "scheduledTime": "1:51 PM",
-      "destination": "Dover"
+      "status": "BOARDING",
+      "source": "choochootracker_live"
+    },
+    "2026-08-08": {
+      "track": "13",
+      "destination": "Dover",
+      "station": "NY Penn",
+      "status": "On Time",
+      "source": "choochootracker"
     }
   },
   "6635": {
