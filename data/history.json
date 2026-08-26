@@ -14289,11 +14289,18 @@
       "source": "choochootracker"
     },
     "2026-08-26": {
-      "track": "",
-      "status": "On Time",
+      "track": "2",
+      "destination": "MSU",
       "station": "NY Penn",
-      "scheduledTime": "12:29 PM",
-      "destination": "MSU"
+      "status": "BOARDING",
+      "source": "choochootracker_live"
+    },
+    "2026-08-08": {
+      "track": "12",
+      "destination": "MSU",
+      "station": "NY Penn",
+      "status": "On Time",
+      "source": "choochootracker"
     }
   },
   "6245": {
