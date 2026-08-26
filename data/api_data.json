@@ -1,8 +1,8 @@
 {
-  "lastUpdated": "2026-08-26T09:49:52.236Z",
+  "lastUpdated": "2026-08-26T09:58:14.731Z",
   "activeStation": "Penn Station New York",
   "activeWindow": "live",
-  "scrapeTime": "112005ms",
+  "scrapeTime": "374110ms",
   "currentBoard": [
     {
       "trainNumber": "3209",
@@ -753,20 +753,20 @@
       "scheduledTime": "5:53 AM",
       "currentTrack": "",
       "predictedTrack": "4",
-      "confidence": 0.31,
+      "confidence": 0.33,
       "trackDistribution": {
         "1": 2,
         "2": 1,
-        "4": 5,
+        "4": 6,
         "8": 1,
         "9": 2,
         "11": 1,
         "12": 1,
         "14": 1,
-        "15": 2
+        "15": 3
       },
-      "daysOfData": 16,
-      "totalHistoryDays": 17,
+      "daysOfData": 18,
+      "totalHistoryDays": 18,
       "excludedTracks": [],
       "excludeReasons": {},
       "stops": [
@@ -791,16 +791,17 @@
       "scheduledTime": "5:58 AM",
       "currentTrack": "",
       "predictedTrack": "1",
-      "confidence": 0.75,
+      "confidence": 0.67,
       "trackDistribution": {
         "1": 12,
         "2": 1,
         "3": 1,
         "4": 1,
-        "9": 1
+        "9": 1,
+        "13": 2
       },
-      "daysOfData": 16,
-      "totalHistoryDays": 17,
+      "daysOfData": 18,
+      "totalHistoryDays": 18,
       "excludedTracks": [],
       "excludeReasons": {},
       "stops": [
@@ -833,11 +834,11 @@
         "8": 1,
         "12": 2,
         "13": 1,
-        "14": 10,
-        "15": 4
+        "14": 11,
+        "15": 5
       },
-      "daysOfData": 20,
-      "totalHistoryDays": 21,
+      "daysOfData": 22,
+      "totalHistoryDays": 22,
       "excludedTracks": [],
       "excludeReasons": {},
       "stops": [
