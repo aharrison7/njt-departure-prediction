@@ -348,11 +348,18 @@
       "source": "choochootracker"
     },
     "2026-08-26": {
-      "track": "",
-      "status": "On Time",
+      "track": "6",
+      "destination": "Long Branch",
       "station": "NY Penn",
-      "scheduledTime": "1:00 AM",
-      "destination": "Long Branch"
+      "status": "BOARDING",
+      "source": "choochootracker_live"
+    },
+    "2026-08-09": {
+      "track": "12",
+      "destination": "Long Branch",
+      "station": "NY Penn",
+      "status": "On Time",
+      "source": "choochootracker"
     }
   },
   "3209": {
@@ -11819,11 +11826,18 @@
       "source": "choochootracker"
     },
     "2026-08-26": {
-      "track": "",
-      "status": "On Time",
+      "track": "1",
+      "destination": "Dover",
       "station": "NY Penn",
-      "scheduledTime": "12:56 AM",
-      "destination": "Dover"
+      "status": "BOARDING",
+      "source": "choochootracker_live"
+    },
+    "2026-08-11": {
+      "track": "13",
+      "destination": "Dover",
+      "station": "NY Penn",
+      "status": "On Time",
+      "source": "choochootracker"
     }
   },
   "6625": {
