@@ -1,8 +1,8 @@
 {
-  "lastUpdated": "2026-08-26T10:49:54.558Z",
+  "lastUpdated": "2026-08-26T11:00:08.664Z",
   "activeStation": "Penn Station New York",
   "activeWindow": "live",
-  "scrapeTime": "114103ms",
+  "scrapeTime": "128484ms",
   "currentBoard": [
     {
       "trainNumber": "6213",
@@ -452,86 +452,7 @@
       ]
     }
   ],
-  "recentlyDeparted": [
-    {
-      "trainNumber": "3817",
-      "scheduledTime": "6:38 AM",
-      "destination": "Trenton",
-      "line": "NEC",
-      "track": "2",
-      "status": "All Aboard",
-      "station": "NY Penn",
-      "stops": [
-        "New York Penn Station",
-        "Secaucus Junction",
-        "Newark Penn Station",
-        "Newark Airport",
-        "North Elizabeth",
-        "Elizabeth",
-        "Rahway",
-        "Metropark",
-        "Metuchen",
-        "Edison",
-        "New Brunswick",
-        "Jersey Avenue",
-        "Princeton Junction",
-        "Hamilton",
-        "Trenton"
-      ],
-      "removedAt": "2026-08-26T10:46:17.868Z",
-      "departedStatus": "Departed",
-      "lastTrack": "2"
-    },
-    {
-      "trainNumber": "A51",
-      "scheduledTime": "6:40 AM",
-      "destination": "Chicago",
-      "line": "AMTK",
-      "track": "5",
-      "status": "All Aboard",
-      "station": "NY Penn",
-      "stops": [
-        "New York Penn Station",
-        "Newark Penn Station",
-        "Metropark",
-        "Trenton",
-        "Philadelphia 30th St",
-        "Wilmington",
-        "Baltimore",
-        "Washington Union Station"
-      ],
-      "removedAt": "2026-08-26T10:46:17.868Z",
-      "departedStatus": "Departed",
-      "lastTrack": "5"
-    },
-    {
-      "trainNumber": "6307",
-      "scheduledTime": "6:42 AM",
-      "destination": "Summit",
-      "line": "M&E",
-      "track": "",
-      "status": "CANCELLED",
-      "station": "NY Penn",
-      "stops": [
-        "New York Penn Station",
-        "Secaucus Junction",
-        "Newark Broad St",
-        "East Orange",
-        "Brick Church",
-        "Orange",
-        "Highland Ave",
-        "Mountain Station",
-        "South Orange",
-        "Maplewood",
-        "Millburn",
-        "Short Hills",
-        "Summit"
-      ],
-      "removedAt": "2026-08-26T10:46:17.868Z",
-      "departedStatus": "Cancelled",
-      "lastTrack": "—"
-    }
-  ],
+  "recentlyDeparted": [],
   "predictions": [
     {
       "trainNumber": "6213",
@@ -573,17 +494,17 @@
       "line": "NJCL",
       "scheduledTime": "6:57 AM",
       "currentTrack": "",
-      "predictedTrack": null,
-      "confidence": 0,
+      "predictedTrack": "3",
+      "confidence": 0.33,
       "trackDistribution": {
         "2": 5,
-        "3": 5,
+        "3": 6,
         "4": 4,
         "8": 1,
-        "11": 1
+        "11": 2
       },
-      "daysOfData": 16,
-      "totalHistoryDays": 17,
+      "daysOfData": 18,
+      "totalHistoryDays": 18,
       "excludedTracks": [
         "1"
       ],
@@ -615,16 +536,16 @@
       "scheduledTime": "7:04 AM",
       "currentTrack": "",
       "predictedTrack": "14",
-      "confidence": 0.58,
+      "confidence": 0.52,
       "trackDistribution": {
         "8": 1,
-        "12": 4,
+        "12": 5,
         "13": 2,
         "14": 11,
-        "15": 1
+        "15": 2
       },
-      "daysOfData": 19,
-      "totalHistoryDays": 20,
+      "daysOfData": 21,
+      "totalHistoryDays": 21,
       "excludedTracks": [
         "1"
       ],
