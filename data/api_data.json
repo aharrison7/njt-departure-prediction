@@ -1,8 +1,8 @@
 {
-  "lastUpdated": "2026-08-26T08:32:47.173Z",
+  "lastUpdated": "2026-08-26T08:42:38.471Z",
   "activeStation": "Penn Station New York",
   "activeWindow": "live",
-  "scrapeTime": "111003ms",
+  "scrapeTime": "111898ms",
   "currentBoard": [
     {
       "trainNumber": "3209",
@@ -518,19 +518,19 @@
       "line": "AMTK",
       "scheduledTime": "4:50 AM",
       "currentTrack": "",
-      "predictedTrack": null,
-      "confidence": 0,
+      "predictedTrack": "11",
+      "confidence": 0.33,
       "trackDistribution": {
         "9": 1,
         "10": 1,
-        "11": 5,
+        "11": 6,
         "12": 2,
         "13": 1,
         "14": 5,
-        "15": 1
+        "15": 2
       },
-      "daysOfData": 16,
-      "totalHistoryDays": 17,
+      "daysOfData": 18,
+      "totalHistoryDays": 18,
       "excludedTracks": [],
       "excludeReasons": {},
       "stops": [
