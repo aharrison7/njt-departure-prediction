@@ -1,9 +1,470 @@
 {
-  "lastUpdated": "2026-08-26T04:09:52.237Z",
+  "lastUpdated": "2026-08-26T04:19:54.300Z",
   "activeStation": "Penn Station New York",
   "activeWindow": "live",
-  "scrapeTime": "112002ms",
+  "scrapeTime": "54001ms",
   "currentBoard": [
+    {
+      "trainNumber": "6201",
+      "scheduledTime": "12:34 AM",
+      "destination": "MSU",
+      "line": "MOBO",
+      "track": "",
+      "status": "On Time",
+      "station": "NY Penn",
+      "stops": [
+        "New York Penn Station",
+        "Secaucus Junction",
+        "Newark Broad St",
+        "Broad Street Bloomfield",
+        "Glen Ridge",
+        "Bay Street Montclair",
+        "Walnut Street",
+        "Watchung Avenue",
+        "Upper Montclair",
+        "Mountain Avenue",
+        "Montclair Heights",
+        "Montclair State University (MSU)"
+      ]
+    },
+    {
+      "trainNumber": "3803",
+      "scheduledTime": "12:43 AM",
+      "destination": "Trenton",
+      "line": "NEC",
+      "track": "",
+      "status": "On Time",
+      "station": "NY Penn",
+      "stops": [
+        "New York Penn Station",
+        "Secaucus Junction",
+        "Newark Penn Station",
+        "Newark Airport",
+        "North Elizabeth",
+        "Elizabeth",
+        "Rahway",
+        "Metropark",
+        "Metuchen",
+        "Edison",
+        "New Brunswick",
+        "Jersey Avenue",
+        "Princeton Junction",
+        "Hamilton",
+        "Trenton"
+      ]
+    },
+    {
+      "trainNumber": "6603",
+      "scheduledTime": "12:56 AM",
+      "destination": "Dover",
+      "line": "M&E",
+      "track": "",
+      "status": "On Time",
+      "station": "NY Penn",
+      "stops": [
+        "New York Penn Station",
+        "Secaucus Junction",
+        "Newark Broad St",
+        "East Orange",
+        "Brick Church",
+        "Orange",
+        "Highland Ave",
+        "Mountain Station",
+        "South Orange",
+        "Maplewood",
+        "Millburn",
+        "Short Hills",
+        "Summit",
+        "Chatham",
+        "Madison",
+        "Convent Station",
+        "Morristown",
+        "Morris Plains",
+        "Mount Tabor",
+        "Denville",
+        "Dover"
+      ]
+    },
+    {
+      "trainNumber": "3205",
+      "scheduledTime": "1:00 AM",
+      "destination": "Long Branch",
+      "line": "NJCL",
+      "track": "",
+      "status": "On Time",
+      "station": "NY Penn",
+      "stops": [
+        "New York Penn Station",
+        "Secaucus Junction",
+        "Newark Penn Station",
+        "Elizabeth",
+        "Rahway",
+        "Avenel",
+        "Woodbridge",
+        "Perth Amboy",
+        "South Amboy",
+        "Matawan",
+        "Hazlet",
+        "Middletown",
+        "Red Bank",
+        "Little Silver",
+        "Long Branch"
+      ]
+    },
+    {
+      "trainNumber": "3805",
+      "scheduledTime": "1:22 AM",
+      "destination": "Trenton",
+      "line": "NEC",
+      "track": "",
+      "status": "On Time",
+      "station": "NY Penn",
+      "stops": [
+        "New York Penn Station",
+        "Secaucus Junction",
+        "Newark Penn Station",
+        "Newark Airport",
+        "North Elizabeth",
+        "Elizabeth",
+        "Rahway",
+        "Metropark",
+        "Metuchen",
+        "Edison",
+        "New Brunswick",
+        "Jersey Avenue",
+        "Princeton Junction",
+        "Hamilton",
+        "Trenton"
+      ]
+    },
+    {
+      "trainNumber": "3209",
+      "scheduledTime": "4:28 AM",
+      "destination": "Long Branch",
+      "line": "NJCL",
+      "track": "",
+      "status": "On Time",
+      "station": "NY Penn",
+      "stops": [
+        "New York Penn Station",
+        "Secaucus Junction",
+        "Newark Penn Station",
+        "Elizabeth",
+        "Rahway",
+        "Avenel",
+        "Woodbridge",
+        "Perth Amboy",
+        "South Amboy",
+        "Matawan",
+        "Hazlet",
+        "Middletown",
+        "Red Bank",
+        "Little Silver",
+        "Long Branch"
+      ]
+    },
+    {
+      "trainNumber": "3809",
+      "scheduledTime": "4:41 AM",
+      "destination": "Trenton",
+      "line": "NEC",
+      "track": "",
+      "status": "On Time",
+      "station": "NY Penn",
+      "stops": [
+        "New York Penn Station",
+        "Secaucus Junction",
+        "Newark Penn Station",
+        "Newark Airport",
+        "North Elizabeth",
+        "Elizabeth",
+        "Rahway",
+        "Metropark",
+        "Metuchen",
+        "Edison",
+        "New Brunswick",
+        "Jersey Avenue",
+        "Princeton Junction",
+        "Hamilton",
+        "Trenton"
+      ]
+    },
+    {
+      "trainNumber": "A111",
+      "scheduledTime": "4:50 AM",
+      "destination": "Washington",
+      "line": "AMTK",
+      "track": "",
+      "status": "On Time",
+      "station": "NY Penn",
+      "stops": [
+        "New York Penn Station",
+        "Newark Penn Station",
+        "Metropark",
+        "Trenton",
+        "Philadelphia 30th St",
+        "Wilmington",
+        "Baltimore",
+        "Washington Union Station"
+      ]
+    },
+    {
+      "trainNumber": "3813",
+      "scheduledTime": "5:14 AM",
+      "destination": "Trenton",
+      "line": "NEC",
+      "track": "",
+      "status": "On Time",
+      "station": "NY Penn",
+      "stops": [
+        "New York Penn Station",
+        "Secaucus Junction",
+        "Newark Penn Station",
+        "Newark Airport",
+        "North Elizabeth",
+        "Elizabeth",
+        "Rahway",
+        "Metropark",
+        "Metuchen",
+        "Edison",
+        "New Brunswick",
+        "Jersey Avenue",
+        "Princeton Junction",
+        "Hamilton",
+        "Trenton"
+      ]
+    },
+    {
+      "trainNumber": "3701",
+      "scheduledTime": "5:32 AM",
+      "destination": "Jersey Ave",
+      "line": "NEC",
+      "track": "",
+      "status": "On Time",
+      "station": "NY Penn",
+      "stops": [
+        "New York Penn Station",
+        "Secaucus Junction",
+        "Newark Penn Station",
+        "Newark Airport",
+        "North Elizabeth",
+        "Elizabeth",
+        "Rahway",
+        "Metropark",
+        "Metuchen",
+        "Edison",
+        "New Brunswick",
+        "Jersey Avenue"
+      ]
+    },
+    {
+      "trainNumber": "3215",
+      "scheduledTime": "5:36 AM",
+      "destination": "Long Branch",
+      "line": "NJCL",
+      "track": "",
+      "status": "On Time",
+      "station": "NY Penn",
+      "stops": [
+        "New York Penn Station",
+        "Secaucus Junction",
+        "Newark Penn Station",
+        "Elizabeth",
+        "Rahway",
+        "Avenel",
+        "Woodbridge",
+        "Perth Amboy",
+        "South Amboy",
+        "Matawan",
+        "Hazlet",
+        "Middletown",
+        "Red Bank",
+        "Little Silver",
+        "Long Branch"
+      ]
+    },
+    {
+      "trainNumber": "3503",
+      "scheduledTime": "5:40 AM",
+      "destination": "So. Amboy",
+      "line": "NJCL",
+      "track": "",
+      "status": "On Time",
+      "station": "NY Penn",
+      "stops": [
+        "New York Penn Station",
+        "Secaucus Junction",
+        "Newark Penn Station",
+        "Elizabeth",
+        "Rahway",
+        "Avenel",
+        "Woodbridge",
+        "Perth Amboy",
+        "South Amboy",
+        "Matawan",
+        "Hazlet",
+        "Middletown",
+        "Red Bank",
+        "Little Silver",
+        "Long Branch",
+        "Elberon",
+        "Allenhurst",
+        "Asbury Park",
+        "Bradley Beach",
+        "Belmar",
+        "Spring Lake",
+        "Manasquan",
+        "Point Pleasant Beach",
+        "Bay Head"
+      ]
+    },
+    {
+      "trainNumber": "A181",
+      "scheduledTime": "5:45 AM",
+      "destination": "Washington",
+      "line": "AMTK",
+      "track": "",
+      "status": "On Time",
+      "station": "NY Penn",
+      "stops": [
+        "New York Penn Station",
+        "Newark Penn Station",
+        "Metropark",
+        "Trenton",
+        "Philadelphia 30th St",
+        "Wilmington",
+        "Baltimore",
+        "Washington Union Station"
+      ]
+    },
+    {
+      "trainNumber": "A607",
+      "scheduledTime": "5:50 AM",
+      "destination": "Philadelphia",
+      "line": "AMTK",
+      "track": "",
+      "status": "On Time",
+      "station": "NY Penn",
+      "stops": [
+        "New York Penn Station",
+        "Newark Penn Station",
+        "Metropark",
+        "Trenton",
+        "Philadelphia 30th St"
+      ]
+    },
+    {
+      "trainNumber": "6209",
+      "scheduledTime": "5:53 AM",
+      "destination": "MSU",
+      "line": "MOBO",
+      "track": "",
+      "status": "On Time",
+      "station": "NY Penn",
+      "stops": [
+        "New York Penn Station",
+        "Secaucus Junction",
+        "Newark Broad St",
+        "Broad Street Bloomfield",
+        "Glen Ridge",
+        "Bay Street Montclair",
+        "Walnut Street",
+        "Watchung Avenue",
+        "Upper Montclair",
+        "Mountain Avenue",
+        "Montclair Heights",
+        "Montclair State University (MSU)"
+      ]
+    },
+    {
+      "trainNumber": "6305",
+      "scheduledTime": "5:58 AM",
+      "destination": "Summit",
+      "line": "M&E",
+      "track": "",
+      "status": "On Time",
+      "station": "NY Penn",
+      "stops": [
+        "New York Penn Station",
+        "Secaucus Junction",
+        "Newark Broad St",
+        "East Orange",
+        "Brick Church",
+        "Orange",
+        "Highland Ave",
+        "Mountain Station",
+        "South Orange",
+        "Maplewood",
+        "Millburn",
+        "Short Hills",
+        "Summit"
+      ]
+    },
+    {
+      "trainNumber": "A89",
+      "scheduledTime": "6:02 AM",
+      "destination": "Washington",
+      "line": "AMTK",
+      "track": "",
+      "status": "On Time",
+      "station": "NY Penn",
+      "stops": [
+        "New York Penn Station",
+        "Newark Penn Station",
+        "Metropark",
+        "Trenton",
+        "Philadelphia 30th St",
+        "Wilmington",
+        "Baltimore",
+        "Washington Union Station"
+      ]
+    },
+    {
+      "trainNumber": "3815",
+      "scheduledTime": "6:06 AM",
+      "destination": "Trenton",
+      "line": "NEC",
+      "track": "",
+      "status": "On Time",
+      "station": "NY Penn",
+      "stops": [
+        "New York Penn Station",
+        "Secaucus Junction",
+        "Newark Penn Station",
+        "Newark Airport",
+        "North Elizabeth",
+        "Elizabeth",
+        "Rahway",
+        "Metropark",
+        "Metuchen",
+        "Edison",
+        "New Brunswick",
+        "Jersey Avenue",
+        "Princeton Junction",
+        "Hamilton",
+        "Trenton"
+      ]
+    },
+    {
+      "trainNumber": "A2103",
+      "scheduledTime": "6:10 AM",
+      "destination": "Baltimore",
+      "line": "AMTK",
+      "track": "",
+      "status": "On Time",
+      "station": "NY Penn",
+      "stops": [
+        "New York Penn Station",
+        "Newark Penn Station",
+        "Metropark",
+        "Trenton",
+        "Philadelphia 30th St",
+        "Wilmington",
+        "Baltimore"
+      ]
+    }
+  ],
+  "recentlyDeparted": [
     {
       "trainNumber": "6679",
       "scheduledTime": "10:56 PM",
@@ -34,7 +495,10 @@
         "Mount Tabor",
         "Denville",
         "Dover"
-      ]
+      ],
+      "removedAt": "2026-08-26T04:18:10.193Z",
+      "departedStatus": "Departed",
+      "lastTrack": "3"
     },
     {
       "trainNumber": "3895",
@@ -60,7 +524,10 @@
         "Princeton Junction",
         "Hamilton",
         "Trenton"
-      ]
+      ],
+      "removedAt": "2026-08-26T04:18:10.193Z",
+      "departedStatus": "Departed",
+      "lastTrack": "4"
     },
     {
       "trainNumber": "3297",
@@ -86,7 +553,10 @@
         "Red Bank",
         "Little Silver",
         "Long Branch"
-      ]
+      ],
+      "removedAt": "2026-08-26T04:18:10.193Z",
+      "departedStatus": "Departed",
+      "lastTrack": "—"
     },
     {
       "trainNumber": "6299",
@@ -109,7 +579,10 @@
         "Mountain Avenue",
         "Montclair Heights",
         "Montclair State University (MSU)"
-      ]
+      ],
+      "removedAt": "2026-08-26T04:18:10.193Z",
+      "departedStatus": "Departed",
+      "lastTrack": "—"
     },
     {
       "trainNumber": "6601",
@@ -141,7 +614,10 @@
         "Mount Tabor",
         "Denville",
         "Dover"
-      ]
+      ],
+      "removedAt": "2026-08-26T04:18:10.193Z",
+      "departedStatus": "Departed",
+      "lastTrack": "—"
     },
     {
       "trainNumber": "3201",
@@ -167,7 +643,10 @@
         "Red Bank",
         "Little Silver",
         "Long Branch"
-      ]
+      ],
+      "removedAt": "2026-08-26T04:18:10.193Z",
+      "departedStatus": "Departed",
+      "lastTrack": "—"
     },
     {
       "trainNumber": "A179",
@@ -183,7 +662,10 @@
         "Metropark",
         "Trenton",
         "Philadelphia 30th St"
-      ]
+      ],
+      "removedAt": "2026-08-26T04:18:10.193Z",
+      "departedStatus": "Departed",
+      "lastTrack": "—"
     },
     {
       "trainNumber": "3801",
@@ -209,486 +691,13 @@
         "Princeton Junction",
         "Hamilton",
         "Trenton"
-      ]
-    },
-    {
-      "trainNumber": "6201",
-      "scheduledTime": "12:34 AM",
-      "destination": "MSU",
-      "line": "MOBO",
-      "track": "",
-      "status": "On Time",
-      "station": "NY Penn",
-      "stops": [
-        "New York Penn Station",
-        "Secaucus Junction",
-        "Newark Broad St",
-        "Broad Street Bloomfield",
-        "Glen Ridge",
-        "Bay Street Montclair",
-        "Walnut Street",
-        "Watchung Avenue",
-        "Upper Montclair",
-        "Mountain Avenue",
-        "Montclair Heights",
-        "Montclair State University (MSU)"
-      ]
-    },
-    {
-      "trainNumber": "3803",
-      "scheduledTime": "12:43 AM",
-      "destination": "Trenton",
-      "line": "NEC",
-      "track": "",
-      "status": "On Time",
-      "station": "NY Penn",
-      "stops": [
-        "New York Penn Station",
-        "Secaucus Junction",
-        "Newark Penn Station",
-        "Newark Airport",
-        "North Elizabeth",
-        "Elizabeth",
-        "Rahway",
-        "Metropark",
-        "Metuchen",
-        "Edison",
-        "New Brunswick",
-        "Jersey Avenue",
-        "Princeton Junction",
-        "Hamilton",
-        "Trenton"
-      ]
-    },
-    {
-      "trainNumber": "6603",
-      "scheduledTime": "12:56 AM",
-      "destination": "Dover",
-      "line": "M&E",
-      "track": "",
-      "status": "On Time",
-      "station": "NY Penn",
-      "stops": [
-        "New York Penn Station",
-        "Secaucus Junction",
-        "Newark Broad St",
-        "East Orange",
-        "Brick Church",
-        "Orange",
-        "Highland Ave",
-        "Mountain Station",
-        "South Orange",
-        "Maplewood",
-        "Millburn",
-        "Short Hills",
-        "Summit",
-        "Chatham",
-        "Madison",
-        "Convent Station",
-        "Morristown",
-        "Morris Plains",
-        "Mount Tabor",
-        "Denville",
-        "Dover"
-      ]
-    },
-    {
-      "trainNumber": "3205",
-      "scheduledTime": "1:00 AM",
-      "destination": "Long Branch",
-      "line": "NJCL",
-      "track": "",
-      "status": "On Time",
-      "station": "NY Penn",
-      "stops": [
-        "New York Penn Station",
-        "Secaucus Junction",
-        "Newark Penn Station",
-        "Elizabeth",
-        "Rahway",
-        "Avenel",
-        "Woodbridge",
-        "Perth Amboy",
-        "South Amboy",
-        "Matawan",
-        "Hazlet",
-        "Middletown",
-        "Red Bank",
-        "Little Silver",
-        "Long Branch"
-      ]
-    },
-    {
-      "trainNumber": "3805",
-      "scheduledTime": "1:22 AM",
-      "destination": "Trenton",
-      "line": "NEC",
-      "track": "",
-      "status": "On Time",
-      "station": "NY Penn",
-      "stops": [
-        "New York Penn Station",
-        "Secaucus Junction",
-        "Newark Penn Station",
-        "Newark Airport",
-        "North Elizabeth",
-        "Elizabeth",
-        "Rahway",
-        "Metropark",
-        "Metuchen",
-        "Edison",
-        "New Brunswick",
-        "Jersey Avenue",
-        "Princeton Junction",
-        "Hamilton",
-        "Trenton"
-      ]
+      ],
+      "removedAt": "2026-08-26T04:18:10.193Z",
+      "departedStatus": "Departed",
+      "lastTrack": "—"
     }
   ],
-  "recentlyDeparted": [],
   "predictions": [
-    {
-      "trainNumber": "6679",
-      "destination": "Dover",
-      "line": "M&E",
-      "scheduledTime": "10:56 PM",
-      "currentTrack": "3",
-      "predictedTrack": null,
-      "confidence": 0,
-      "trackDistribution": {
-        "2": 3,
-        "3": 3,
-        "9": 1,
-        "11": 2,
-        "12": 2
-      },
-      "daysOfData": 13,
-      "totalHistoryDays": 14,
-      "excludedTracks": [
-        "4"
-      ],
-      "excludeReasons": {
-        "4": "currently occupied by another train"
-      },
-      "stops": [
-        "New York Penn Station",
-        "Secaucus Junction",
-        "Newark Broad St",
-        "East Orange",
-        "Brick Church",
-        "Orange",
-        "Highland Ave",
-        "Mountain Station",
-        "South Orange",
-        "Maplewood",
-        "Millburn",
-        "Short Hills",
-        "Summit",
-        "Chatham",
-        "Madison",
-        "Convent Station",
-        "Morristown",
-        "Morris Plains",
-        "Mount Tabor",
-        "Denville",
-        "Dover"
-      ]
-    },
-    {
-      "trainNumber": "3895",
-      "destination": "Trenton",
-      "line": "NEC",
-      "scheduledTime": "11:06 PM",
-      "currentTrack": "4",
-      "predictedTrack": "4",
-      "confidence": 0.56,
-      "trackDistribution": {
-        "4": 5,
-        "10": 3,
-        "12": 1
-      },
-      "daysOfData": 14,
-      "totalHistoryDays": 15,
-      "excludedTracks": [
-        "3"
-      ],
-      "excludeReasons": {
-        "3": "currently occupied by another train"
-      },
-      "stops": [
-        "New York Penn Station",
-        "Secaucus Junction",
-        "Newark Penn Station",
-        "Newark Airport",
-        "North Elizabeth",
-        "Elizabeth",
-        "Rahway",
-        "Metropark",
-        "Metuchen",
-        "Edison",
-        "New Brunswick",
-        "Jersey Avenue",
-        "Princeton Junction",
-        "Hamilton",
-        "Trenton"
-      ]
-    },
-    {
-      "trainNumber": "3297",
-      "destination": "Long Branch-BH",
-      "line": "NJCL",
-      "scheduledTime": "11:18 PM",
-      "currentTrack": "",
-      "predictedTrack": "1",
-      "confidence": 0.44,
-      "trackDistribution": {
-        "1": 4,
-        "2": 2,
-        "7": 1,
-        "10": 1,
-        "13": 1
-      },
-      "daysOfData": 13,
-      "totalHistoryDays": 15,
-      "excludedTracks": [
-        "3",
-        "4"
-      ],
-      "excludeReasons": {
-        "3": "currently occupied by another train",
-        "4": "currently occupied by another train"
-      },
-      "stops": [
-        "New York Penn Station",
-        "Secaucus Junction",
-        "Newark Penn Station",
-        "Elizabeth",
-        "Rahway",
-        "Avenel",
-        "Woodbridge",
-        "Perth Amboy",
-        "South Amboy",
-        "Matawan",
-        "Hazlet",
-        "Middletown",
-        "Red Bank",
-        "Little Silver",
-        "Long Branch"
-      ]
-    },
-    {
-      "trainNumber": "6299",
-      "destination": "MSU",
-      "line": "MOBO",
-      "scheduledTime": "11:41 PM",
-      "currentTrack": "",
-      "predictedTrack": null,
-      "confidence": 0,
-      "trackDistribution": {
-        "2": 2,
-        "7": 2,
-        "10": 1,
-        "12": 2
-      },
-      "daysOfData": 13,
-      "totalHistoryDays": 15,
-      "excludedTracks": [
-        "3",
-        "4"
-      ],
-      "excludeReasons": {
-        "3": "currently occupied by another train",
-        "4": "currently occupied by another train"
-      },
-      "stops": [
-        "New York Penn Station",
-        "Secaucus Junction",
-        "Newark Broad St",
-        "Broad Street Bloomfield",
-        "Glen Ridge",
-        "Bay Street Montclair",
-        "Walnut Street",
-        "Watchung Avenue",
-        "Upper Montclair",
-        "Mountain Avenue",
-        "Montclair Heights",
-        "Montclair State University (MSU)"
-      ]
-    },
-    {
-      "trainNumber": "6601",
-      "destination": "Dover",
-      "line": "M&E",
-      "scheduledTime": "12:02 AM",
-      "currentTrack": "",
-      "predictedTrack": "2",
-      "confidence": 0.25,
-      "trackDistribution": {
-        "1": 1,
-        "2": 3,
-        "8": 1,
-        "9": 1,
-        "10": 2,
-        "11": 2,
-        "12": 2
-      },
-      "daysOfData": 15,
-      "totalHistoryDays": 16,
-      "excludedTracks": [
-        "3",
-        "4"
-      ],
-      "excludeReasons": {
-        "3": "currently occupied by another train",
-        "4": "currently occupied by another train"
-      },
-      "stops": [
-        "New York Penn Station",
-        "Secaucus Junction",
-        "Newark Broad St",
-        "East Orange",
-        "Brick Church",
-        "Orange",
-        "Highland Ave",
-        "Mountain Station",
-        "South Orange",
-        "Maplewood",
-        "Millburn",
-        "Short Hills",
-        "Summit",
-        "Chatham",
-        "Madison",
-        "Convent Station",
-        "Morristown",
-        "Morris Plains",
-        "Mount Tabor",
-        "Denville",
-        "Dover"
-      ]
-    },
-    {
-      "trainNumber": "3201",
-      "destination": "Long Branch",
-      "line": "NJCL",
-      "scheduledTime": "12:05 AM",
-      "currentTrack": "",
-      "predictedTrack": null,
-      "confidence": 0,
-      "trackDistribution": {
-        "1": 1,
-        "2": 3,
-        "7": 3,
-        "9": 1,
-        "10": 2,
-        "11": 1,
-        "12": 3
-      },
-      "daysOfData": 16,
-      "totalHistoryDays": 17,
-      "excludedTracks": [
-        "3",
-        "4"
-      ],
-      "excludeReasons": {
-        "3": "currently occupied by another train",
-        "4": "currently occupied by another train"
-      },
-      "stops": [
-        "New York Penn Station",
-        "Secaucus Junction",
-        "Newark Penn Station",
-        "Elizabeth",
-        "Rahway",
-        "Avenel",
-        "Woodbridge",
-        "Perth Amboy",
-        "South Amboy",
-        "Matawan",
-        "Hazlet",
-        "Middletown",
-        "Red Bank",
-        "Little Silver",
-        "Long Branch"
-      ]
-    },
-    {
-      "trainNumber": "A179",
-      "destination": "Philadelphia",
-      "line": "AMTK",
-      "scheduledTime": "12:11 AM",
-      "currentTrack": "",
-      "predictedTrack": "14",
-      "confidence": 0.36,
-      "trackDistribution": {
-        "8": 1,
-        "12": 1,
-        "13": 2,
-        "14": 5,
-        "15": 2,
-        "16": 3
-      },
-      "daysOfData": 14,
-      "totalHistoryDays": 15,
-      "excludedTracks": [
-        "3",
-        "4"
-      ],
-      "excludeReasons": {
-        "3": "currently occupied by another train",
-        "4": "currently occupied by another train"
-      },
-      "stops": [
-        "New York Penn Station",
-        "Newark Penn Station",
-        "Metropark",
-        "Trenton",
-        "Philadelphia 30th St"
-      ]
-    },
-    {
-      "trainNumber": "3801",
-      "destination": "Trenton",
-      "line": "NEC",
-      "scheduledTime": "12:14 AM",
-      "currentTrack": "",
-      "predictedTrack": "12",
-      "confidence": 0.3,
-      "trackDistribution": {
-        "1": 1,
-        "6": 2,
-        "7": 2,
-        "9": 1,
-        "10": 1,
-        "12": 3
-      },
-      "daysOfData": 16,
-      "totalHistoryDays": 17,
-      "excludedTracks": [
-        "3",
-        "4"
-      ],
-      "excludeReasons": {
-        "3": "currently occupied by another train",
-        "4": "currently occupied by another train"
-      },
-      "stops": [
-        "New York Penn Station",
-        "Secaucus Junction",
-        "Newark Penn Station",
-        "Newark Airport",
-        "North Elizabeth",
-        "Elizabeth",
-        "Rahway",
-        "Metropark",
-        "Metuchen",
-        "Edison",
-        "New Brunswick",
-        "Jersey Avenue",
-        "Princeton Junction",
-        "Hamilton",
-        "Trenton"
-      ]
-    },
     {
       "trainNumber": "6201",
       "destination": "MSU",
@@ -696,9 +705,11 @@
       "scheduledTime": "12:34 AM",
       "currentTrack": "",
       "predictedTrack": "6",
-      "confidence": 0.3,
+      "confidence": 0.23,
       "trackDistribution": {
         "2": 2,
+        "3": 1,
+        "4": 2,
         "6": 3,
         "7": 2,
         "9": 1,
@@ -706,14 +717,8 @@
       },
       "daysOfData": 13,
       "totalHistoryDays": 15,
-      "excludedTracks": [
-        "3",
-        "4"
-      ],
-      "excludeReasons": {
-        "3": "currently occupied by another train",
-        "4": "currently occupied by another train"
-      },
+      "excludedTracks": [],
+      "excludeReasons": {},
       "stops": [
         "New York Penn Station",
         "Secaucus Junction",
@@ -735,10 +740,12 @@
       "line": "NEC",
       "scheduledTime": "12:43 AM",
       "currentTrack": "",
-      "predictedTrack": "11",
-      "confidence": 0.27,
+      "predictedTrack": null,
+      "confidence": 0,
       "trackDistribution": {
         "2": 2,
+        "3": 3,
+        "4": 1,
         "7": 2,
         "8": 2,
         "9": 1,
@@ -747,14 +754,8 @@
       },
       "daysOfData": 15,
       "totalHistoryDays": 17,
-      "excludedTracks": [
-        "3",
-        "4"
-      ],
-      "excludeReasons": {
-        "3": "currently occupied by another train",
-        "4": "currently occupied by another train"
-      },
+      "excludedTracks": [],
+      "excludeReasons": {},
       "stops": [
         "New York Penn Station",
         "Secaucus Junction",
@@ -782,20 +783,16 @@
       "predictedTrack": null,
       "confidence": 0,
       "trackDistribution": {
+        "3": 4,
+        "4": 4,
         "10": 2,
         "12": 1,
         "13": 2
       },
       "daysOfData": 13,
       "totalHistoryDays": 15,
-      "excludedTracks": [
-        "3",
-        "4"
-      ],
-      "excludeReasons": {
-        "3": "currently occupied by another train",
-        "4": "currently occupied by another train"
-      },
+      "excludedTracks": [],
+      "excludeReasons": {},
       "stops": [
         "New York Penn Station",
         "Secaucus Junction",
@@ -827,24 +824,20 @@
       "scheduledTime": "1:00 AM",
       "currentTrack": "",
       "predictedTrack": "2",
-      "confidence": 0.5,
+      "confidence": 0.33,
       "trackDistribution": {
         "1": 1,
         "2": 5,
+        "3": 2,
+        "4": 3,
         "7": 1,
         "10": 2,
         "12": 1
       },
       "daysOfData": 15,
       "totalHistoryDays": 17,
-      "excludedTracks": [
-        "3",
-        "4"
-      ],
-      "excludeReasons": {
-        "3": "currently occupied by another train",
-        "4": "currently occupied by another train"
-      },
+      "excludedTracks": [],
+      "excludeReasons": {},
       "stops": [
         "New York Penn Station",
         "Secaucus Junction",
@@ -869,25 +862,21 @@
       "line": "NEC",
       "scheduledTime": "1:22 AM",
       "currentTrack": "",
-      "predictedTrack": null,
-      "confidence": 0,
+      "predictedTrack": "4",
+      "confidence": 0.33,
       "trackDistribution": {
         "1": 1,
         "2": 2,
+        "3": 3,
+        "4": 5,
         "9": 1,
         "10": 2,
         "12": 1
       },
       "daysOfData": 15,
       "totalHistoryDays": 17,
-      "excludedTracks": [
-        "3",
-        "4"
-      ],
-      "excludeReasons": {
-        "3": "currently occupied by another train",
-        "4": "currently occupied by another train"
-      },
+      "excludedTracks": [],
+      "excludeReasons": {},
       "stops": [
         "New York Penn Station",
         "Secaucus Junction",
@@ -904,6 +893,402 @@
         "Princeton Junction",
         "Hamilton",
         "Trenton"
+      ]
+    },
+    {
+      "trainNumber": "3209",
+      "destination": "Long Branch",
+      "line": "NJCL",
+      "scheduledTime": "4:28 AM",
+      "currentTrack": "",
+      "predictedTrack": null,
+      "confidence": 0,
+      "trackDistribution": {},
+      "daysOfData": 1,
+      "excludedTracks": [],
+      "excludeReasons": {},
+      "note": "No track assignments in history",
+      "stops": [
+        "New York Penn Station",
+        "Secaucus Junction",
+        "Newark Penn Station",
+        "Elizabeth",
+        "Rahway",
+        "Avenel",
+        "Woodbridge",
+        "Perth Amboy",
+        "South Amboy",
+        "Matawan",
+        "Hazlet",
+        "Middletown",
+        "Red Bank",
+        "Little Silver",
+        "Long Branch"
+      ]
+    },
+    {
+      "trainNumber": "3809",
+      "destination": "Trenton",
+      "line": "NEC",
+      "scheduledTime": "4:41 AM",
+      "currentTrack": "",
+      "predictedTrack": null,
+      "confidence": 0,
+      "trackDistribution": {},
+      "daysOfData": 1,
+      "excludedTracks": [],
+      "excludeReasons": {},
+      "note": "No track assignments in history",
+      "stops": [
+        "New York Penn Station",
+        "Secaucus Junction",
+        "Newark Penn Station",
+        "Newark Airport",
+        "North Elizabeth",
+        "Elizabeth",
+        "Rahway",
+        "Metropark",
+        "Metuchen",
+        "Edison",
+        "New Brunswick",
+        "Jersey Avenue",
+        "Princeton Junction",
+        "Hamilton",
+        "Trenton"
+      ]
+    },
+    {
+      "trainNumber": "A111",
+      "destination": "Washington",
+      "line": "AMTK",
+      "scheduledTime": "4:50 AM",
+      "currentTrack": "",
+      "predictedTrack": null,
+      "confidence": 0,
+      "trackDistribution": {},
+      "daysOfData": 1,
+      "excludedTracks": [],
+      "excludeReasons": {},
+      "note": "No track assignments in history",
+      "stops": [
+        "New York Penn Station",
+        "Newark Penn Station",
+        "Metropark",
+        "Trenton",
+        "Philadelphia 30th St",
+        "Wilmington",
+        "Baltimore",
+        "Washington Union Station"
+      ]
+    },
+    {
+      "trainNumber": "3813",
+      "destination": "Trenton",
+      "line": "NEC",
+      "scheduledTime": "5:14 AM",
+      "currentTrack": "",
+      "predictedTrack": null,
+      "confidence": 0,
+      "trackDistribution": {},
+      "daysOfData": 1,
+      "excludedTracks": [],
+      "excludeReasons": {},
+      "note": "No track assignments in history",
+      "stops": [
+        "New York Penn Station",
+        "Secaucus Junction",
+        "Newark Penn Station",
+        "Newark Airport",
+        "North Elizabeth",
+        "Elizabeth",
+        "Rahway",
+        "Metropark",
+        "Metuchen",
+        "Edison",
+        "New Brunswick",
+        "Jersey Avenue",
+        "Princeton Junction",
+        "Hamilton",
+        "Trenton"
+      ]
+    },
+    {
+      "trainNumber": "3701",
+      "destination": "Jersey Ave",
+      "line": "NEC",
+      "scheduledTime": "5:32 AM",
+      "currentTrack": "",
+      "predictedTrack": null,
+      "confidence": 0,
+      "trackDistribution": {},
+      "daysOfData": 1,
+      "excludedTracks": [],
+      "excludeReasons": {},
+      "note": "No track assignments in history",
+      "stops": [
+        "New York Penn Station",
+        "Secaucus Junction",
+        "Newark Penn Station",
+        "Newark Airport",
+        "North Elizabeth",
+        "Elizabeth",
+        "Rahway",
+        "Metropark",
+        "Metuchen",
+        "Edison",
+        "New Brunswick",
+        "Jersey Avenue"
+      ]
+    },
+    {
+      "trainNumber": "3215",
+      "destination": "Long Branch",
+      "line": "NJCL",
+      "scheduledTime": "5:36 AM",
+      "currentTrack": "",
+      "predictedTrack": null,
+      "confidence": 0,
+      "trackDistribution": {},
+      "daysOfData": 1,
+      "excludedTracks": [],
+      "excludeReasons": {},
+      "note": "No track assignments in history",
+      "stops": [
+        "New York Penn Station",
+        "Secaucus Junction",
+        "Newark Penn Station",
+        "Elizabeth",
+        "Rahway",
+        "Avenel",
+        "Woodbridge",
+        "Perth Amboy",
+        "South Amboy",
+        "Matawan",
+        "Hazlet",
+        "Middletown",
+        "Red Bank",
+        "Little Silver",
+        "Long Branch"
+      ]
+    },
+    {
+      "trainNumber": "3503",
+      "destination": "So. Amboy",
+      "line": "NJCL",
+      "scheduledTime": "5:40 AM",
+      "currentTrack": "",
+      "predictedTrack": null,
+      "confidence": 0,
+      "trackDistribution": {},
+      "daysOfData": 1,
+      "excludedTracks": [],
+      "excludeReasons": {},
+      "note": "No track assignments in history",
+      "stops": [
+        "New York Penn Station",
+        "Secaucus Junction",
+        "Newark Penn Station",
+        "Elizabeth",
+        "Rahway",
+        "Avenel",
+        "Woodbridge",
+        "Perth Amboy",
+        "South Amboy",
+        "Matawan",
+        "Hazlet",
+        "Middletown",
+        "Red Bank",
+        "Little Silver",
+        "Long Branch",
+        "Elberon",
+        "Allenhurst",
+        "Asbury Park",
+        "Bradley Beach",
+        "Belmar",
+        "Spring Lake",
+        "Manasquan",
+        "Point Pleasant Beach",
+        "Bay Head"
+      ]
+    },
+    {
+      "trainNumber": "A181",
+      "destination": "Washington",
+      "line": "AMTK",
+      "scheduledTime": "5:45 AM",
+      "currentTrack": "",
+      "predictedTrack": null,
+      "confidence": 0,
+      "trackDistribution": {},
+      "daysOfData": 1,
+      "excludedTracks": [],
+      "excludeReasons": {},
+      "note": "No track assignments in history",
+      "stops": [
+        "New York Penn Station",
+        "Newark Penn Station",
+        "Metropark",
+        "Trenton",
+        "Philadelphia 30th St",
+        "Wilmington",
+        "Baltimore",
+        "Washington Union Station"
+      ]
+    },
+    {
+      "trainNumber": "A607",
+      "destination": "Philadelphia",
+      "line": "AMTK",
+      "scheduledTime": "5:50 AM",
+      "currentTrack": "",
+      "predictedTrack": null,
+      "confidence": 0,
+      "trackDistribution": {},
+      "daysOfData": 1,
+      "excludedTracks": [],
+      "excludeReasons": {},
+      "note": "No track assignments in history",
+      "stops": [
+        "New York Penn Station",
+        "Newark Penn Station",
+        "Metropark",
+        "Trenton",
+        "Philadelphia 30th St"
+      ]
+    },
+    {
+      "trainNumber": "6209",
+      "destination": "MSU",
+      "line": "MOBO",
+      "scheduledTime": "5:53 AM",
+      "currentTrack": "",
+      "predictedTrack": null,
+      "confidence": 0,
+      "trackDistribution": {},
+      "daysOfData": 1,
+      "excludedTracks": [],
+      "excludeReasons": {},
+      "note": "No track assignments in history",
+      "stops": [
+        "New York Penn Station",
+        "Secaucus Junction",
+        "Newark Broad St",
+        "Broad Street Bloomfield",
+        "Glen Ridge",
+        "Bay Street Montclair",
+        "Walnut Street",
+        "Watchung Avenue",
+        "Upper Montclair",
+        "Mountain Avenue",
+        "Montclair Heights",
+        "Montclair State University (MSU)"
+      ]
+    },
+    {
+      "trainNumber": "6305",
+      "destination": "Summit",
+      "line": "M&E",
+      "scheduledTime": "5:58 AM",
+      "currentTrack": "",
+      "predictedTrack": null,
+      "confidence": 0,
+      "trackDistribution": {},
+      "daysOfData": 1,
+      "excludedTracks": [],
+      "excludeReasons": {},
+      "note": "No track assignments in history",
+      "stops": [
+        "New York Penn Station",
+        "Secaucus Junction",
+        "Newark Broad St",
+        "East Orange",
+        "Brick Church",
+        "Orange",
+        "Highland Ave",
+        "Mountain Station",
+        "South Orange",
+        "Maplewood",
+        "Millburn",
+        "Short Hills",
+        "Summit"
+      ]
+    },
+    {
+      "trainNumber": "A89",
+      "destination": "Washington",
+      "line": "AMTK",
+      "scheduledTime": "6:02 AM",
+      "currentTrack": "",
+      "predictedTrack": null,
+      "confidence": 0,
+      "trackDistribution": {},
+      "daysOfData": 1,
+      "excludedTracks": [],
+      "excludeReasons": {},
+      "note": "No track assignments in history",
+      "stops": [
+        "New York Penn Station",
+        "Newark Penn Station",
+        "Metropark",
+        "Trenton",
+        "Philadelphia 30th St",
+        "Wilmington",
+        "Baltimore",
+        "Washington Union Station"
+      ]
+    },
+    {
+      "trainNumber": "3815",
+      "destination": "Trenton",
+      "line": "NEC",
+      "scheduledTime": "6:06 AM",
+      "currentTrack": "",
+      "predictedTrack": null,
+      "confidence": 0,
+      "trackDistribution": {},
+      "daysOfData": 1,
+      "excludedTracks": [],
+      "excludeReasons": {},
+      "note": "No track assignments in history",
+      "stops": [
+        "New York Penn Station",
+        "Secaucus Junction",
+        "Newark Penn Station",
+        "Newark Airport",
+        "North Elizabeth",
+        "Elizabeth",
+        "Rahway",
+        "Metropark",
+        "Metuchen",
+        "Edison",
+        "New Brunswick",
+        "Jersey Avenue",
+        "Princeton Junction",
+        "Hamilton",
+        "Trenton"
+      ]
+    },
+    {
+      "trainNumber": "A2103",
+      "destination": "Baltimore",
+      "line": "AMTK",
+      "scheduledTime": "6:10 AM",
+      "currentTrack": "",
+      "predictedTrack": null,
+      "confidence": 0,
+      "trackDistribution": {},
+      "daysOfData": 1,
+      "excludedTracks": [],
+      "excludeReasons": {},
+      "note": "No track assignments in history",
+      "stops": [
+        "New York Penn Station",
+        "Newark Penn Station",
+        "Metropark",
+        "Trenton",
+        "Philadelphia 30th St",
+        "Wilmington",
+        "Baltimore"
       ]
     }
   ],
