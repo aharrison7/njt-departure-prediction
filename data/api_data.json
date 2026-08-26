@@ -1,8 +1,8 @@
 {
-  "lastUpdated": "2026-08-26T05:09:56.601Z",
+  "lastUpdated": "2026-08-26T05:18:59.021Z",
   "activeStation": "Penn Station New York",
   "activeWindow": "live",
-  "scrapeTime": "116597ms",
+  "scrapeTime": "118400ms",
   "currentBoard": [
     {
       "trainNumber": "6201",
@@ -633,18 +633,18 @@
       "scheduledTime": "1:22 AM",
       "currentTrack": "",
       "predictedTrack": "4",
-      "confidence": 0.33,
+      "confidence": 0.29,
       "trackDistribution": {
         "1": 1,
-        "2": 2,
+        "2": 3,
         "3": 3,
         "4": 5,
         "9": 1,
         "10": 2,
-        "12": 1
+        "12": 2
       },
-      "daysOfData": 15,
-      "totalHistoryDays": 17,
+      "daysOfData": 17,
+      "totalHistoryDays": 18,
       "excludedTracks": [],
       "excludeReasons": {},
       "stops": [
