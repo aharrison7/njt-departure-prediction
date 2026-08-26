@@ -5959,10 +5959,10 @@
       "destination": "Trenton"
     },
     "2026-08-25": {
-      "track": "4",
-      "status": "On Time",
-      "station": "Jersey Ave",
-      "scheduledTime": "11:36 PM",
+      "track": "11",
+      "status": "All Aboard",
+      "station": "NY Penn",
+      "scheduledTime": "10:38 PM",
       "destination": "Trenton"
     },
     "2026-08-23": {
