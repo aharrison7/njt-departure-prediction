@@ -3502,6 +3502,20 @@
       "station": "NY Penn",
       "status": "On Time",
       "source": "choochootracker"
+    },
+    "2026-08-10": {
+      "track": "13",
+      "destination": "Jersey Avenue",
+      "station": "NY Penn",
+      "status": "On Time",
+      "source": "choochootracker"
+    },
+    "2026-08-26": {
+      "track": "2",
+      "destination": "Jersey Avenue",
+      "station": "NY Penn",
+      "status": "BOARDING",
+      "source": "choochootracker_live"
     }
   },
   "3753": {
@@ -7220,6 +7234,20 @@
       "station": "NY Penn",
       "status": "On Time",
       "source": "choochootracker"
+    },
+    "2026-08-12": {
+      "track": "13",
+      "destination": "Trenton",
+      "station": "NY Penn",
+      "status": "On Time",
+      "source": "choochootracker"
+    },
+    "2026-08-26": {
+      "track": "13",
+      "destination": "Trenton",
+      "station": "NY Penn",
+      "status": "BOARDING",
+      "source": "choochootracker_live"
     }
   },
   "5123": {
@@ -11822,6 +11850,20 @@
       "station": "NY Penn",
       "status": "On Time",
       "source": "choochootracker"
+    },
+    "2026-08-12": {
+      "track": "9",
+      "destination": "Dover",
+      "station": "NY Penn",
+      "status": "On Time",
+      "source": "choochootracker"
+    },
+    "2026-08-26": {
+      "track": "4",
+      "destination": "Dover",
+      "station": "NY Penn",
+      "status": "BOARDING",
+      "source": "choochootracker_live"
     }
   },
   "6679": {
@@ -15175,6 +15217,13 @@
       "station": "NY Penn",
       "status": "On Time",
       "source": "choochootracker"
+    },
+    "2026-08-26": {
+      "track": "14",
+      "destination": "Philadelphia",
+      "station": "NY Penn",
+      "status": "BOARDING",
+      "source": "choochootracker_live"
     }
   }
 }
