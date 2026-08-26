@@ -6074,9 +6074,9 @@
     },
     "2026-08-25": {
       "track": "4",
-      "status": "On Time",
-      "station": "Jersey Ave",
-      "scheduledTime": "12:10 AM",
+      "status": "All Aboard",
+      "station": "NY Penn",
+      "scheduledTime": "11:06 PM",
       "destination": "Trenton"
     },
     "2026-08-23": {
@@ -12141,11 +12141,11 @@
       "destination": "Dover"
     },
     "2026-08-25": {
-      "track": "1",
-      "destination": "Dover",
+      "track": "3",
+      "status": "All Aboard",
       "station": "NY Penn",
-      "status": "On Time",
-      "source": "choochootracker"
+      "scheduledTime": "10:56 PM",
+      "destination": "Dover"
     },
     "2026-08-23": {
       "track": "2",
@@ -12216,6 +12216,20 @@
       "station": "NY Penn",
       "status": "On Time",
       "source": "choochootracker"
+    },
+    "2026-08-13": {
+      "track": "12",
+      "destination": "Dover",
+      "station": "NY Penn",
+      "status": "On Time",
+      "source": "choochootracker"
+    },
+    "2026-08-26": {
+      "track": "3",
+      "destination": "Dover",
+      "station": "NY Penn",
+      "status": "BOARDING",
+      "source": "choochootracker_live"
     }
   },
   "A2165": {
