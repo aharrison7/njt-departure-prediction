@@ -10217,11 +10217,11 @@
       "source": "choochootracker"
     },
     "2026-08-26": {
-      "track": "1",
-      "destination": "Trenton",
+      "track": "13",
+      "status": "All Aboard",
       "station": "NY Penn",
-      "status": "BOARDING",
-      "source": "choochootracker_live"
+      "scheduledTime": "9:06 PM",
+      "destination": "Trenton"
     }
   },
   "3889": {
@@ -24433,6 +24433,13 @@
       "station": "NY Penn",
       "status": "On Time",
       "source": "choochootracker"
+    },
+    "2026-08-26": {
+      "track": "5",
+      "status": "All Aboard",
+      "station": "NY Penn",
+      "scheduledTime": "9:00 PM",
+      "destination": "Philadelphia"
     }
   },
   "A177": {
