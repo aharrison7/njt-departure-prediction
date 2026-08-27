@@ -1,8 +1,8 @@
 {
-  "lastUpdated": "2026-08-27T03:59:55.375Z",
+  "lastUpdated": "2026-08-27T06:12:19.649Z",
   "activeStation": "Penn Station New York",
   "activeWindow": "live",
-  "scrapeTime": "114900ms",
+  "scrapeTime": "115806ms",
   "currentBoard": [
     {
       "trainNumber": "A639",
@@ -500,18 +500,18 @@
       "line": "AMTK",
       "scheduledTime": "9:00 PM",
       "currentTrack": "5",
-      "predictedTrack": null,
-      "confidence": 0,
+      "predictedTrack": "5",
+      "confidence": 0.33,
       "trackDistribution": {
-        "5": 5,
+        "5": 6,
         "6": 2,
         "7": 5,
         "8": 1,
         "9": 1,
         "10": 3
       },
-      "daysOfData": 17,
-      "totalHistoryDays": 17,
+      "daysOfData": 18,
+      "totalHistoryDays": 18,
       "excludedTracks": [
         "13"
       ],
@@ -532,8 +532,8 @@
       "line": "NEC",
       "scheduledTime": "9:06 PM",
       "currentTrack": "13",
-      "predictedTrack": "4",
-      "confidence": 0.29,
+      "predictedTrack": null,
+      "confidence": 0,
       "trackDistribution": {
         "1": 1,
         "2": 2,
@@ -542,10 +542,10 @@
         "8": 2,
         "9": 1,
         "10": 1,
-        "13": 4
+        "13": 5
       },
-      "daysOfData": 17,
-      "totalHistoryDays": 17,
+      "daysOfData": 18,
+      "totalHistoryDays": 18,
       "excludedTracks": [
         "5"
       ],
@@ -586,7 +586,7 @@
         "9": 1
       },
       "daysOfData": 18,
-      "totalHistoryDays": 18,
+      "totalHistoryDays": 19,
       "excludedTracks": [
         "5",
         "13"
@@ -631,7 +631,7 @@
         "14": 1
       },
       "daysOfData": 17,
-      "totalHistoryDays": 17,
+      "totalHistoryDays": 18,
       "excludedTracks": [
         "5",
         "13"
@@ -671,7 +671,7 @@
         "10": 1
       },
       "daysOfData": 18,
-      "totalHistoryDays": 18,
+      "totalHistoryDays": 19,
       "excludedTracks": [
         "5",
         "13"
@@ -716,7 +716,7 @@
         "9": 2
       },
       "daysOfData": 18,
-      "totalHistoryDays": 18,
+      "totalHistoryDays": 19,
       "excludedTracks": [
         "5",
         "13"
@@ -763,7 +763,7 @@
         "10": 3
       },
       "daysOfData": 16,
-      "totalHistoryDays": 16,
+      "totalHistoryDays": 17,
       "excludedTracks": [
         "5",
         "13"
@@ -813,7 +813,7 @@
         "15": 1
       },
       "daysOfData": 16,
-      "totalHistoryDays": 16,
+      "totalHistoryDays": 17,
       "excludedTracks": [
         "5",
         "13"
@@ -849,7 +849,7 @@
         "12": 1
       },
       "daysOfData": 17,
-      "totalHistoryDays": 17,
+      "totalHistoryDays": 18,
       "excludedTracks": [
         "5",
         "13"
@@ -889,7 +889,7 @@
         "12": 1
       },
       "daysOfData": 15,
-      "totalHistoryDays": 15,
+      "totalHistoryDays": 16,
       "excludedTracks": [
         "5",
         "13"
@@ -933,7 +933,7 @@
         "9": 2
       },
       "daysOfData": 15,
-      "totalHistoryDays": 15,
+      "totalHistoryDays": 16,
       "excludedTracks": [
         "5",
         "13"
@@ -984,7 +984,7 @@
         "14": 3
       },
       "daysOfData": 13,
-      "totalHistoryDays": 14,
+      "totalHistoryDays": 15,
       "excludedTracks": [
         "5",
         "13"
@@ -1027,7 +1027,7 @@
         "11": 4
       },
       "daysOfData": 15,
-      "totalHistoryDays": 16,
+      "totalHistoryDays": 17,
       "excludedTracks": [
         "5",
         "13"
@@ -1072,7 +1072,7 @@
         "12": 1
       },
       "daysOfData": 14,
-      "totalHistoryDays": 15,
+      "totalHistoryDays": 16,
       "excludedTracks": [
         "5",
         "13"
@@ -1115,7 +1115,7 @@
         "14": 2
       },
       "daysOfData": 15,
-      "totalHistoryDays": 16,
+      "totalHistoryDays": 17,
       "excludedTracks": [
         "5",
         "13"
@@ -1165,7 +1165,7 @@
         "12": 2
       },
       "daysOfData": 13,
-      "totalHistoryDays": 14,
+      "totalHistoryDays": 15,
       "excludedTracks": [
         "5",
         "13"
@@ -1213,7 +1213,7 @@
         "12": 1
       },
       "daysOfData": 14,
-      "totalHistoryDays": 15,
+      "totalHistoryDays": 16,
       "excludedTracks": [
         "5",
         "13"
@@ -1257,7 +1257,7 @@
         "10": 1
       },
       "daysOfData": 13,
-      "totalHistoryDays": 15,
+      "totalHistoryDays": 16,
       "excludedTracks": [
         "5",
         "13"
@@ -1301,7 +1301,7 @@
         "12": 2
       },
       "daysOfData": 13,
-      "totalHistoryDays": 15,
+      "totalHistoryDays": 16,
       "excludedTracks": [
         "5",
         "13"
