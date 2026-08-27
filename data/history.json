@@ -2564,6 +2564,13 @@
       "station": "NY Penn",
       "status": "BOARDING",
       "source": "choochootracker_live"
+    },
+    "2026-08-27": {
+      "track": "10",
+      "status": "All Aboard",
+      "station": "NY Penn",
+      "scheduledTime": "6:01 PM",
+      "destination": "Long Branch"
     }
   },
   "3275": {
@@ -2678,6 +2685,13 @@
       "station": "NY Penn",
       "status": "On Time",
       "source": "choochootracker"
+    },
+    "2026-08-27": {
+      "track": "",
+      "status": "On Time",
+      "station": "NY Penn",
+      "scheduledTime": "6:31 PM",
+      "destination": "Long Branch"
     }
   },
   "3279": {
@@ -4421,6 +4435,13 @@
       "station": "NY Penn",
       "status": "On Time",
       "source": "choochootracker"
+    },
+    "2026-08-27": {
+      "track": "",
+      "status": "On Time",
+      "station": "NY Penn",
+      "scheduledTime": "6:29 PM",
+      "destination": "So. Amboy"
     }
   },
   "3701": {
@@ -9664,6 +9685,13 @@
       "station": "NY Penn",
       "status": "On Time",
       "source": "choochootracker"
+    },
+    "2026-08-27": {
+      "track": "",
+      "status": "On Time",
+      "station": "NY Penn",
+      "scheduledTime": "6:18 PM",
+      "destination": "Trenton"
     }
   },
   "3875": {
@@ -9785,6 +9813,13 @@
       "station": "NY Penn",
       "status": "On Time",
       "source": "choochootracker"
+    },
+    "2026-08-27": {
+      "track": "",
+      "status": "On Time",
+      "station": "NY Penn",
+      "scheduledTime": "6:47 PM",
+      "destination": "Trenton"
     }
   },
   "3877": {
@@ -11884,6 +11919,13 @@
       "station": "NY Penn",
       "status": "BOARDING",
       "source": "choochootracker_live"
+    },
+    "2026-08-27": {
+      "track": "",
+      "status": "On Time",
+      "station": "NY Penn",
+      "scheduledTime": "6:12 PM",
+      "destination": "Trenton"
     }
   },
   "3961": {
@@ -12005,6 +12047,13 @@
       "station": "NY Penn",
       "status": "On Time",
       "source": "choochootracker"
+    },
+    "2026-08-27": {
+      "track": "",
+      "status": "On Time",
+      "station": "NY Penn",
+      "scheduledTime": "6:37 PM",
+      "destination": "Trenton"
     }
   },
   "3965": {
@@ -15419,6 +15468,13 @@
       "station": "NY Penn",
       "status": "BOARDING",
       "source": "choochootracker_live"
+    },
+    "2026-08-27": {
+      "track": "",
+      "status": "On Time",
+      "station": "NY Penn",
+      "scheduledTime": "6:14 PM",
+      "destination": "MSU"
     }
   },
   "6283": {
@@ -15519,6 +15575,13 @@
       "station": "NY Penn",
       "status": "On Time",
       "source": "choochootracker"
+    },
+    "2026-08-27": {
+      "track": "",
+      "status": "On Time",
+      "station": "NY Penn",
+      "scheduledTime": "6:41 PM",
+      "destination": "MSU"
     }
   },
   "6291": {
@@ -17206,6 +17269,13 @@
       "station": "NY Penn",
       "status": "On Time",
       "source": "choochootracker"
+    },
+    "2026-08-27": {
+      "track": "",
+      "status": "On Time",
+      "station": "NY Penn",
+      "scheduledTime": "6:50 PM",
+      "destination": "Summit"
     }
   },
   "6363": {
@@ -17555,6 +17625,13 @@
       "station": "NY Penn",
       "status": "BOARDING",
       "source": "choochootracker_live"
+    },
+    "2026-08-27": {
+      "track": "",
+      "status": "On Time",
+      "station": "NY Penn",
+      "scheduledTime": "6:06 PM",
+      "destination": "Gladstone"
     }
   },
   "6601": {
@@ -19887,6 +19964,13 @@
       "station": "NY Penn",
       "status": "BOARDING",
       "source": "choochootracker_live"
+    },
+    "2026-08-27": {
+      "track": "3",
+      "status": "All Aboard",
+      "station": "NY Penn",
+      "scheduledTime": "5:52 PM",
+      "destination": "Dover"
     }
   },
   "6655": {
@@ -20001,6 +20085,13 @@
       "station": "NY Penn",
       "status": "BOARDING",
       "source": "choochootracker_live"
+    },
+    "2026-08-27": {
+      "track": "",
+      "status": "On Time",
+      "station": "NY Penn",
+      "scheduledTime": "6:20 PM",
+      "destination": "Dover"
     }
   },
   "6659": {
@@ -20094,6 +20185,13 @@
       "station": "NY Penn",
       "status": "On Time",
       "source": "choochootracker"
+    },
+    "2026-08-27": {
+      "track": "",
+      "status": "CANCELLED",
+      "station": "NY Penn",
+      "scheduledTime": "6:56 PM",
+      "destination": "Dover"
     }
   },
   "6667": {
@@ -21858,6 +21956,13 @@
       "station": "NY Penn",
       "status": "BOARDING",
       "source": "choochootracker_live"
+    },
+    "2026-08-27": {
+      "track": "11",
+      "status": "All Aboard",
+      "station": "NY Penn",
+      "scheduledTime": "6:05 PM",
+      "destination": "Washington"
     }
   },
   "A197": {
@@ -21986,6 +22091,13 @@
       "station": "NY Penn",
       "status": "BOARDING",
       "source": "choochootracker_live"
+    },
+    "2026-08-27": {
+      "track": "14",
+      "status": "All Aboard",
+      "station": "NY Penn",
+      "scheduledTime": "6:09 PM",
+      "destination": "Washington"
     }
   },
   "A137": {
@@ -22100,6 +22212,13 @@
       "station": "NY Penn",
       "status": "On Time",
       "source": "choochootracker"
+    },
+    "2026-08-27": {
+      "track": "",
+      "status": "On Time",
+      "station": "NY Penn",
+      "scheduledTime": "6:27 PM",
+      "destination": "Washington"
     }
   },
   "A655": {
@@ -22214,6 +22333,13 @@
       "station": "NY Penn",
       "status": "On Time",
       "source": "choochootracker"
+    },
+    "2026-08-27": {
+      "track": "",
+      "status": "On Time",
+      "station": "NY Penn",
+      "scheduledTime": "6:35 PM",
+      "destination": "Harrisburg"
     }
   },
   "A55": {
@@ -22328,6 +22454,13 @@
       "station": "NY Penn",
       "status": "On Time",
       "source": "choochootracker"
+    },
+    "2026-08-27": {
+      "track": "",
+      "status": "On Time",
+      "station": "NY Penn",
+      "scheduledTime": "6:45 PM",
+      "destination": "Washington"
     }
   },
   "A97": {
