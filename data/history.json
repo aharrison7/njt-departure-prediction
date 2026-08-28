@@ -374,6 +374,13 @@
       "station": "NY Penn",
       "status": "On Time",
       "source": "choochootracker"
+    },
+    "2026-08-27": {
+      "track": "",
+      "status": "On Time",
+      "station": "NY Penn",
+      "scheduledTime": "1:00 AM",
+      "destination": "Long Branch"
     }
   },
   "3209": {
@@ -3413,8 +3420,8 @@
       "destination": "Long Branch-BH"
     },
     "2026-08-27": {
-      "track": "",
-      "status": "On Time",
+      "track": "2",
+      "status": "All Aboard",
       "station": "NY Penn",
       "scheduledTime": "11:18 PM",
       "destination": "Long Branch-BH"
@@ -6485,6 +6492,13 @@
       "station": "NY Penn",
       "status": "On Time",
       "source": "choochootracker"
+    },
+    "2026-08-27": {
+      "track": "",
+      "status": "On Time",
+      "station": "NY Penn",
+      "scheduledTime": "1:22 AM",
+      "destination": "Trenton"
     }
   },
   "3809": {
