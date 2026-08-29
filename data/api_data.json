@@ -1,8 +1,8 @@
 {
-  "lastUpdated": "2026-08-29T14:19:54.260Z",
+  "lastUpdated": "2026-08-29T14:29:52.292Z",
   "activeStation": "Penn Station New York",
   "activeWindow": "live",
-  "scrapeTime": "53798ms",
+  "scrapeTime": "112200ms",
   "currentBoard": [
     {
       "trainNumber": "A43",
@@ -450,116 +450,7 @@
       ]
     }
   ],
-  "recentlyDeparted": [
-    {
-      "trainNumber": "A127",
-      "scheduledTime": "10:08 AM",
-      "destination": "Washington",
-      "line": "AMTK",
-      "track": "10",
-      "status": "All Aboard",
-      "station": "NY Penn",
-      "stops": [
-        "New York Penn Station",
-        "Newark Penn Station",
-        "Metropark",
-        "Trenton",
-        "Philadelphia 30th St",
-        "Wilmington",
-        "Baltimore",
-        "Washington Union Station"
-      ],
-      "removedAt": "2026-08-29T14:17:30.562Z",
-      "departedStatus": "Departed",
-      "lastTrack": "10"
-    },
-    {
-      "trainNumber": "A2249",
-      "scheduledTime": "10:10 AM",
-      "destination": "BWI Airport",
-      "line": "AMTK",
-      "track": "",
-      "status": "On Time",
-      "station": "NY Penn",
-      "stops": [
-        "New York Penn Station",
-        "Newark Penn Station",
-        "Metropark",
-        "Trenton",
-        "Philadelphia 30th St",
-        "Wilmington",
-        "Baltimore",
-        "Washington Union Station"
-      ],
-      "removedAt": "2026-08-29T14:17:30.562Z",
-      "departedStatus": "Departed",
-      "lastTrack": "—"
-    },
-    {
-      "trainNumber": "6919",
-      "scheduledTime": "10:11 AM",
-      "destination": "Dover",
-      "line": "M&E",
-      "track": "2",
-      "status": "All Aboard",
-      "station": "NY Penn",
-      "stops": [
-        "New York Penn Station",
-        "Secaucus Junction",
-        "Newark Broad St",
-        "East Orange",
-        "Brick Church",
-        "Orange",
-        "Highland Ave",
-        "Mountain Station",
-        "South Orange",
-        "Maplewood",
-        "Millburn",
-        "Short Hills",
-        "Summit",
-        "Chatham",
-        "Madison",
-        "Convent Station",
-        "Morristown",
-        "Morris Plains",
-        "Mount Tabor",
-        "Denville",
-        "Dover"
-      ],
-      "removedAt": "2026-08-29T14:17:30.562Z",
-      "departedStatus": "Departed",
-      "lastTrack": "2"
-    },
-    {
-      "trainNumber": "7833",
-      "scheduledTime": "10:16 AM",
-      "destination": "Trenton",
-      "line": "NEC",
-      "track": "3",
-      "status": "All Aboard",
-      "station": "NY Penn",
-      "stops": [
-        "New York Penn Station",
-        "Secaucus Junction",
-        "Newark Penn Station",
-        "Newark Airport",
-        "North Elizabeth",
-        "Elizabeth",
-        "Rahway",
-        "Metropark",
-        "Metuchen",
-        "Edison",
-        "New Brunswick",
-        "Jersey Avenue",
-        "Princeton Junction",
-        "Hamilton",
-        "Trenton"
-      ],
-      "removedAt": "2026-08-29T14:17:30.562Z",
-      "departedStatus": "Departed",
-      "lastTrack": "3"
-    }
-  ],
+  "recentlyDeparted": [],
   "predictions": [
     {
       "trainNumber": "A43",
