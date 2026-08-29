@@ -1,8 +1,8 @@
 {
-  "lastUpdated": "2026-08-29T09:59:13.297Z",
+  "lastUpdated": "2026-08-29T10:09:51.316Z",
   "activeStation": "Penn Station New York",
   "activeWindow": "live",
-  "scrapeTime": "132715ms",
+  "scrapeTime": "110602ms",
   "currentBoard": [
     {
       "trainNumber": "7813",
