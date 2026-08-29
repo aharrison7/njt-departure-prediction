@@ -21681,6 +21681,24 @@
       "destination": "Trenton"
     }
   },
+  "7845": {
+    "2026-08-29": {
+      "track": "",
+      "status": "On Time",
+      "station": "NY Penn",
+      "scheduledTime": "1:14 PM",
+      "destination": "Trenton"
+    }
+  },
+  "7847": {
+    "2026-08-29": {
+      "track": "",
+      "status": "On Time",
+      "station": "NY Penn",
+      "scheduledTime": "1:55 PM",
+      "destination": "Trenton"
+    }
+  },
   "A2165": {
     "2026-08-21": {
       "track": "",
@@ -29039,6 +29057,24 @@
       "station": "NY Penn",
       "scheduledTime": "1:05 PM",
       "destination": "Harrisburg"
+    }
+  },
+  "A99": {
+    "2026-08-29": {
+      "track": "",
+      "status": "On Time",
+      "station": "NY Penn",
+      "scheduledTime": "1:17 PM",
+      "destination": "Newport News"
+    }
+  },
+  "A2259": {
+    "2026-08-29": {
+      "track": "",
+      "status": "On Time",
+      "station": "NY Penn",
+      "scheduledTime": "1:22 PM",
+      "destination": "Washington"
     }
   }
 }
