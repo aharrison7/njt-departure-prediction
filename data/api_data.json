@@ -1,80 +1,16 @@
 {
-  "lastUpdated": "2026-08-30T13:59:57.049Z",
+  "lastUpdated": "2026-08-30T14:09:53.976Z",
   "activeStation": "Penn Station New York",
   "activeWindow": "live",
-  "scrapeTime": "116900ms",
+  "scrapeTime": "113904ms",
   "currentBoard": [
-    {
-      "trainNumber": "A143",
-      "scheduledTime": "9:47 AM",
-      "destination": "Washington",
-      "line": "AMTK",
-      "track": "",
-      "status": "DELAYED",
-      "station": "NY Penn",
-      "stops": [
-        "New York Penn Station",
-        "Newark Penn Station",
-        "Metropark",
-        "Trenton",
-        "Philadelphia 30th St",
-        "Wilmington",
-        "Baltimore",
-        "Washington Union Station"
-      ]
-    },
-    {
-      "trainNumber": "7233",
-      "scheduledTime": "9:55 AM",
-      "destination": "Long Branch",
-      "line": "NJCL",
-      "track": "4",
-      "status": "All Aboard",
-      "station": "NY Penn",
-      "stops": [
-        "New York Penn Station",
-        "Secaucus Junction",
-        "Newark Penn Station",
-        "Elizabeth",
-        "Rahway",
-        "Avenel",
-        "Woodbridge",
-        "Perth Amboy",
-        "South Amboy",
-        "Matawan",
-        "Hazlet",
-        "Middletown",
-        "Red Bank",
-        "Little Silver",
-        "Long Branch"
-      ]
-    },
-    {
-      "trainNumber": "A2213",
-      "scheduledTime": "10:03 AM",
-      "destination": "Washington",
-      "line": "AMTK",
-      "track": "10",
-      "status": "All Aboard",
-      "station": "NY Penn",
-      "stops": [
-        "New York Penn Station",
-        "Newark Penn Station",
-        "Metropark",
-        "Trenton",
-        "Philadelphia 30th St",
-        "Wilmington",
-        "Baltimore",
-        "Washington Union Station"
-      ]
-    },
     {
       "trainNumber": "6919",
       "scheduledTime": "10:11 AM",
       "destination": "Dover",
       "line": "M&E",
-      "track": "",
-      "status": "On Time",
+      "track": "3",
+      "status": "All Aboard",
       "station": "NY Penn",
       "stops": [
         "New York Penn Station",
@@ -289,7 +225,7 @@
       "destination": "Washington",
       "line": "AMTK",
       "track": "",
-      "status": "On Time",
+      "status": "DELAYED",
       "station": "NY Penn",
       "stops": [
         "New York Penn Station",
@@ -441,29 +377,96 @@
         "Baltimore",
         "Washington Union Station"
       ]
+    },
+    {
+      "trainNumber": "A105",
+      "scheduledTime": "12:24 PM",
+      "destination": "Washington",
+      "line": "AMTK",
+      "track": "",
+      "status": "On Time",
+      "station": "NY Penn",
+      "stops": [
+        "New York Penn Station",
+        "Newark Penn Station",
+        "Metropark",
+        "Trenton",
+        "Philadelphia 30th St",
+        "Wilmington",
+        "Baltimore",
+        "Washington Union Station"
+      ]
+    },
+    {
+      "trainNumber": "A145",
+      "scheduledTime": "12:55 PM",
+      "destination": "Roanoke",
+      "line": "AMTK",
+      "track": "",
+      "status": "On Time",
+      "station": "NY Penn",
+      "stops": [
+        "New York Penn Station",
+        "Newark Penn Station",
+        "Metropark",
+        "Trenton",
+        "Philadelphia 30th St",
+        "Wilmington",
+        "Baltimore",
+        "Washington Union Station"
+      ]
+    },
+    {
+      "trainNumber": "A665",
+      "scheduledTime": "1:05 PM",
+      "destination": "Harrisburg",
+      "line": "AMTK",
+      "track": "",
+      "status": "On Time",
+      "station": "NY Penn",
+      "stops": [
+        "New York Penn Station",
+        "Newark Penn Station",
+        "Metropark",
+        "Trenton",
+        "Philadelphia 30th St",
+        "Wilmington",
+        "Baltimore",
+        "Washington Union Station"
+      ]
     }
   ],
-  "recentlyDeparted": [],
-  "predictions": [
+  "recentlyDeparted": [
+    {
+      "trainNumber": "A143",
+      "scheduledTime": "9:47 AM",
+      "destination": "Washington",
+      "line": "AMTK",
+      "track": "",
+      "status": "DELAYED",
+      "station": "NY Penn",
+      "stops": [
+        "New York Penn Station",
+        "Newark Penn Station",
+        "Metropark",
+        "Trenton",
+        "Philadelphia 30th St",
+        "Wilmington",
+        "Baltimore",
+        "Washington Union Station"
+      ],
+      "removedAt": "2026-08-30T14:06:09.672Z",
+      "departedStatus": "Departed",
+      "lastTrack": "—"
+    },
     {
       "trainNumber": "7233",
+      "scheduledTime": "9:55 AM",
       "destination": "Long Branch",
       "line": "NJCL",
-      "scheduledTime": "9:55 AM",
-      "currentTrack": "4",
-      "predictedTrack": "4",
-      "confidence": 1,
-      "trackDistribution": {
-        "4": 1
-      },
-      "daysOfData": 1,
-      "totalHistoryDays": 2,
-      "excludedTracks": [
-        "10"
-      ],
-      "excludeReasons": {
-        "10": "currently occupied by another train"
-      },
+      "track": "4",
+      "status": "All Aboard",
+      "station": "NY Penn",
       "stops": [
         "New York Penn Station",
         "Secaucus Junction",
@@ -480,51 +483,19 @@
         "Red Bank",
         "Little Silver",
         "Long Branch"
-      ]
+      ],
+      "removedAt": "2026-08-30T14:06:09.672Z",
+      "departedStatus": "Departed",
+      "lastTrack": "4"
     },
     {
       "trainNumber": "A2213",
-      "destination": "Washington",
-      "line": "AMTK",
       "scheduledTime": "10:03 AM",
-      "currentTrack": "10",
-      "predictedTrack": "10",
-      "confidence": 1,
-      "trackDistribution": {
-        "10": 1
-      },
-      "daysOfData": 1,
-      "totalHistoryDays": 1,
-      "excludedTracks": [
-        "4"
-      ],
-      "excludeReasons": {
-        "4": "currently occupied by another train"
-      },
-      "stops": [
-        "New York Penn Station",
-        "Newark Penn Station",
-        "Metropark",
-        "Trenton",
-        "Philadelphia 30th St",
-        "Wilmington",
-        "Baltimore",
-        "Washington Union Station"
-      ]
-    },
-    {
-      "trainNumber": "A143",
       "destination": "Washington",
       "line": "AMTK",
-      "scheduledTime": "9:47 AM",
-      "currentTrack": "",
-      "predictedTrack": null,
-      "confidence": 0,
-      "trackDistribution": {},
-      "daysOfData": 2,
-      "excludedTracks": [],
-      "excludeReasons": {},
-      "note": "No track assignments in history",
+      "track": "10",
+      "status": "All Aboard",
+      "station": "NY Penn",
       "stops": [
         "New York Penn Station",
         "Newark Penn Station",
@@ -534,29 +505,29 @@
         "Wilmington",
         "Baltimore",
         "Washington Union Station"
-      ]
-    },
+      ],
+      "removedAt": "2026-08-30T14:06:09.672Z",
+      "departedStatus": "Departed",
+      "lastTrack": "10"
+    }
+  ],
+  "predictions": [
     {
       "trainNumber": "6919",
       "destination": "Dover",
       "line": "M&E",
       "scheduledTime": "10:11 AM",
-      "currentTrack": "",
-      "predictedTrack": "2",
-      "confidence": 1,
+      "currentTrack": "3",
+      "predictedTrack": null,
+      "confidence": 0,
       "trackDistribution": {
-        "2": 1
+        "2": 1,
+        "3": 1
       },
-      "daysOfData": 1,
+      "daysOfData": 2,
       "totalHistoryDays": 2,
-      "excludedTracks": [
-        "4",
-        "10"
-      ],
-      "excludeReasons": {
-        "4": "currently occupied by another train",
-        "10": "currently occupied by another train"
-      },
+      "excludedTracks": [],
+      "excludeReasons": {},
       "stops": [
         "New York Penn Station",
         "Secaucus Junction",
@@ -587,20 +558,16 @@
       "line": "NEC",
       "scheduledTime": "10:16 AM",
       "currentTrack": "",
-      "predictedTrack": "3",
-      "confidence": 1,
-      "trackDistribution": {
-        "3": 1
-      },
+      "predictedTrack": null,
+      "confidence": 0,
+      "trackDistribution": {},
       "daysOfData": 1,
       "totalHistoryDays": 2,
       "excludedTracks": [
-        "4",
-        "10"
+        "3"
       ],
       "excludeReasons": {
-        "4": "currently occupied by another train",
-        "10": "currently occupied by another train"
+        "3": "currently occupied by another train"
       },
       "stops": [
         "New York Penn Station",
@@ -651,9 +618,10 @@
       "scheduledTime": "10:52 AM",
       "currentTrack": "",
       "predictedTrack": "14",
-      "confidence": 0.48,
+      "confidence": 0.46,
       "trackDistribution": {
         "8": 1,
+        "10": 1,
         "13": 5,
         "14": 11,
         "15": 4,
@@ -662,12 +630,10 @@
       "daysOfData": 24,
       "totalHistoryDays": 26,
       "excludedTracks": [
-        "4",
-        "10"
+        "3"
       ],
       "excludeReasons": {
-        "4": "currently occupied by another train",
-        "10": "currently occupied by another train"
+        "3": "currently occupied by another train"
       },
       "stops": [
         "New York Penn Station",
@@ -1004,6 +970,78 @@
       "confidence": 0,
       "trackDistribution": {},
       "daysOfData": 1,
+      "excludedTracks": [],
+      "excludeReasons": {},
+      "note": "No track assignments in history",
+      "stops": [
+        "New York Penn Station",
+        "Newark Penn Station",
+        "Metropark",
+        "Trenton",
+        "Philadelphia 30th St",
+        "Wilmington",
+        "Baltimore",
+        "Washington Union Station"
+      ]
+    },
+    {
+      "trainNumber": "A105",
+      "destination": "Washington",
+      "line": "AMTK",
+      "scheduledTime": "12:24 PM",
+      "currentTrack": "",
+      "predictedTrack": null,
+      "confidence": 0,
+      "trackDistribution": {},
+      "daysOfData": 1,
+      "excludedTracks": [],
+      "excludeReasons": {},
+      "note": "No track assignments in history",
+      "stops": [
+        "New York Penn Station",
+        "Newark Penn Station",
+        "Metropark",
+        "Trenton",
+        "Philadelphia 30th St",
+        "Wilmington",
+        "Baltimore",
+        "Washington Union Station"
+      ]
+    },
+    {
+      "trainNumber": "A145",
+      "destination": "Roanoke",
+      "line": "AMTK",
+      "scheduledTime": "12:55 PM",
+      "currentTrack": "",
+      "predictedTrack": null,
+      "confidence": 0,
+      "trackDistribution": {},
+      "daysOfData": 1,
+      "excludedTracks": [],
+      "excludeReasons": {},
+      "note": "No track assignments in history",
+      "stops": [
+        "New York Penn Station",
+        "Newark Penn Station",
+        "Metropark",
+        "Trenton",
+        "Philadelphia 30th St",
+        "Wilmington",
+        "Baltimore",
+        "Washington Union Station"
+      ]
+    },
+    {
+      "trainNumber": "A665",
+      "destination": "Harrisburg",
+      "line": "AMTK",
+      "scheduledTime": "1:05 PM",
+      "currentTrack": "",
+      "predictedTrack": null,
+      "confidence": 0,
+      "trackDistribution": {},
+      "daysOfData": 2,
       "excludedTracks": [],
       "excludeReasons": {},
       "note": "No track assignments in history",
