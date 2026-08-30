@@ -1,8 +1,8 @@
 {
-  "lastUpdated": "2026-08-30T14:09:53.976Z",
+  "lastUpdated": "2026-08-30T14:19:26.854Z",
   "activeStation": "Penn Station New York",
   "activeWindow": "live",
-  "scrapeTime": "113904ms",
+  "scrapeTime": "146104ms",
   "currentBoard": [
     {
       "trainNumber": "6919",
@@ -436,81 +436,7 @@
       ]
     }
   ],
-  "recentlyDeparted": [
-    {
-      "trainNumber": "A143",
-      "scheduledTime": "9:47 AM",
-      "destination": "Washington",
-      "line": "AMTK",
-      "track": "",
-      "status": "DELAYED",
-      "station": "NY Penn",
-      "stops": [
-        "New York Penn Station",
-        "Newark Penn Station",
-        "Metropark",
-        "Trenton",
-        "Philadelphia 30th St",
-        "Wilmington",
-        "Baltimore",
-        "Washington Union Station"
-      ],
-      "removedAt": "2026-08-30T14:06:09.672Z",
-      "departedStatus": "Departed",
-      "lastTrack": "—"
-    },
-    {
-      "trainNumber": "7233",
-      "scheduledTime": "9:55 AM",
-      "destination": "Long Branch",
-      "line": "NJCL",
-      "track": "4",
-      "status": "All Aboard",
-      "station": "NY Penn",
-      "stops": [
-        "New York Penn Station",
-        "Secaucus Junction",
-        "Newark Penn Station",
-        "Elizabeth",
-        "Rahway",
-        "Avenel",
-        "Woodbridge",
-        "Perth Amboy",
-        "South Amboy",
-        "Matawan",
-        "Hazlet",
-        "Middletown",
-        "Red Bank",
-        "Little Silver",
-        "Long Branch"
-      ],
-      "removedAt": "2026-08-30T14:06:09.672Z",
-      "departedStatus": "Departed",
-      "lastTrack": "4"
-    },
-    {
-      "trainNumber": "A2213",
-      "scheduledTime": "10:03 AM",
-      "destination": "Washington",
-      "line": "AMTK",
-      "track": "10",
-      "status": "All Aboard",
-      "station": "NY Penn",
-      "stops": [
-        "New York Penn Station",
-        "Newark Penn Station",
-        "Metropark",
-        "Trenton",
-        "Philadelphia 30th St",
-        "Wilmington",
-        "Baltimore",
-        "Washington Union Station"
-      ],
-      "removedAt": "2026-08-30T14:06:09.672Z",
-      "departedStatus": "Departed",
-      "lastTrack": "10"
-    }
-  ],
+  "recentlyDeparted": [],
   "predictions": [
     {
       "trainNumber": "6919",
