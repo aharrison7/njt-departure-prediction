@@ -21495,8 +21495,8 @@
       "destination": "Dover"
     },
     "2026-08-30": {
-      "track": "",
-      "status": "On Time",
+      "track": "3",
+      "status": "All Aboard",
       "station": "NY Penn",
       "scheduledTime": "10:11 AM",
       "destination": "Dover"
@@ -29607,6 +29607,24 @@
       "station": "NY Penn",
       "scheduledTime": "12:20 PM",
       "destination": "Washington"
+    }
+  },
+  "A105": {
+    "2026-08-30": {
+      "track": "",
+      "status": "On Time",
+      "station": "NY Penn",
+      "scheduledTime": "12:24 PM",
+      "destination": "Washington"
+    }
+  },
+  "A145": {
+    "2026-08-30": {
+      "track": "",
+      "status": "On Time",
+      "station": "NY Penn",
+      "scheduledTime": "12:55 PM",
+      "destination": "Roanoke"
     }
   }
 }
