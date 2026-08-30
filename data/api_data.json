@@ -1,35 +1,9 @@
 {
-  "lastUpdated": "2026-08-30T09:09:51.693Z",
+  "lastUpdated": "2026-08-30T09:19:51.853Z",
   "activeStation": "Penn Station New York",
   "activeWindow": "live",
-  "scrapeTime": "111103ms",
+  "scrapeTime": "111504ms",
   "currentBoard": [
-    {
-      "trainNumber": "7813",
-      "scheduledTime": "5:10 AM",
-      "destination": "Trenton",
-      "line": "NEC",
-      "track": "",
-      "status": "On Time",
-      "station": "NY Penn",
-      "stops": [
-        "New York Penn Station",
-        "Secaucus Junction",
-        "Newark Penn Station",
-        "Newark Airport",
-        "North Elizabeth",
-        "Elizabeth",
-        "Rahway",
-        "Metropark",
-        "Metuchen",
-        "Edison",
-        "New Brunswick",
-        "Jersey Avenue",
-        "Princeton Junction",
-        "Hamilton",
-        "Trenton"
-      ]
-    },
     {
       "trainNumber": "7217",
       "scheduledTime": "5:53 AM",
@@ -443,23 +417,33 @@
         "Baltimore",
         "Washington Union Station"
       ]
+    },
+    {
+      "trainNumber": "7629",
+      "scheduledTime": "9:07 AM",
+      "destination": "Rahway",
+      "line": "NJCL",
+      "track": "",
+      "status": "On Time",
+      "station": "NY Penn",
+      "stops": [
+        "New York Penn Station",
+        "Secaucus Junction",
+        "Newark Penn Station",
+        "Elizabeth",
+        "Rahway"
+      ]
     }
   ],
-  "recentlyDeparted": [],
-  "predictions": [
+  "recentlyDeparted": [
     {
       "trainNumber": "7813",
+      "scheduledTime": "5:10 AM",
       "destination": "Trenton",
       "line": "NEC",
-      "scheduledTime": "5:10 AM",
-      "currentTrack": "",
-      "predictedTrack": null,
-      "confidence": 0,
-      "trackDistribution": {},
-      "daysOfData": 2,
-      "excludedTracks": [],
-      "excludeReasons": {},
-      "note": "No track assignments in history",
+      "track": "",
+      "status": "On Time",
+      "station": "NY Penn",
       "stops": [
         "New York Penn Station",
         "Secaucus Junction",
@@ -476,8 +460,13 @@
         "Princeton Junction",
         "Hamilton",
         "Trenton"
-      ]
-    },
+      ],
+      "removedAt": "2026-08-30T09:14:31.349Z",
+      "departedStatus": "Departed",
+      "lastTrack": "—"
+    }
+  ],
+  "predictions": [
     {
       "trainNumber": "7217",
       "destination": "Long Branch",
@@ -1003,6 +992,27 @@
         "Wilmington",
         "Baltimore",
         "Washington Union Station"
+      ]
+    },
+    {
+      "trainNumber": "7629",
+      "destination": "Rahway",
+      "line": "NJCL",
+      "scheduledTime": "9:07 AM",
+      "currentTrack": "",
+      "predictedTrack": null,
+      "confidence": 0,
+      "trackDistribution": {},
+      "daysOfData": 2,
+      "excludedTracks": [],
+      "excludeReasons": {},
+      "note": "No track assignments in history",
+      "stops": [
+        "New York Penn Station",
+        "Secaucus Junction",
+        "Newark Penn Station",
+        "Elizabeth",
+        "Rahway"
       ]
     }
   ],
