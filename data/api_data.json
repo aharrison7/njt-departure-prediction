@@ -1,8 +1,8 @@
 {
-  "lastUpdated": "2026-08-30T09:19:51.853Z",
+  "lastUpdated": "2026-08-30T11:29:35.334Z",
   "activeStation": "Penn Station New York",
   "activeWindow": "live",
-  "scrapeTime": "111504ms",
+  "scrapeTime": "125602ms",
   "currentBoard": [
     {
       "trainNumber": "7217",
@@ -435,37 +435,7 @@
       ]
     }
   ],
-  "recentlyDeparted": [
-    {
-      "trainNumber": "7813",
-      "scheduledTime": "5:10 AM",
-      "destination": "Trenton",
-      "line": "NEC",
-      "track": "",
-      "status": "On Time",
-      "station": "NY Penn",
-      "stops": [
-        "New York Penn Station",
-        "Secaucus Junction",
-        "Newark Penn Station",
-        "Newark Airport",
-        "North Elizabeth",
-        "Elizabeth",
-        "Rahway",
-        "Metropark",
-        "Metuchen",
-        "Edison",
-        "New Brunswick",
-        "Jersey Avenue",
-        "Princeton Junction",
-        "Hamilton",
-        "Trenton"
-      ],
-      "removedAt": "2026-08-30T09:14:31.349Z",
-      "departedStatus": "Departed",
-      "lastTrack": "—"
-    }
-  ],
+  "recentlyDeparted": [],
   "predictions": [
     {
       "trainNumber": "7217",
