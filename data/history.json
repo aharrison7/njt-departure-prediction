@@ -253,6 +253,13 @@
       "station": "NY Penn",
       "scheduledTime": "12:05 AM",
       "destination": "Long Branch"
+    },
+    "2026-08-30": {
+      "track": "",
+      "status": "On Time",
+      "station": "NY Penn",
+      "scheduledTime": "12:05 AM",
+      "destination": "Long Branch"
     }
   },
   "3205": {
@@ -6413,6 +6420,13 @@
       "destination": "Trenton"
     },
     "2026-08-28": {
+      "track": "",
+      "status": "On Time",
+      "station": "NY Penn",
+      "scheduledTime": "12:14 AM",
+      "destination": "Trenton"
+    },
+    "2026-08-30": {
       "track": "",
       "status": "On Time",
       "station": "NY Penn",
@@ -30056,6 +30070,15 @@
       "status": "On Time",
       "station": "NY Penn",
       "scheduledTime": "11:58 PM",
+      "destination": "Philadelphia"
+    }
+  },
+  "A169": {
+    "2026-08-30": {
+      "track": "",
+      "status": "On Time",
+      "station": "NY Penn",
+      "scheduledTime": "12:20 AM",
       "destination": "Philadelphia"
     }
   }
