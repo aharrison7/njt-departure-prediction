@@ -1,8 +1,8 @@
 {
-  "lastUpdated": "2026-08-31T00:39:52.302Z",
+  "lastUpdated": "2026-08-31T01:49:57.859Z",
   "activeStation": "Penn Station New York",
   "activeWindow": "live",
-  "scrapeTime": "52282ms",
+  "scrapeTime": "297509ms",
   "currentBoard": [
     {
       "trainNumber": "7875",
@@ -473,101 +473,7 @@
       ]
     }
   ],
-  "recentlyDeparted": [
-    {
-      "trainNumber": "7273",
-      "scheduledTime": "8:07 PM",
-      "destination": "Long Branch",
-      "line": "NJCL",
-      "track": "10",
-      "status": "All Aboard",
-      "station": "NY Penn",
-      "stops": [
-        "New York Penn Station",
-        "Secaucus Junction",
-        "Newark Penn Station",
-        "Elizabeth",
-        "Rahway",
-        "Avenel",
-        "Woodbridge",
-        "Perth Amboy",
-        "South Amboy",
-        "Matawan",
-        "Hazlet",
-        "Middletown",
-        "Red Bank",
-        "Little Silver",
-        "Long Branch"
-      ],
-      "removedAt": "2026-08-31T00:31:10.302Z",
-      "departedStatus": "Departed",
-      "lastTrack": "10"
-    },
-    {
-      "trainNumber": "6939",
-      "scheduledTime": "8:11 PM",
-      "destination": "Dover",
-      "line": "M&E",
-      "track": "2",
-      "status": "All Aboard",
-      "station": "NY Penn",
-      "stops": [
-        "New York Penn Station",
-        "Secaucus Junction",
-        "Newark Broad St",
-        "East Orange",
-        "Brick Church",
-        "Orange",
-        "Highland Ave",
-        "Mountain Station",
-        "South Orange",
-        "Maplewood",
-        "Millburn",
-        "Short Hills",
-        "Summit",
-        "Chatham",
-        "Madison",
-        "Convent Station",
-        "Morristown",
-        "Morris Plains",
-        "Mount Tabor",
-        "Denville",
-        "Dover"
-      ],
-      "removedAt": "2026-08-31T00:31:10.302Z",
-      "departedStatus": "Departed",
-      "lastTrack": "2"
-    },
-    {
-      "trainNumber": "7873",
-      "scheduledTime": "8:14 PM",
-      "destination": "Trenton",
-      "line": "NEC",
-      "track": "1",
-      "status": "All Aboard",
-      "station": "NY Penn",
-      "stops": [
-        "New York Penn Station",
-        "Secaucus Junction",
-        "Newark Penn Station",
-        "Newark Airport",
-        "North Elizabeth",
-        "Elizabeth",
-        "Rahway",
-        "Metropark",
-        "Metuchen",
-        "Edison",
-        "New Brunswick",
-        "Jersey Avenue",
-        "Princeton Junction",
-        "Hamilton",
-        "Trenton"
-      ],
-      "removedAt": "2026-08-31T00:31:10.302Z",
-      "departedStatus": "Departed",
-      "lastTrack": "1"
-    }
-  ],
+  "recentlyDeparted": [],
   "predictions": [
     {
       "trainNumber": "7875",
