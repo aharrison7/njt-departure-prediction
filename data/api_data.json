@@ -1,8 +1,8 @@
 {
-  "lastUpdated": "2026-09-03T12:49:53.203Z",
+  "lastUpdated": "2026-09-03T12:59:41.368Z",
   "activeStation": "Penn Station New York",
   "activeWindow": "live",
-  "scrapeTime": "112421ms",
+  "scrapeTime": "160000ms",
   "currentBoard": [],
   "recentlyDeparted": [],
   "predictions": [],
