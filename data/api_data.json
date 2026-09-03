@@ -1,8 +1,8 @@
 {
-  "lastUpdated": "2026-09-02T23:58:03.583Z",
+  "lastUpdated": "2026-09-03T00:09:50.967Z",
   "activeStation": "Penn Station New York",
   "activeWindow": "live",
-  "scrapeTime": "722301ms",
+  "scrapeTime": "110298ms",
   "currentBoard": [],
   "recentlyDeparted": [],
   "predictions": [],
@@ -10,12 +10,6 @@
     "recentByTrain": {
       "3361": [
         "2026-08-27"
-      ],
-      "6307": [
-        "2026-08-26"
-      ],
-      "6311": [
-        "2026-08-26"
       ],
       "6351": [
         "2026-08-28"
